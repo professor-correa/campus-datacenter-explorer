@@ -16,7 +16,23 @@ Este é um resumo dos conceitos e padrões de nomenclatura para **Commit**, **Br
 
 ---
 
-## 🏷️ 2. Padrões de Nomenclatura
+## 🍴 2. Fork: O Repositório Pessoal
+
+Quando você não tem permissão de escrita direta no repositório principal, é necessário criar um **Fork**.
+
+* **O que é um Fork?** É uma **cópia independente** do repositório original para a **sua conta** na plataforma (ex: GitHub).
+* **Propósito:** Ele permite que você faça todas as suas alterações (commits e branches) em um ambiente seguro, sem afetar o projeto principal.
+* **Fluxo:** Você forka o repositório, trabalha nas suas branches e, ao finalizar, abre um Pull Request do seu Fork para o repositório original.
+
+### 📌 Regra de Ouro para PRs
+
+> 🚨 **ABRA O PULL REQUEST SOMENTE QUANDO O TRABALHO ESTIVER CONCLUÍDO E PRONTO PARA REVISÃO.**
+
+Mantenha suas alterações no seu Fork até que a feature ou correção esteja completa, testada localmente e as mensagens de commit estejam limpas e padronizadas.
+
+---
+
+## 🏷️ 3. Padrões de Nomenclatura
 
 A padronização é crucial para automatizar ferramentas e entender o histórico rapidamente.
 
@@ -40,14 +56,12 @@ Formato: `tipo: descrição da mudança` (ex: `feat: created header component`).
 
 Use **camelCase**. Formato: `tipo/nomeDaBranch`.
 
-> Como estamos traalhando em grupos diferentes, coloquem uma indentificação do seu rack depois do `/`, para indentificarmos melhor e evitar conflitos como **branches com mesmo nome**
-
 | Tipo | Foco | Exemplo (camelCase) |
 | :--- | :--- | :--- |
-| `feat/` | Criação de **novas features**. | `feat/RK1createdHeader` |
-| `fix/` | **Correção** de bugs. | `fix/RK2headerComponentAlignment` |
-| `chore/` | Mudanças **estruturais**. | `chore/RK1updatedDependencies` |
-| `refactor/` | **Refatoração** de código. | `refactor/RK2apiConnection` |
+| `feat/` | Criação de **novas features**. | `feat/createdRack1Header` |
+| `fix/` | **Correção** de bugs. | `fix/headerComponentAlignment` |
+| `chore/` | Mudanças **estruturais**. | `chore/updatedDependencies` |
+| `refactor/` | **Refatoração** de código. | `refactor/apiConnection` |
 
 ### 🔄 Padrão de Pull Requests (PRs)
 
@@ -61,9 +75,9 @@ Use o tipo entre **colchetes `[ ]`** e o nome em **Title Case**.
 
 ---
 
-## 🗺️ 3. Fluxo de Integração (Git Flow Básico)
+## 🗺️ 4. Fluxo de Integração (Git Flow Básico)
 
-### ⚠️ **REGRA DE OURO:** Nunca faça commit direto nas branches principais (`develop`, `production`).
+⚠️ **REGRA DE OURO:** Nunca faça commit direto nas branches principais (`develop`, `production`).
 
 ### 🔹 Branches de Trabalho (`feat/`, `fix/`, etc.)
 * São branches **temporárias** derivadas de `develop`.
