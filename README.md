@@ -1,6 +1,9 @@
 # 🚀 Guia Essencial de Git: Conceitos e Padrões
 
 Este é um resumo dos conceitos e padrões de nomenclatura para **Commit**, **Branch** e **Pull Request (PR)**, visando um histórico de código claro e colaborativo.
+Mais detalhes sobre nomenclarura e estrutura:
+- [Nomenclatura das Branches](https://github.com/professor-correa/campus-datacenter-explorer/issues/3)
+- [Padrão de Commits, Branches e Pull Request](https://github.com/professor-correa/campus-datacenter-explorer/issues/4)
 
 ---
 
