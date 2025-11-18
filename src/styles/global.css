@@ -1,0 +1,13 @@
+@import url("./variables.css");
+@import url("./reset.css");
+
+html{
+    font-family: var(--font-family-MS);
+    font-style: normal;
+
+    /* Coloquem o link da fonte no html de vocês, renderiza melhor colocando direto no hrml
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     */
+}
