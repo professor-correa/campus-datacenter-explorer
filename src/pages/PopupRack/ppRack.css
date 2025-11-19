@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 100px;
+}
+.rack-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  aspect-ratio: 619/583.24;
+  background-image: url("../../assets/images/fibra-popup-hack.png");
+  background-size: contain;
+  border: 1px solid black;
+}
+.rack-img {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+}
+.rack-button {
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+}
+.patch {
+    position: relative;
+    top: 14%;
+    left: 8.58%;
+    width: 34.5%;
+    height: 6%;
+    background-color: aliceblue;
+}
