@@ -1,0 +1,62 @@
+/* Reset Básico e Moderno */
+
+/* 1. Use o box-sizing border-box para facilitar o layout */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remova a margem padrão do body */
+body {
+    margin: 0;
+    line-height: 1.5; /* Boa prática para legibilidade */
+    -webkit-font-smoothing: antialiased; /* Melhoria de fonte para navegadores WebKit */
+}
+
+/* 3. Evite problemas de sobreposição de elementos embutidos (imagens, vídeos, etc.) */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block; /* Mude para block para lidar com a linha de base indesejada */
+    max-width: 100%; /* Garante que a mídia seja responsiva */
+}
+
+/* 4. Remova estilos e margens padrão de cabeçalhos e parágrafos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* 5. Estilos de lista (opcional - dependendo do seu projeto) */
+ul,
+ol {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* 6. Garanta que inputs, textareas e buttons herdem a fonte */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Forçar um novo contexto de empilhamento para evitar bugs em elementos flutuantes */
+#root,
+#__next {
+    isolation: isolate;
+}
