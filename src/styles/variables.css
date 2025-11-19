@@ -1,0 +1,72 @@
+:root {
+    /* =================================================================
+       FAMÍLIA DE FONTE
+       (Assumindo uma fonte moderna. Altere 'Nome da Sua Fonte' conforme necessário)
+       ================================================================= */
+    --font-family-MS: "Montserrat", sans-serif;
+
+    /* =================================================================
+       PESOS (WEIGHTS)
+       ================================================================= */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    /* =================================================================
+       TAMANHOS (SIZES)
+       (Escala baseada em 'rem' para acessibilidade e responsividade.
+        Os valores são aproximações comuns para esses nomes de classes.)
+        o "rem" é semelhante ao "px", mas dividido por 10
+        ex: 2rem == 20px
+       ================================================================= */
+
+    /* Tamanhos de Display (Extra Large) */
+    --text-9xl: 8rem; /* Equivalente a 'text-9xl' */
+    --text-8xl: 6rem; /* Equivalente a 'text-8xl' */
+    --text-7xl: 4.5rem; /* Equivalente a 'text-7xl' */
+
+    /* Tamanhos de Título (Headings) */
+    --text-6xl: 3.75rem; /* Equivalente a 'text-6xl' */
+    --text-5xl: 3rem; /* Equivalente a 'text-5xl' */
+    --text-4xl: 2.25rem; /* Equivalente a 'text-4xl' */
+    --text-3xl: 1.875rem; /* Equivalente a 'text-3xl' */
+
+    /* Tamanhos de Corpo (Body/Paragraphs) */
+    --text-2xl: 1.5rem; /* Equivalente a 'text-2xl' */
+    --text-xl: 1.25rem; /* Equivalente a 'text-xl' (Não visível, mas boa prática) */
+    --text-lg: 1.125rem; /* (Não visível, mas boa prática) */
+    --text-base: 1rem; /* Tamanho Padrão (16px) */
+
+    /* Tamanhos Pequenos */
+    --text-sm: 0.875rem; /* Equivalente a 'text-sm' */
+    --text-xs: 0.75rem; /* Equivalente a 'text-xs' */
+
+
+    /* Color styles */
+    --grey-c100: #FFFFFF;
+    --grey-c200: #E7E7E7;
+    --grey-c300: #B6B6B6;
+    --grey-c400: #969696;
+    --grey-c500: #696969;
+    --grey-c600: #525252;
+    --grey-c700: #3B3B3B;
+    --grey-c800: #242424;
+    --grey-c900: #1E1E1E;
+    --grey-c1000: #000000;
+    --red-v100: #FFE8E9;
+    --red-v200: #FFBFC3;
+    --red-v300: #FF969C;
+    --red-v400: #FF6D76;
+    --red-v500: #FF4550;
+    --red-v600: #FF1C29;
+    --red-v700: #E30613;
+    --red-v800: #BA000B;
+    --red-v900: #9A1915;
+    --red-v1000: #681413;
+
+    /* Effect styles */
+    --hover-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+}
