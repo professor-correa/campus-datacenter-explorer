@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     padding: 100px;
 }
+
 /*copiar daqui*/
 .rack-component {
     display: flex;
@@ -28,7 +29,12 @@ body {
     border: 1px solid black;
 }
 
-.rack-container h6 {
+.rack-component h6 {
+    font-family: var(--font-family-MS);
+    font-size: var(--text-xl);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    line-height: 141%;
 }
 
 .rack-button {
@@ -91,11 +97,25 @@ body {
     margin-top: -70%;
 }
 
+.popup h3 {
+    text-align: center;
+    font-family: var(--font-family-MS);
+    font-size: var(--text-sm);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    line-height: 130%;
+}
+
 .popup p {
     width: 100%;
     text-wrap: pretty;
     text-align: center;
     word-wrap: break-word;
+    font-family: var(--font-family-MS);
+    font-size: var(--text-xs);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 130%;
 }
 
 .popup.show {
@@ -116,4 +136,5 @@ body {
     font-size: 22px;
     cursor: pointer;
 }
+
 /*até aqui*/
