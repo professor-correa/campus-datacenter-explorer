@@ -1,5 +1,14 @@
 @import url(/src/styles/global.css);
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
 /* SERVICES */
 
 section {
@@ -27,9 +36,10 @@ section {
     width: 100%;
 }
 
-.title-services h1 {
+h1 {
     font-weight: 600;
     font-size: 30px;
+    text-align: center;
 }
 
 /* Card Dropdown */
@@ -37,8 +47,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;            
-    gap: 20px;       
+    align-items: center;
+    gap: 20px;
 }
 
 .card-dropdown {
@@ -77,13 +87,91 @@ section {
     height: auto;
 }
 
-.info-dropdown .documentation-direction {
+.info-dropdown .direction {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
 }
 
-.info-dropdown .documentation-direction a {
+.info-dropdown .direction a {
     color: var(--grey-c400);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--red-v600);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    color: var(--grey-c100);
+}
+
+footer a {
+    color: var(--grey-c100);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 70%;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+nav h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.footer-contact h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;  
+}
+
+.footer-links h2 {
+    font-weight: 600;
+    font-size: 20px;
 }
