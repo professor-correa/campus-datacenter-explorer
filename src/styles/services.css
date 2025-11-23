@@ -1,0 +1,89 @@
+@import url(/src/styles/global.css);
+
+/* SERVICES */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Title Service */
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+    gap: 20px;
+}
+
+.line {
+    background: var(--grey-c1000);
+    height: 0.9px;
+    width: 100%;
+}
+
+.title-services h1 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* Card Dropdown */
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;            
+    gap: 20px;       
+}
+
+.card-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title-dropdown h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title-dropdown img {
+    height: 24px;
+    width: auto;
+}
+
+.info-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-dropdown img {
+    width: 247px;
+    height: auto;
+}
+
+.info-dropdown .documentation-direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.info-dropdown .documentation-direction a {
+    color: var(--grey-c400);
+}
