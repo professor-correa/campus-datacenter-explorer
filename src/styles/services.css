@@ -1,0 +1,177 @@
+@import url(/src/styles/global.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* SERVICES */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Title Service */
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+    gap: 20px;
+}
+
+.line {
+    background: var(--grey-c1000);
+    height: 0.9px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Card Dropdown */
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title-dropdown h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title-dropdown img {
+    height: 24px;
+    width: auto;
+}
+
+.info-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-dropdown img {
+    width: 247px;
+    height: auto;
+}
+
+.info-dropdown .direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.info-dropdown .direction a {
+    color: var(--grey-c400);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--red-v600);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    color: var(--grey-c100);
+}
+
+footer a {
+    color: var(--grey-c100);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 70%;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+nav h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.footer-contact h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;  
+}
+
+.footer-links h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
