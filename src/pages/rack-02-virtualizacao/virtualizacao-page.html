@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rack 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
 
     <header>
         <img src="./assets/icons/logo-senai.svg" alt="">
-        <nav>
+        <img src="assets/icons/menu-icon.svg" alt="">
+        <nav class="menu-options">
             <a href="">link</a>
             <a href="">link</a>
             <a href="">link</a>
@@ -21,9 +28,11 @@
         </nav>
     </header>
 
-    <h1>Virtualização</h1>
+    <div class="hero">
+        <h1>Virtualização</h1>
 
-    <img src="" alt="">
+        <img src="" alt="">
+    </div>
 
     <main>
         <h2>O que é...?</h2>
@@ -45,7 +54,7 @@
             atualizações e resolvam problemas à distância, com total segurança e agilidade, sem precisar se deslocar
             fisicamente até o rack.</p>
         <h3>Como tudo isso se conecta:</h3>
-        <img src="../assets/images/rack-img.webp" alt="">
+        <img src="../../assets/images/fibra-popup-hack.png" alt="">
     </main>
 
     <section class="dropdown">
@@ -56,25 +65,35 @@
     </section>
 
     <footer>
-        <nav>
+        <nav class="footer-nav">
             <h2><a href="">Voltar na Página</a></h2>
-            <a href="">link</a>
-            <a href="">link</a>
-            <a href="">link</a>
-            <a href="">link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
         </nav>
-        <div class="contact-wrapper">
-            <h3>Contatos</h3>
-            <div class="icons-wrapper">
-                <img src="./assets/icons/github-icon-vector.svg" alt="">
-                <img src="./assets/icons/instagram-icon-vector.svg" alt="">
-                <img src="./assets/icons/figma-icon-vector.svg" alt="">
-                <img src="./assets/icons/linkedin-icon-vector.svg" alt="">
+        <div class="footer-wrapper">
+            <div class="footer-content contact-wrapper">
+                <h3>Contatos</h3>
+                <div class="icons-wrapper">
+                    <a href="#" target="_blank">
+                        <img src="./assets/icons/github-icon-vector.svg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./assets/icons/instagram-icon-vector.svg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./assets/icons/figma-icon-vector.svg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./assets/icons/linkedin-icon-vector.svg" alt="">
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="access-too-wrapper">
-            <h3>Acesse Também</h3>
-            <a href="https://sp.senai.br/unidade/suicobrasileira/" target="_blank">Senai Suiço Brasileira</a>
+            <div class="footer-content access-too-wrapper">
+                <h3>Acesse Também</h3>
+                <a href="https://sp.senai.br/unidade/suicobrasileira/" target="_blank">Senai Suiço Brasileira</a>
+            </div>
         </div>
     </footer>
 
