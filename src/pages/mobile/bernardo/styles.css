@@ -18,6 +18,7 @@ section {
     align-items: center;
     padding: 20px;
     gap: 20px;
+    width: 91%;
 }
 
 /* Title Service */
@@ -49,6 +50,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 .card-dropdown {
@@ -56,6 +58,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    width: 100%;
+
 }
 
 .title-dropdown {
@@ -63,6 +67,12 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    transition: transform 0.2s;
+}
+
+.title-dropdown:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .title-dropdown h3 {
@@ -70,16 +80,26 @@ h1 {
     font-weight: 500;
 }
 
-.title-dropdown img {
+.title-dropdown .click-arrow {
     height: 24px;
     width: auto;
+    transition: transform 0.2s;
+}
+
+.title-dropdown .girar-seta {
+    transition: transform 0.2s;
+    transform: rotate(180deg);
 }
 
 .info-dropdown {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.info-dropdown.open {
+    display: flex;
 }
 
 .info-dropdown img {
@@ -168,7 +188,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;  
+    gap: 12px;
 }
 
 .footer-links h2 {
