@@ -14,14 +14,13 @@ header {
 
 header .left-wrapper {
     display: flex;
-    width: 163px;
-    height: 45px;
+    width: 43%;
+    height: auto;
     margin-top: 21px;
     margin-left: 10px;
 }
 
 header .right-wrapper {
-
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -38,7 +37,7 @@ header .hamburger {
 }
 
 main {
-    border: 2px solid red;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,41 +46,54 @@ main {
     height: 100%;
 }
 
-main .main-header-title h1 {
+main h1 {
     display: flex;
     justify-content: center;
     padding-top: 30px;
-    font-weight: 700;
-    color: var(--grey-c900);
+    color: var(--grey-c1000);
 }
 
-main .main-header-title .image-server {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+main img {
+    width: 91%;
 }
-
-/* main .main-header-title .image-server img {
-    width: 100%;
-    height: auto;
-} */
 
 main .container-box {
-    width: 90%;
-    border: 2px solid blue;
+    border: 1px solid var(--grey-c300);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 91%;
+    margin-bottom: 20px;
 }
 
-main.container-text {
+main .container-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    width: 91%;
+    margin: 22px 20px;
+}
+
+main .container-box img {
+    width: 91%;
+    margin-bottom: 22px;
+}
+
+main .container-box .container-text .technical-doc {
+
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+main .container-text p {
+    text-align: start;
+    width: 91%;
+    color: var(--grey-c700);
 }
