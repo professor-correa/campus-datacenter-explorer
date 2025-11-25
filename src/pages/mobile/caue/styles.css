@@ -1,7 +1,7 @@
 @import url(/src/styles/global.css);
 
 /* Cauê esteve aqui :) */
-section.header {
+header {
     background-color: var(--red-v600);
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@ section.header {
    
 }
 
-.left-wrapper {
+header .left-wrapper {
     display: flex;
     width: 163px;
     height: 45px;
@@ -20,7 +20,7 @@ section.header {
     margin-left: 10px;
 }
 
-.right-wrapper {
+header .right-wrapper {
 
     display: flex;
     align-items: center;
@@ -28,13 +28,60 @@ section.header {
     margin-top: 28px;
 }
 
-.nav-links {
+header .nav-links {
     display: none;
 }
 
-/* Não consegui colocar "cursor: pointer" nesse cara aqui. Se alguém conseguir, peço que faça as alterações necessárias. */
-/* Tive que colocar ele como png na pasta de svg pq ele não subia no LiveServer como svg :\ (ELE É UM ICON, LOGO MANTÉM-SE COM OS ARQUIVOS PNG) */
-.hamburger {
+header .hamburger {
     color: var(--grey-c100);
     cursor: pointer;
+}
+
+main {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    height: 100%;
+}
+
+main .main-header-title h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-weight: 700;
+    color: var(--grey-c900);
+}
+
+main .main-header-title .image-server {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* main .main-header-title .image-server img {
+    width: 100%;
+    height: auto;
+} */
+
+main .container-box {
+    width: 90%;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 91%;
+}
+
+main.container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
