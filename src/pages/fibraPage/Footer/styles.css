@@ -1,0 +1,48 @@
+@import url('../../../styles/global.css');
+@import url('../../../styles/variables.css');
+
+footer.footer {
+  background-color: var(--red-v700);
+  color: var(--grey-c100);
+  font-family: var(--font-family-MS, "Montserrat", sans-serif);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer h3.footer-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.social-icons {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.social-icons a {
+  color: var(--red-100);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+footer a {
+  color: var(--red-100);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--grey-c100);
+}
