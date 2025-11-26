@@ -12,13 +12,13 @@ footer.footer {
 footer h3.footer-title {
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-bold);
 }
 
 footer p {
   margin: 5px 0;
-  font-size: 16px;
+  font-size: var(--text-base);
 }
 
 .social-icons {
@@ -39,8 +39,8 @@ footer p {
 
 footer a {
   color: var(--red-100);
-  text-decoration: underline;
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
 }
 
 footer a:hover {
