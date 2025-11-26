@@ -12,7 +12,7 @@ footer.footer {
 footer h3.footer-title {
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: var(--text-4xl);
+  font-size: var(--text-3xl);
   font-weight: var(--font-weight-bold);
 }
 
@@ -40,7 +40,7 @@ footer p {
 footer a {
   color: var(--red-100);
   text-decoration: none;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--text-base);
 }
 
 footer a:hover {
