@@ -1,7 +1,7 @@
 @import url(/src/styles/global.css);
 
 /* Cauê esteve aqui :) */
-section.header {
+header {
     background-color: var(--red-v600);
     display: flex;
     flex-direction: row;
@@ -12,29 +12,88 @@ section.header {
    
 }
 
-.left-wrapper {
+header .left-wrapper {
     display: flex;
-    width: 163px;
-    height: 45px;
+    width: 43%;
+    height: auto;
     margin-top: 21px;
     margin-left: 10px;
 }
 
-.right-wrapper {
-
+header .right-wrapper {
     display: flex;
     align-items: center;
     margin-right: 10px;
     margin-top: 28px;
 }
 
-.nav-links {
+header .nav-links {
     display: none;
 }
 
-/* Não consegui colocar "cursor: pointer" nesse cara aqui. Se alguém conseguir, peço que faça as alterações necessárias. */
-/* Tive que colocar ele como png na pasta de svg pq ele não subia no LiveServer como svg :\ (ELE É UM ICON, LOGO MANTÉM-SE COM OS ARQUIVOS PNG) */
-.hamburger {
+header .hamburger {
     color: var(--grey-c100);
     cursor: pointer;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    height: 100%;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: var(--grey-c1000);
+}
+
+main img {
+    width: 91%;
+}
+
+main .container-box {
+    border: 1px solid var(--grey-c300);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 91%;
+    margin-bottom: 20px;
+}
+
+main .container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 91%;
+    margin: 22px 20px;
+}
+
+main .container-box img {
+    width: 91%;
+    margin-bottom: 22px;
+}
+
+main .container-box .container-text .technical-doc {
+
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+main .container-text p {
+    text-align: start;
+    width: 91%;
+    color: var(--grey-c700);
 }
