@@ -21,6 +21,110 @@ section {
     width: 91%;
 }
 
+
+/* Cauê esteve aqui :) */
+header {
+    background-color: var(--red-v600);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 105px;
+
+}
+
+header .left-wrapper {
+    display: flex;
+    width: 43%;
+    height: auto;
+    margin-top: 21px;
+    margin-left: 10px;
+}
+
+header .right-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 28px;
+}
+
+header .nav-links {
+    display: none;
+}
+
+header .hamburger {
+    color: var(--grey-c100);
+    cursor: pointer;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    height: 100%;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: var(--grey-c1000);
+}
+
+main img {
+    width: 91%;
+}
+
+main .container-box {
+    border: 1px solid var(--grey-c300);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 91%;
+    margin-bottom: 20px;
+}
+
+main .container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 91%;
+    margin: 22px 20px;
+}
+
+main .container-box img {
+    width: 91%;
+    margin-bottom: 22px;
+}
+
+main .container-box .container-text .technical-doc {
+
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+main .container-text p {
+    text-align: start;
+    width: 91%;
+    color: var(--grey-c700);
+}
+
+
+
+
+
+
 /* Title Service */
 .title-wrapper {
     display: flex;
@@ -84,6 +188,7 @@ h1 {
     height: 24px;
     width: auto;
     transition: transform 0.2s;
+    transition: max-height 0.5s;
 }
 
 .title-dropdown .girar-seta {
@@ -92,7 +197,10 @@ h1 {
 }
 
 .info-dropdown {
-    display: none;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -100,6 +208,7 @@ h1 {
 
 .info-dropdown.open {
     display: flex;
+    max-height: 500px;
 }
 
 .info-dropdown img {
@@ -133,7 +242,14 @@ footer h2 {
 
 footer a {
     color: var(--grey-c100);
+    transition: transform 0.7s;
 }
+
+footer a:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+}
+
 
 .footer-content {
     display: flex;
@@ -173,6 +289,14 @@ nav a {
 .footer-contact h2 {
     font-weight: 600;
     font-size: 24px;
+}
+
+.footer-contact img {
+    transition: transform 0.7s;
+}
+
+.footer-contact img:hover {
+    transform: scale(1.2);
 }
 
 .image-wrapper {
