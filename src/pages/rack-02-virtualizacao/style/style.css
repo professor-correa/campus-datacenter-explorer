@@ -1,12 +1,17 @@
 header {
+
+    background: var(--red-v700, #E30613);
+}
+
+.header-content {
     display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
     height: 73.254px;
     padding: 14px 30px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-
-    background: var(--red-v700, #E30613);
 }
 
 a {
@@ -37,7 +42,27 @@ h3 {
     line-height: 150%;
 }
 
+main {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    margin: 8px;
+}
 
 .menu-options {
     display: none;
