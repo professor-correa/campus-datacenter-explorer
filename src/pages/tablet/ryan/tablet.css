@@ -1,6 +1,6 @@
 /* Ryan */
 @import url(/src/styles/global.css);
-
+/* Ryan */
 header {
     display: flex;
     flex-direction: column;
@@ -59,3 +59,64 @@ nav>ul>li>a {
     color: var(--grey-c100);
     text-decoration: none;
 }
+/* Nikollas */
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.titulo-card {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.banner {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #b6b6b6;
+  border-radius: 10px;
+}
+
+.card p>ul>li {
+   font-size: 22px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+.card ul {
+  margin: 0 20px 25px;
+}
+
+.doc-link {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  color: (var(--grey-c100));
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.diagram {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+/* Ryan */
