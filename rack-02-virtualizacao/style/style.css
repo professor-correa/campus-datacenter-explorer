@@ -258,14 +258,14 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
-    margin: 2.5rem;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .card-container {
     position: relative;
     width: 250px;
-    height: 320px;
+    height: 250px;
 }
 
 .flip-card {
@@ -283,8 +283,7 @@ ul {
 .card-front {
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
     width: 100%;
     height: 100%;
@@ -294,6 +293,13 @@ ul {
     color: var(--grey-c100);
     background-color: var(--red-v600);
     backface-visibility: hidden;
+}
+
+.card-front .flip-icon{
+    justify-self: end;
+    align-self: end;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .card-back {
@@ -311,4 +317,16 @@ ul {
     background-color: var(--red-v600);
     backface-visibility: hidden;
     transform: rotateY(180deg);
+}
+
+@media(min-width: 820px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-container {
+        width: 250px;
+        height: 320px;
+    }
 }
