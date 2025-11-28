@@ -1,17 +1,21 @@
+@import url('../../styles/global.css');
+@import url('../../styles/variables.css');
+
 .dropdown-container {
       border: 1px solid #ffffff;
       border-radius: 6px;
       width: 100%;
       max-width: 480px;
-      padding: 12px;
       box-sizing: border-box;
       font-family: "Montserrat", sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
     .dropdown-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      cursor: pointer;
     }
     .dropdown-title {
       margin: 0;
@@ -28,6 +32,7 @@
     .dropdown-toggle img {
       width: 18px;
       height: 18px;
+      cursor: pointer;
       transition: transform 200ms ease;
     }
     .dropdown-container:not(.open) .dropdown-content {
@@ -37,7 +42,6 @@
       transform: rotate(180deg);
     }
     .dropdown-content {
-      margin-top: 12px;
       line-height: 1.4;
     }
 
