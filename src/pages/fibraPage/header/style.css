@@ -1,0 +1,44 @@
+@import url(../../../styles/global.css);
+
+body{
+    overflow-x: hidden;
+}
+
+header nav {
+    background-color: var(--red-v700);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 40vw;
+    height: 92vh;
+    background: var(--red-v700);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.nav-list.active{
+    transform: translateX(0);
+
+}
