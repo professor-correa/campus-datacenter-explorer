@@ -1,0 +1,114 @@
+@import url(/src/styles/global.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 30px;
+    background-color: var(--red-v700);
+    transition: gap 0.4s ease;
+}
+
+header>.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: gap 0.4s ease;
+}
+
+.images>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+#links.open {
+    max-height: 300px;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+nav>ul>li>a {
+    font-size: 1rem;
+    color: var(--grey-c100);
+    text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.titulo-card {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.banner {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #b6b6b6;
+  border-radius: 10px;
+}
+
+.card p>ul>li {
+   font-size: 22px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+.card ul {
+  margin: 0 20px 25px;
+}
+
+.doc-link {
+  display: inline-block;
+  color: (var(--grey-c100));
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.diagram {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
