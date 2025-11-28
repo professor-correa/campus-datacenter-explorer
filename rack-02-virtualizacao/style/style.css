@@ -276,7 +276,7 @@ ul {
     transition: all 0.5s ease;
 }
 
-.card-container:hover .flip-card{
+.flip{
     transform: rotateY(180deg);
 }
 
