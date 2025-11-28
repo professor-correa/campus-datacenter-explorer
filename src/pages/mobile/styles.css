@@ -1,5 +1,10 @@
 @import url(/src/styles/global.css);
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -21,8 +26,19 @@ section {
     width: 91%;
 }
 
+a {
+    color: var(--grey-c100);
+    transition: transform 0.7s;
+    font-weight: 500;
+}
 
-/* Cauê esteve aqui :) */
+a:hover {
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+
+/* CAUÊ ESTEVE AQUI :) */
 header {
     background-color: var(--red-v600);
     display: flex;
@@ -30,33 +46,60 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 105px;
-
 }
 
-header .left-wrapper {
+header .content-header {
     display: flex;
-    width: 43%;
-    height: auto;
-    margin-top: 21px;
-    margin-left: 10px;
-}
-
-header .right-wrapper {
-    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 30px; */
     align-items: center;
-    margin-right: 10px;
-    margin-top: 28px;
+    width: 100%;
+    margin: 14px 20px;
 }
 
-header .nav-links {
-    display: none;
+header .content-header .title-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-header .hamburger {
-    color: var(--grey-c100);
-    cursor: pointer;
+header .content-header .title-header .logo-senai {
+    width: 178px;
+    height: auto;
 }
+
+header .content-header .title-header .icon-dropper1 {
+    width: 30px;
+    height: auto;
+    transition: opacity 0.2s, transform 0.3s;
+    opacity: 1;
+}
+
+header .content-header .title-header .icon-dropper1:hover {
+    transform: scale(1.3);
+}
+
+header .content-header .title-header .icon-dropper1.fading {
+    opacity: 0;
+}
+
+header .content-header .nav-header {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, margin-top 0.5s;
+    width: 100%;
+    height: auto;
+}
+
+header .content-header .nav-header.open {
+    max-height: 500px;
+    margin-top: 25px;
+}
+
+
 
 main {
 
@@ -105,13 +148,16 @@ main .container-box img {
 }
 
 main .container-box .container-text .technical-doc {
-
     width: 91%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 10px;
     cursor: pointer;
+}
+
+main .container-box .container-text .technical-doc a {
+    color: var(--grey-c400);
 }
 
 main .container-text p {
@@ -123,7 +169,7 @@ main .container-text p {
 
 
 
-
+/* BERNARDO ESTEVE AQUI :) */
 
 /* Title Service */
 .title-wrapper {

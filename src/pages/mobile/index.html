@@ -16,22 +16,20 @@
 <body>
     <!-- Cauê esteve aqui. Um abraço para quem estiver lendo :) -->
     <!-- HEADER -->
-    <header>
-        <div class="left-wrapper">
-            <img src="/src/assets/images/senai-logo.png" alt="Logo do Senai" />
-        </div>
+    <header id="header">
+        <div class="content-header">
+            <div class="title-header">
+                <img class="logo-senai" src="/src/assets/icons/Logotipo Senai.svg" alt="Logo do Senai" />
 
-        <div class="right-wrapper">
-            <nav class="nav-links">
-                <a href="/index.html">Home</a>
-                <a href="/src/pages/services.html">Serviços</a>
-                <a href="/src/pages/about.html">Sobre Nós</a>
-                <a href="/src/pages/contact.html">Contato</a>
-            </nav>
-
-            <div class="hamburger">
-                <img src="/src/assets/images/hamburguer.png" alt="Ícone do hambúrguer" />
+                <img class="icon-dropper1" src="/src/assets/icons/u_list-ul.svg" alt="Ícone do hambúrguer" />
             </div>
+
+            <nav class="nav-header">
+                <a href="#">Home</a>
+                <a href="#services">Serviços</a>
+                <a href="#technical-documentation">Documentação Técnica</a>
+                <a href="#footer">Contatos</a>
+            </nav>
         </div>
     </header>
 
@@ -68,7 +66,7 @@
                     • um organizador que deixa tudo mais fácil de administrar em redes grandes.</p>
 
                 <div class="technical-doc">
-                    <a href="">veja a documentação técnica</a>
+                    <a href="#technical-documentation">veja a documentação técnica</a>
                 </div>
 
             </div>
@@ -247,11 +245,11 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <nav>
                 <h2>Voltar na Página</h2>
-                <a href="">Topo</a>
+                <a href="#header">Topo</a>
                 <a href="#services">Serviços</a>
                 <a href="#technical-documentation">Documentação Técnica</a>
             </nav>
