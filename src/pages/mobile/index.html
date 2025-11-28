@@ -5,15 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ad1</title>
-    <link rel="stylesheet" href="/src/pages/mobile/bernardo/styles.css" />
+    <link rel="stylesheet" href="/src/pages/mobile/styles.css" />
     <link rel="stylesheet" href="/src/styles/global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
-<!-- Bernardo Esteve aqui :) -->
+
 <body>
+    <!-- Cauê esteve aqui. Um abraço para quem estiver lendo :) -->
+    <!-- HEADER -->
+    <header id="header">
+        <div class="content-header">
+            <div class="title-header">
+                <img class="logo-senai" src="/src/assets/icons/Logotipo Senai.svg" alt="Logo do Senai" />
+
+                <img class="icon-dropper1" src="/src/assets/icons/u_list-ul.svg" alt="Ícone do hambúrguer" />
+            </div>
+
+            <nav class="nav-header">
+                <a href="#">Home</a>
+                <a href="#services">Serviços</a>
+                <a href="#technical-documentation">Documentação Técnica</a>
+                <a href="#footer">Contatos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+        <h1>Rack AD1</h1>
+        <img src="/src/assets/images/server.png" alt="Imagem do servidor" />
+        <div class="container-box">
+            <div class="container-text">
+                <h2>O que é o AD?</h2>
+                <p>Imagina uma empresa grande<br>
+                    • tem vários funcionários (usuários).<br>
+                    • cada um precisa acessar computadores, impressoras, pastas e sistemas.<br>
+                    • se cada máquina tivesse senha própria e cada serviço fosse separado, ia virar uma bagunça.</p>
+                <br>
+                <p><strong>O que o AD faz ?</strong><br>
+                    O Active Directory é tipo o “porteiro digital” da empresa:<br>
+                    • ele guarda todas as informações sobre quem são os usuários e quais permissões cada um tem.<br>
+                    • ele controla o acesso: só quem tem login e senha válidos entra.<br>
+                    • ele organiza os recursos (computadores, impressoras, pastas compartilhadas) em um lugar central.
+                </p>
+                <br>
+                <p><strong>Exemplo prático:</strong><br>
+                    • você chega na empresa, liga o PC e coloca seu usuário e senha.<br>
+                    • o AD verifica: “Esse cara trabalha aqui? Ele pode acessar quais pastas? pode usar a impressora do
+                    3º andar?”<br>
+                    • se sim, ele libera. Se não, bloqueia.</p>
+                <br>
+                <p><strong>Em resumo:</strong><br>
+                    O AD é um serviço da Microsoft que funciona como:<br>
+                    • um cadastro central de pessoas e equipamentos.<br>
+                    • um sistema de segurança que garante que só quem deve ter acesso, tenha.<br>
+                    • um organizador que deixa tudo mais fácil de administrar em redes grandes.</p>
+
+                <div class="technical-doc">
+                    <a href="#technical-documentation">veja a documentação técnica</a>
+                </div>
+
+            </div>
+            <img src="/src/assets/images/fibra-popup-hack.png" alt="Imagem do rack AD1">
+        </div>
+
+    </main>
+
+    <!-- Bernardo Esteve aqui :) -->
     <!-- SERVICES -->
     <section id="services" class="services">
         <div class="title-wrapper">
@@ -183,21 +245,21 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <nav>
                 <h2>Voltar na Página</h2>
-                <a href="">Topo</a>
+                <a href="#header">Topo</a>
                 <a href="#services">Serviços</a>
                 <a href="#technical-documentation">Documentação Técnica</a>
             </nav>
             <div class="footer-contact">
                 <h2>Contatos</h2>
                 <div class="image-wrapper">
-                    <img class="click-arrow" src="/src/assets/icons/github.svg" alt="Git Hub">
-                    <img class="click-arrow" src="/src/assets/icons/instagram.svg" alt="Instragram">
-                    <img class="click-arrow" src="/src/assets/icons/figma.svg" alt="Figma">
-                    <img class="click-arrow" src="/src/assets/icons/linkedin.svg" alt="Linkedin">
+                    <img class="click-img" src="/src/assets/icons/github.svg" alt="Git Hub">
+                    <img class="click-img" src="/src/assets/icons/instagram.svg" alt="Instragram">
+                    <img class="click-img" src="/src/assets/icons/figma.svg" alt="Figma">
+                    <img class="click-img" src="/src/assets/icons/linkedin.svg" alt="Linkedin">
                 </div>
             </div>
             <div class="footer-links">
