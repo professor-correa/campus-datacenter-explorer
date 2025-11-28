@@ -102,7 +102,7 @@ main {
     border: 1px solid var(--grey-c300, #B6B6B6);
 }
 
-.main-content > h2{
+.main-content>h2 {
     text-align: center;
     font-size: 30px;
     font-style: normal;
@@ -167,7 +167,7 @@ main {
 }
 
 
-footer{
+footer {
     display: flex;
     padding: 20px 24px;
     flex-direction: column;
@@ -243,7 +243,8 @@ footer h3 {
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%;
+    /* 22.4px */
     text-decoration-line: underline;
 }
 
@@ -276,7 +277,7 @@ ul {
     transition: all 0.5s ease;
 }
 
-.flip{
+.flip {
     transform: rotateY(180deg);
 }
 
@@ -299,7 +300,6 @@ ul {
     justify-self: end;
     align-self: end;
     padding-top: 1rem;
-    padding-bottom: 2rem;
 }
 
 .card-back {
@@ -323,6 +323,10 @@ ul {
     ul {
         display: flex;
         flex-direction: row;
+    }
+
+    .card-front .flip-icon{
+        padding-bottom: 2rem;
     }
 
     .card-container {
