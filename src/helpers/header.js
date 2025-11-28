@@ -4,19 +4,39 @@ class MobileNavbar {
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
+
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    animateLinks() {
+        this.navLinks.forEach((link, index) => {
+            link.style.animation
+                ? (link.style.animation = "")
+                : (link.style.animation = `navLinkFade 0.5 ease forwards ${index / 7 + 0.3}s`);
+        });
+
+    }
+
+    handleClick() {
+        this.navList.classList.toggle(this.activeClass);
+        this.animateLinks();
     }
 
     addClickEvent() {
-        this.mobileMenu.addEventListener("click", () => console.log("working"));
+        this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
-    init(){
-        if(this.mobileMenu){
+    init() {
+        if (this.mobileMenu) {
             this.addClickEvent();
+        } else {
+            console.error("Menu element not found! Check your class names.");
         }
         return this;
     }
 }
+
 
 const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
@@ -24,4 +44,4 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list li",
 );
 
-mobileNavbar.init();
+mobileNavbar.init(); 
