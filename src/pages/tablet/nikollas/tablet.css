@@ -1,6 +1,11 @@
-/* Ryan */
 @import url(/src/styles/global.css);
-/* Ryan */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -10,14 +15,9 @@ header {
     gap: 30px;
     background-color: var(--red-v700);
     transition: gap 0.4s ease;
-    /* suaviza o gap */
 }
 
-header.noGap {
-    gap: 0px;
-}
-
-header>.imagesWrap {
+header>.images {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,23 +25,20 @@ header>.imagesWrap {
     transition: gap 0.4s ease;
 }
 
-.imagesWrap>button {
+.images>button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-/* Menu fechado por padrão */
 #links {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
 }
 
-/* Quando aberto */
 #links.open {
     max-height: 300px;
-    /* altura suficiente para caber o conteúdo */
 }
 
 nav>ul {
@@ -59,7 +56,6 @@ nav>ul>li>a {
     color: var(--grey-c100);
     text-decoration: none;
 }
-/* Nikollas */
 
 main {
   padding: 20px;
@@ -105,13 +101,10 @@ main {
 }
 
 .doc-link {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  width: 100%;
+  display: inline-block;
   color: (var(--grey-c100));
   margin-bottom: 20px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .diagram {
@@ -119,4 +112,3 @@ main {
   border-radius: 8px;
   margin-top: 20px;
 }
-/* Ryan */

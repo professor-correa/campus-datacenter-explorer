@@ -1,30 +1,29 @@
-// Ryan
 let abrir = document.getElementById("hamburgerMenu");
 let arrowUp = document.getElementById("arrowUp");
 let hamburgerIcon = document.getElementById("hamburgerIcon");
 let links = document.getElementById("links");
 let header = document.querySelector("header");
 
-// Estado inicial: menu fechado
 links.classList.remove("open");
-header.classList.add("noGap");
+header.classList.add("Gap");
 arrowUp.style.display = "none";
 hamburgerIcon.style.display = "block";
 
-// Alterna o menu ao clicar
 abrir.addEventListener("click", () => {
     if (!links.classList.contains("open")) {
-        // Abre menu → volta o gap imediatamente
+
         links.classList.add("open");
-        header.classList.remove("noGap");
+        header.classList.remove("Gap");
         arrowUp.style.display = "block";
         hamburgerIcon.style.display = "none";
     } else {
-        // Fecha menu → anima links e gap juntos
         links.classList.remove("open");
-        header.classList.add("noGap");   // <<< aplica já aqui
         arrowUp.style.display = "none";
         hamburgerIcon.style.display = "block";
+
+        links.addEventListener("transitionend", function handler() {
+            header.classList.add("Gap");
+            links.removeEventListener("transitionend", handler);
+        });
     }
 });
-
