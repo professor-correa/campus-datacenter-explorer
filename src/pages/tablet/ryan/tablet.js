@@ -20,16 +20,11 @@ abrir.addEventListener("click", () => {
         arrowUp.style.display = "block";
         hamburgerIcon.style.display = "none";
     } else {
-        // Fecha menu → primeiro anima o links
+        // Fecha menu → anima links e gap juntos
         links.classList.remove("open");
+        header.classList.add("noGap");   // <<< aplica já aqui
         arrowUp.style.display = "none";
         hamburgerIcon.style.display = "block";
-
-        // Só depois da transição do links terminar, tira o gap
-        links.addEventListener("transitionend", function handler() {
-            header.classList.add("noGap");
-            // remove o listener para não acumular
-            links.removeEventListener("transitionend", handler);
-        });
     }
 });
+
