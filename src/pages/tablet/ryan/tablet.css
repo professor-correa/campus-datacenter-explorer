@@ -1,18 +1,21 @@
-/* Ryan */
 @import url(/src/styles/global.css);
 
-/* Ryan */
+/* colaborador Ryan was here */
 html {
+  /* adicionei um scroll suave */
   scroll-behavior: smooth;
 }
 
+/* colaborador Caue was here  */
+/* ---------- Header ---------- */
 header {
+  position: fixed;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 14px 30px;
-  position: fixed;
   gap: 30px;
   width: 100%;
   background-color: var(--red-v700);
@@ -67,25 +70,25 @@ nav>ul>li>a {
   text-decoration: none;
 }
 
-/* Nikollas */
-
+/* ---------- Header ---------- */
+/* ---------- Main ---------- */
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .titulo {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 72px;
-  margin-bottom: 20px;
-  font-weight: 800;
+  margin-top: 80px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .titulo-card {
   text-align: center;
-  font-size: 48px;
+  font-size: 30px;
   margin-bottom: 40px;
   font-weight: 600;
 }
@@ -94,7 +97,6 @@ main {
   width: 100%;
   height: 500px;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 .card {
@@ -102,6 +104,13 @@ main {
   padding: 20px;
   border: 1px solid #b6b6b6;
   border-radius: 10px;
+}
+
+.card>p,
+ul>li {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--grey-c700);
 }
 
 .card p>ul>li {
@@ -119,7 +128,8 @@ main {
   flex-direction: column;
   align-items: end;
   width: 100%;
-  color: (var(--grey-c100));
+  color: (var(--grey-c900));
+  font-size: 16px;
   margin-bottom: 20px;
   text-decoration: underline;
 }
@@ -130,22 +140,25 @@ main {
   margin-top: 20px;
 }
 
-/* Services Section */
-/* Ryan */
+/* ---------- Main ---------- */
+/* colaborador Bernardo was here */
+/* ---------- Section Services and Documentation ---------- */
+
 .services-documentation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 32px;
+  gap: 15px;
+  padding: 20px;
 }
 
 .services-documentation>h2 {
   padding-top: 20px;
-  width: 550px;
+  width: 329px;
   border-top: 2px solid var(--grey-c500);
   text-align: center;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 600;
   color: var(--grey-c1000);
 }
@@ -167,7 +180,7 @@ main {
 }
 
 .dropdown>h3 {
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--grey-c1000);
 }
@@ -195,7 +208,7 @@ img.none {
 }
 
 .serviceContent>p {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -205,13 +218,13 @@ img.none {
 
 .serviceContent>a {
   align-self: flex-end;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--grey-c700);
 }
 
-/* End service section */
-/* Inicio do footer */
+/* ----------- Section Services and Documentation ----------*/
+/* ---------- Footer ---------- */
 footer {
   display: flex;
   flex-direction: column;
@@ -223,7 +236,7 @@ footer {
 }
 
 footer>h2 {
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 600;
   color: var(--grey-c100);
 }
@@ -237,7 +250,7 @@ footer>nav>ul {
 }
 
 footer>nav>ul>li>a {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--grey-c100);
 }
@@ -252,7 +265,7 @@ footer>nav>ul>li>a {
 }
 
 .contatos>h3 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--grey-c100);
 }
@@ -265,16 +278,98 @@ footer>nav>ul>li>a {
 }
 
 footer>h4 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--grey-c100);
 }
 
 footer>a {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--grey-c100);
   text-decoration: underline;
 }
 
-/* Fim do footer */
+/* ---------- Footer ---------- */
+/* colaborador Nikollas was here */
+@media (min-width: 768px) {
+
+  /* ---------- main ---------- */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+
+  .titulo-card {
+    font-size: 48px;
+  }
+
+  .banner {
+    margin-bottom: 20px;
+  }
+
+  .doc-link {
+    color: (var(--grey-c100));
+    /* Alteração de cor */
+  }
+
+  /* ---------- main ---------- */
+  /* ---------- Services ans Documentation Section ---------- */
+  /* colaborador Ryan was here */
+  .services-documentation {
+    padding: 30px 32px;
+  }
+
+  .services-documentation>h2 {
+    width: 550px;
+    font-size: 48px;
+  }
+
+  .dropdown>h3 {
+    font-size: 36px;
+  }
+
+  .serviceContent>p {
+    font-size: 24px;
+  }
+
+  .serviceContent>a {
+    font-size: 24px;
+  }
+
+  /* ---------- Services ans Documentation Section ---------- */
+  /* ---------- Footer ----------*/
+
+  footer>h2 {
+    font-size: 48px;
+  }
+
+  footer>nav>ul>li>a {
+    font-size: 24px;
+  }
+
+  .contatos>h3 {
+    font-size: 36px;
+  }
+
+  .socialMedias {
+    scale: 1.4;
+  }
+
+  footer>h4 {
+    font-size: 30px;
+  }
+
+  footer>a {
+    font-size: 24px;
+  }
+
+  /* ---------- Footer ----------*/
+}
