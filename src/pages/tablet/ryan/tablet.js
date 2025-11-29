@@ -13,37 +13,71 @@ hamburgerIcon.style.display = "block";
 
 // Alterna o menu ao clicar
 abrir.addEventListener("click", () => {
-    if (!links.classList.contains("open")) {
-        // Abre menu → volta o gap imediatamente
-        links.classList.add("open");
-        header.classList.remove("noGap");
-        arrowUp.style.display = "block";
-        hamburgerIcon.style.display = "none";
-    } else {
-        // Fecha menu → anima links e gap juntos
-        links.classList.remove("open");
-        header.classList.add("noGap");   // <<< aplica já aqui
-        arrowUp.style.display = "none";
-        hamburgerIcon.style.display = "block";
-    }
+  if (!links.classList.contains("open")) {
+    // Abre menu → volta o gap imediatamente
+    links.classList.add("open");
+    header.classList.remove("noGap");
+    arrowUp.style.display = "block";
+    hamburgerIcon.style.display = "none";
+  } else {
+    // Fecha menu → anima links e gap juntos
+    links.classList.remove("open");
+    header.classList.add("noGap"); // <<< aplica já aqui
+    arrowUp.style.display = "none";
+    hamburgerIcon.style.display = "block";
+  }
 });
 
-// Dropdown da services 
-document.querySelectorAll(".service-documentation .dropdown").forEach(dropdown => {
-  dropdown.addEventListener("click", () => {
-    const content = dropdown.nextElementSibling;
-    const arrowDown = dropdown.querySelector("img.block");
-    const arrowUp = dropdown.querySelector("img.none");
+// Dropdown da services
+document
+  .querySelectorAll(".service-documentation .dropdown")
+  .forEach((dropdown) => {
+    dropdown.addEventListener("click", () => {
+      const content = dropdown.nextElementSibling;
+      const arrowDown = dropdown.querySelector("img.block");
+      const arrowUp = dropdown.querySelector("img.none");
 
-    content.classList.toggle("open");
+      content.classList.toggle("open");
 
-    // alterna ícones
-    if (content.classList.contains("open")) {
-      arrowDown.style.display = "none";
-      arrowUp.style.display = "block";
-    } else {
-      arrowDown.style.display = "block";
-      arrowUp.style.display = "none";
+      // alterna ícones
+      if (content.classList.contains("open")) {
+        arrowDown.style.display = "none";
+        arrowUp.style.display = "block";
+      } else {
+        arrowDown.style.display = "block";
+        arrowUp.style.display = "none";
+      }
+    });
+  });
+
+// Scroll suave para links internos + fechar o menu hamburguer ao clicar num link
+// Seleciona todos os links do header que apontam para IDs
+document.querySelectorAll('#links a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Pega o ID do destino
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    // Faz o scroll suave
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
+
+    // Fecha o menu hamburguer
+    const headerNav = document.getElementById("links");
+    const hamburgerMenu = document.getElementById("hamburgerMenu");
+
+    // Remove classe "open" ou aplica estilo de fechar
+    headerNav.classList.remove("open");
+    hamburgerMenu.classList.remove("active");
+    links.classList.remove("open");
+    header.classList.add("noGap"); // <<< aplica já aqui
+    arrowUp.style.display = "none";
+    hamburgerIcon.style.display = "block";
   });
 });
