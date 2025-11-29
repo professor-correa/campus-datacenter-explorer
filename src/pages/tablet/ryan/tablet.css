@@ -1,90 +1,102 @@
-/* Ryan */
 @import url(/src/styles/global.css);
-/* Ryan */
+
+/* colaborador Ryan was here */
+html {
+  /* adicionei um scroll suave */
+  scroll-behavior: smooth;
+}
+
+/* colaborador Caue was here  */
+/* ---------- Header ---------- */
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 30px;
-    gap: 30px;
-    background-color: var(--red-v700);
-    transition: gap 0.4s ease;
-    /* suaviza o gap */
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 30px;
+  gap: 30px;
+  width: 100%;
+  background-color: var(--red-v700);
+  transition: gap 0.4s ease;
+  /* suaviza o gap */
 }
 
 header.noGap {
-    gap: 0px;
+  gap: 0px;
 }
 
 header>.imagesWrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    transition: gap 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: gap 0.4s ease;
 }
 
 .imagesWrap>button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /* Menu fechado por padrão */
 #links {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
 
 /* Quando aberto */
 #links.open {
-    max-height: 300px;
-    /* altura suficiente para caber o conteúdo */
+  max-height: 300px;
+  /* altura suficiente para caber o conteúdo */
 }
 
 nav>ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 nav>ul>li>a {
-    font-size: 1rem;
-    color: var(--grey-c100);
-    text-decoration: none;
+  font-size: 1rem;
+  color: var(--grey-c100);
+  text-decoration: none;
 }
-/* Nikollas */
 
+/* ---------- Header ---------- */
+/* ---------- Main ---------- */
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .titulo {
-  text-align: center;
-  font-size: 72px;
-  margin-bottom: 20px;
-  font-weight: 800;
+  margin-top: 80px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .titulo-card {
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 40px;
-    font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .banner {
   width: 100%;
+  height: 500px;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 .card {
@@ -94,10 +106,17 @@ main {
   border-radius: 10px;
 }
 
+.card>p,
+ul>li {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--grey-c700);
+}
+
 .card p>ul>li {
-   font-size: 22px;
-   margin-top: 20px;
-   margin-bottom: 10px;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .card ul {
@@ -109,7 +128,8 @@ main {
   flex-direction: column;
   align-items: end;
   width: 100%;
-  color: (var(--grey-c100));
+  color: (var(--grey-c900));
+  font-size: 16px;
   margin-bottom: 20px;
   text-decoration: underline;
 }
@@ -119,4 +139,237 @@ main {
   border-radius: 8px;
   margin-top: 20px;
 }
-/* Ryan */
+
+/* ---------- Main ---------- */
+/* colaborador Bernardo was here */
+/* ---------- Section Services and Documentation ---------- */
+
+.services-documentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.services-documentation>h2 {
+  padding-top: 20px;
+  width: 329px;
+  border-top: 2px solid var(--grey-c500);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--grey-c1000);
+}
+
+.service-documentation {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown>h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--grey-c1000);
+}
+
+img.none {
+  display: none;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.serviceContent.open {
+  max-height: 2000px;
+  /* valor grande suficiente para caber o conteúdo */
+  opacity: 1;
+}
+
+.serviceContent>p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.serviceContent:last-child {
+  align-items: flex-end;
+}
+
+.serviceContent>a {
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--grey-c700);
+}
+
+/* ----------- Section Services and Documentation ----------*/
+/* ---------- Footer ---------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 30px;
+  background-color: var(--red-v700);
+}
+
+footer>h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--grey-c100);
+}
+
+footer>nav>ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+footer>nav>ul>li>a {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--grey-c100);
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.contatos>h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--grey-c100);
+}
+
+.socialMedias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+footer>h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--grey-c100);
+}
+
+footer>a {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--grey-c100);
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+/* colaborador Nikollas was here */
+@media (min-width: 768px) {
+
+  /* ---------- main ---------- */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+
+  .titulo-card {
+    font-size: 48px;
+  }
+
+  .banner {
+    margin-bottom: 20px;
+  }
+
+  .doc-link {
+    color: (var(--grey-c100));
+    /* Alteração de cor */
+  }
+
+  /* ---------- main ---------- */
+  /* ---------- Services ans Documentation Section ---------- */
+  /* colaborador Ryan was here */
+  .services-documentation {
+    padding: 30px 32px;
+  }
+
+  .services-documentation>h2 {
+    width: 550px;
+    font-size: 48px;
+  }
+
+  .dropdown>h3 {
+    font-size: 36px;
+  }
+
+  .serviceContent>p {
+    font-size: 24px;
+  }
+
+  .serviceContent>a {
+    font-size: 24px;
+  }
+
+  /* ---------- Services ans Documentation Section ---------- */
+  /* ---------- Footer ----------*/
+
+  footer>h2 {
+    font-size: 48px;
+  }
+
+  footer>nav>ul>li>a {
+    font-size: 24px;
+  }
+
+  .contatos>h3 {
+    font-size: 36px;
+  }
+
+  .socialMedias {
+    scale: 1.4;
+  }
+
+  footer>h4 {
+    font-size: 30px;
+  }
+
+  footer>a {
+    font-size: 24px;
+  }
+
+  /* ---------- Footer ----------*/
+}
