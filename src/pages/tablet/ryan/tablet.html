@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="./tablet.css" />
     <script src="./tablet.js" defer></script>
   </head>
 
   <body>
     <!-- Ryan -->
+    <div id="topo" class="scrollLink"></div>
     <header class="noGap">
       <div class="imagesWrap">
         <img
@@ -53,7 +53,7 @@
         alt="Rack AD1"
         class="banner"
       />
-
+      <div id="ad" class="scrollLink"></div>
       <section class="card">
         <h2 class="titulo-card">O que é o AD?</h2>
         <p>Imagina uma empresa grande:</p>
@@ -115,7 +115,9 @@
           </li>
         </ul>
 
-        <a href="#" class="doc-link">veja a documentação técnica</a>
+        <a href="#adDocumentation" class="doc-link"
+          >veja a documentação técnica</a
+        >
 
         <img
           src="/src/assets/images/ad1Image.svg"
@@ -125,7 +127,12 @@
         <div class="square"></div>
       </section>
     </main>
-    <!-- Ryan -->
+    <!-- Ryan was here bro -->
+    <!-- Links para os serviços -->
+    <div id="adService" class="scrollLink"></div>
+    <div id="vmwareService" class="scrollLink"></div>
+    <div id="dnsService" class="scrollLink"></div>
+    <div id="arduinoService" class="scrollLink"></div>
     <section class="services-documentation">
       <h2>Serviços</h2>
       <!-- Serviço 1 -->
@@ -152,7 +159,7 @@
             grandes ambientes corporativos.
           </p>
           <img src="/src/assets/images/serviceHeroImage.jpg" alt="" />
-          <a href="">Veja a documentação técnica</a>
+          <a href="#adDocumentation">Veja a documentação técnica</a>
         </div>
       </div>
       <!-- Serviço 2 -->
@@ -178,7 +185,7 @@
             aumentar a flexibilidade da infraestrutura de TI.
           </p>
           <img src="/src/assets/images/serviceHeroImage.jpg" alt="" />
-          <a href="">Veja a documentação técnica</a>
+          <a href="#vmwareDocumentation">Veja a documentação técnica</a>
         </div>
       </div>
       <!-- Serviço 3 -->
@@ -205,7 +212,7 @@
             dispositivos.
           </p>
           <img src="/src/assets/images/serviceHeroImage.jpg" alt="" />
-          <a href="">Veja a documentação técnica</a>
+          <a href="#dnsDocumentation">Veja a documentação técnica</a>
         </div>
       </div>
       <!-- Serviço 4 -->
@@ -236,10 +243,16 @@
             laboratórios, data centers ou ambientes industriais.
           </p>
           <img src="/src/assets/images/serviceHeroImage.jpg" alt="" />
-          <a href="">Veja a documentação técnica</a>
+          <a href="#arduinoDocumentation">Veja a documentação técnica</a>
         </div>
       </div>
     </section>
+    <!-- links que são redirecionados pra documentação técnica -->
+    <div id="adDocumentation" class="scrollLink"></div>
+    <div id="vmwareDocumentation" class="scrollLink"></div>
+    <div id="dnsDocumentation" class="scrollLink"></div>
+    <div id="arduinoDocumentation" class="scrollLink"></div>
+
     <section class="services-documentation">
       <h2>Documentação Técnica</h2>
       <!-- Documentação 1 -->
@@ -265,7 +278,7 @@
             aplicar políticas de segurança e facilitar a administração de
             grandes ambientes corporativos.
           </p>
-          <a href="">Veja o serviço</a>
+          <a href="#adService">Veja o serviço</a>
         </div>
         <!-- Documentação 2 -->
         <div class="dropdown">
@@ -296,7 +309,7 @@
             ambientes de teste, nuvem privada, alta disponibilidade em data
             centers.
           </p>
-          <a href="">Veja o serviço</a>
+          <a href="#vmwareService">Veja o serviço</a>
         </div>
         <!-- Documentação 3 -->
         <div class="dropdown">
@@ -324,7 +337,7 @@
             Segurança com DNSSEC (assinaturas digitais). Casos de uso: Navegação
             na web, autenticação de serviços, comunicação entre dispositivos.
           </p>
-          <a href="">Veja o serviço</a>
+          <a href="#dnsService">Veja o serviço</a>
         </div>
         <!-- Documentação 4 -->
         <div class="dropdown">
@@ -352,9 +365,41 @@
             Bluetooth ou LoRa. Casos de uso: Automação residencial,
             monitoramento ambiental, protótipos de robótica, sistemas de IoT.
           </p>
-          <a href="">Veja o serviço</a>
+          <a href="#arduinoService">Veja o serviço</a>
         </div>
       </div>
     </section>
+    <footer>
+      <h2>Voltar na Página</h2>
+      <nav>
+        <ul>
+          <li><a href="#topo">Topo</a></li>
+          <li><a href="#adService">Serviços</a></li>
+          <li><a href="#adDocumentation">Documentação Técnica</a></li>
+        </ul>
+      </nav>
+      <nav class="contatos">
+        <h3>Contatos</h3>
+        <div class="socialMedias">
+          <a
+            href="https://github.com/professor-correa/campus-datacenter-explorer"
+            ><img src="/src/assets/icons/github.svg" alt="logo do github"
+          /></a>
+          <a href=""
+            ><img src="/src/assets/icons/instagram.svg" alt="logo do instagram"
+          /></a>
+          <a href=""
+            ><img src="/src/assets/icons/figma.svg" alt="logo do figma"
+          /></a>
+          <a href=""
+            ><img src="/src/assets/icons/linkedin.svg" alt="logo do linkedin"
+          /></a>
+        </div>
+      </nav>
+      <h4>Acesse Também</h4>
+      <a href="https://sp.senai.br/unidade/suicobrasileira/"
+        >Senai suiço-brasileira</a
+      >
+    </footer>
   </body>
 </html>
