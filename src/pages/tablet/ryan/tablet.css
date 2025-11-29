@@ -122,14 +122,15 @@ main {
 }
 /* Services Section */
 /* Ryan */
-.services {
+.services-documentation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px 32px;
 }
-.services > h2 {
+.services-documentation > h2 {
+  padding-top: 20px;
   width: 550px;
   border-top: 2px solid var(--grey-c500);
   text-align: center;
@@ -138,7 +139,7 @@ main {
   color: var(--grey-c1000);
 }
 
-.service { 
+.service-documentation { 
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -191,6 +192,7 @@ img.none {
 }
 
 .serviceContent > a {
+    align-self: flex-end;
     font-size: 24px;
     font-weight: 300;
     color: var(--grey-c700);
