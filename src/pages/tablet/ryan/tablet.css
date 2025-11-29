@@ -83,6 +83,7 @@ main {
 
 .banner {
   width: 100%;
+  height: 500px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -119,4 +120,79 @@ main {
   border-radius: 8px;
   margin-top: 20px;
 }
+/* Services Section */
 /* Ryan */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 32px;
+}
+.services > h2 {
+  width: 550px;
+  border-top: 2px solid var(--grey-c500);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--grey-c1000);
+}
+
+.service { 
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown > h3 {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--grey-c1000);
+}
+
+img.none {
+  display: none;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.serviceContent.open {
+  max-height: 2000px; /* valor grande suficiente para caber o conteúdo */
+  opacity: 1;
+}
+
+.serviceContent > p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.serviceContent:last-child {
+  align-items: flex-end;
+}
+
+.serviceContent > a {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--grey-c700);
+ }
+ /* End service section */
