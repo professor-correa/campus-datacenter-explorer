@@ -1,103 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rack3 tablet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./tablet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./tablet.css" />
     <script src="./tablet.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Ryan -->
     <header class="noGap">
-        <div class="imagesWrap">
-            <img src="/src/assets/icons/LogotipoSenai.svg" alt="logotipo do senai">
-            <button id="hamburgerMenu">
-                <img id="arrowUp" src="/src/assets/images/arrowUp.svg" alt="ícone seta para cima">
-                <img id="hamburgerIcon" src="/src/assets/images/hamburgerMenu.svg" alt="ícone menu hamburguer">
-            </button>
-        </div>
-        <nav id="links">
-            <ul>
-                <li><a href="#ad">O que é o AD ?</a></li>
-                <li><a href="#service">Serviços</a></li>
-                <li><a href="#documentation">Documentação técnica</a></li>
-                <li><a href="#footer">Footer</a></li>
-            </ul>
-        </nav>
+      <div class="imagesWrap">
+        <img
+          src="/src/assets/icons/LogotipoSenai.svg"
+          alt="logotipo do senai"
+        />
+        <button id="hamburgerMenu">
+          <img
+            id="arrowUp"
+            src="/src/assets/images/arrowUp.svg"
+            alt="ícone seta para cima"
+          />
+          <img
+            id="hamburgerIcon"
+            src="/src/assets/images/hamburgerMenu.svg"
+            alt="ícone menu hamburguer"
+          />
+        </button>
+      </div>
+      <nav id="links">
+        <ul>
+          <li><a href="#ad">O que é o AD ?</a></li>
+          <li><a href="#service">Serviços</a></li>
+          <li><a href="#documentation">Documentação técnica</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Nikollas -->
     <main>
-        <h1 class="titulo">Rack AD1</h1>
+      <h1 class="titulo">Rack AD1</h1>
 
-        <img src="/src/assets/images/ad1RackIlustration.svg" alt="Rack AD1" class="banner" />
+      <img
+        src="/src/assets/images/ad1RackIlustration.svg"
+        alt="Rack AD1"
+        class="banner"
+      />
 
-        <section class="card">
-            <h2 class="titulo-card">O que é o AD?</h2>
-            <p>Imagina uma empresa grande:</p>
-            <ul>
-                <li>tem vários funcionários (usuários).</li>
-                <li>cada um precisa acessar computadores, impressoras, pastas e sistemas.</li>
-                <li>se cada máquina tivesse senha própria e cada serviço fosse separado, ia virar uma bagunça.</li>
-            </ul>
+      <section class="card">
+        <h2 class="titulo-card">O que é o AD?</h2>
+        <p>Imagina uma empresa grande:</p>
+        <ul>
+          <li>tem vários funcionários (usuários).</li>
+          <li>
+            cada um precisa acessar computadores, impressoras, pastas e
+            sistemas.
+          </li>
+          <li>
+            se cada máquina tivesse senha própria e cada serviço fosse separado,
+            ia virar uma bagunça.
+          </li>
+        </ul>
 
-            <p>O que o AD faz?<br>
-                O Active Directory é tipo o "porteiro digital" da empresa:
-            </p>
-            <ul>
-                <li>ele guarda todas as informações sobre quem são os usuários e quais permissões cada um tem.</li>
-                <li>ele controla o acesso: só quem tem login e senha válidos entra.</li>
-                <li>ele organiza os recursos (computadores, impressoras, pastas compartilhadas) em um lugar central.
-                </li>
-            </ul>
+        <p>
+          O que o AD faz?<br />
+          O Active Directory é tipo o "porteiro digital" da empresa:
+        </p>
+        <ul>
+          <li>
+            ele guarda todas as informações sobre quem são os usuários e quais
+            permissões cada um tem.
+          </li>
+          <li>
+            ele controla o acesso: só quem tem login e senha válidos entra.
+          </li>
+          <li>
+            ele organiza os recursos (computadores, impressoras, pastas
+            compartilhadas) em um lugar central.
+          </li>
+        </ul>
 
-            <p>Exemplo prático:</p>
-            <ul>
-                <li>você chega na empresa, liga o PC e coloca seu usuário e senha.</li>
-                <li>o AD verifica: “Esse cara trabalha aqui? Ele pode acessar quais pastas? Pode usar a impressora do 3°
-                    andar?”</li>
-                <li>se sim, ele libera. Se não, bloqueia.</li>
-            </ul>
+        <p>Exemplo prático:</p>
+        <ul>
+          <li>
+            você chega na empresa, liga o PC e coloca seu usuário e senha.
+          </li>
+          <li>
+            o AD verifica: “Esse cara trabalha aqui? Ele pode acessar quais
+            pastas? Pode usar a impressora do 3° andar?”
+          </li>
+          <li>se sim, ele libera. Se não, bloqueia.</li>
+        </ul>
 
-            <p>Em resumo:<br>
-                O AD é um serviço da Microsoft que funciona como:
-            </p>
-            <ul>
-                <li>um cadastro central de pessoas e equipamentos.</li>
-                <li>um sistema de segurança que garante que só quem deve ter acesso, tenha.</li>
-                <li>um organizador que deixa tudo mais fácil de administrar em redes grandes.</li>
-            </ul>
+        <p>
+          Em resumo:<br />
+          O AD é um serviço da Microsoft que funciona como:
+        </p>
+        <ul>
+          <li>um cadastro central de pessoas e equipamentos.</li>
+          <li>
+            um sistema de segurança que garante que só quem deve ter acesso,
+            tenha.
+          </li>
+          <li>
+            um organizador que deixa tudo mais fácil de administrar em redes
+            grandes.
+          </li>
+        </ul>
 
-            <a href="#" class="doc-link">veja a documentação técnica</a>
+        <a href="#" class="doc-link">veja a documentação técnica</a>
 
-            <img src="/src/assets/images/ad1Image.svg" alt="Diagrama Rack" class="diagram" />
-            <div class="square"></div>
-        </section>
+        <img
+          src="/src/assets/images/ad1Image.svg"
+          alt="Diagrama Rack"
+          class="diagram"
+        />
+        <div class="square"></div>
+      </section>
     </main>
     <!-- Ryan -->
     <section class="services">
-        <h2>Serviços</h2>
-        <div class="service">
-            <div class="dropdown">
-                <h3>Ad</h3>
-                <img class="block" src="/src/assets/icons/arrowDownOIcon.svg" alt="arrow down icon">
-                <img class="none" src="/src/assets/icons/arrow.svg" alt="arrow up icon">
-            </div>
-            <div class="serviceContent">
-                <p>O Active Directory (AD) é um serviço da Microsoft que organiza e gerencia recursos
-                    de rede em um domínio. Ele centraliza a autenticação de usuários, computadores e serviços,
-                    permitindo aplicar políticas de segurança e facilitar a administração de grandes ambientes
-                    corporativos.</p>
-                <img src="/src/assets/images/serviceHeroImage.jpg" alt="">
-                <a href="">Veja a documentação técnica</a>
-            </div>
+      <h2>Serviços</h2>
+      <!-- Serviço 1 -->
+      <div class="service">
+        <div class="dropdown">
+          <h3>Ad</h3>
+          <img
+            class="block"
+            src="/src/assets/icons/arrowDownOIcon.svg"
+            alt="arrow down icon"
+          />
+          <img
+            class="none"
+            src="/src/assets/icons/arrow.svg"
+            alt="arrow up icon"
+          />
         </div>
+        <div class="serviceContent">
+          <p>
+            O Active Directory (AD) é um serviço da Microsoft que organiza e
+            gerencia recursos de rede em um domínio. Ele centraliza a
+            autenticação de usuários, computadores e serviços, permitindo
+            aplicar políticas de segurança e facilitar a administração de
+            grandes ambientes corporativos.
+          </p>
+          <img src="/src/assets/images/serviceHeroImage.jpg" alt="" />
+          <a href="">Veja a documentação técnica</a>
+        </div>
+      </div>
+      <!-- Serviço 2 -->
+      <div class="service">
+        <div class="dropdown">
+          <h3>VMWare</h3>
+          <img
+            class="block"
+            src="/src/assets/icons/arrowDownOIcon.svg"
+            alt="arrow down icon"
+          />
+          <img
+            class="none"
+            src="/src/assets/icons/arrow.svg"
+            alt="arrow up icon"
+          />
+        </div>
+        <div class="serviceContent">
+          <p>
+            O VMWare é uma plataforma de virtualização que possibilita a criação
+            e gestão de máquinas virtuais. Ele permite otimizar o uso dos
+            recursos de hardware, isolar ambientes de teste e produção e
+            aumentar a flexibilidade da infraestrutura de TI.
+          </p>
+          <img src="/src/assets/images/serviceHeroImage.jpg" alt="" />
+          <a href="">Veja a documentação técnica</a>
+        </div>
+      </div>
+      <!-- Serviço 3 -->
+      <div class="service">
+        <div class="dropdown">
+          <h3>DNS</h3>
+          <img
+            class="block"
+            src="/src/assets/icons/arrowDownOIcon.svg"
+            alt="arrow down icon"
+          />
+          <img
+            class="none"
+            src="/src/assets/icons/arrow.svg"
+            alt="arrow up icon"
+          />
+        </div>
+        <div class="serviceContent">
+          <p>
+            O Domain Name System (DNS) converte nomes de domínio (como
+            www.exemplo.com) em endereços IP, permitindo que os usuários acessem
+            serviços de rede de forma mais simples e intuitiva. Ele é essencial
+            para navegação na web, autenticação de serviços e comunicação entre
+            dispositivos.
+          </p>
+          <img src="/src/assets/images/serviceHeroImage.jpg" alt="" />
+          <a href="">Veja a documentação técnica</a>
+        </div>
+      </div>
+      <!-- Serviço 4 -->
+      <div class="service">
+        <div class="dropdown">
+          <h3>Arduino</h3>
+          <img
+            class="block"
+            src="/src/assets/icons/arrowDownOIcon.svg"
+            alt="arrow down icon"
+          />
+          <img
+            class="none"
+            src="/src/assets/icons/arrow.svg"
+            alt="arrow up icon"
+          />
+        </div>
+        <div class="serviceContent">
+          <p>
+            O Arduino será usado para monitoramento de umidade e temperatura é
+            um sistema embarcado desenvolvido para coletar e exibir dados
+            ambientais em tempo real. Utilizando sensores como o DHT11 ou DHT22,
+            o dispositivo mede a temperatura e a umidade do ambiente,
+            processando as informações por meio da placa Arduino. Esses dados
+            podem ser exibidos em um display, enviados para um servidor ou
+            integrados a sistemas de automação e IoT. O projeto oferece uma
+            solução acessível e eficiente para controle climático em
+            laboratórios, data centers ou ambientes industriais.
+          </p>
+          <img src="/src/assets/images/serviceHeroImage.jpg" alt="" />
+          <a href="">Veja a documentação técnica</a>
+        </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
