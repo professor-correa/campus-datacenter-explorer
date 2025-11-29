@@ -29,7 +29,7 @@ abrir.addEventListener("click", () => {
 });
 
 // Dropdown da services 
-document.querySelectorAll(".service .dropdown").forEach(dropdown => {
+document.querySelectorAll(".service-documentation .dropdown").forEach(dropdown => {
   dropdown.addEventListener("click", () => {
     const content = dropdown.nextElementSibling;
     const arrowDown = dropdown.querySelector("img.block");
