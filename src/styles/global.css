@@ -11,3 +11,65 @@ html{
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
      */
 }
+
+h1{
+    font-size: var(--text-5xl);
+    font-weight: 800;
+}
+
+h2{
+    font-size: var(--text-3xl);
+    font-weight: 600;
+}
+
+h3{
+    font-size: var(--text-xl);
+    font-weight: 500;
+}
+
+p{
+    font-size: var(--text-base);
+    font-weight: 400;
+}
+
+a{
+    font-size: var(--text-base);
+    font-weight: 300;
+}
+
+@media (min-width: 747px){
+    h1{
+        font-size: var(--text-7xl);
+    }
+
+    h2{
+        font-size: var(--text-5xl);
+    }
+
+    h3{
+        font-size: var(--text-4xl);
+    }
+
+    p, a{
+        font-size: var(--text-2xl);
+    }
+
+}
+
+@media (min-width: 1280px) {
+    h1{
+        font-size: var(--text-8xl);
+    }
+
+    h2{
+        font-size: var(--text-6xl);
+    }
+
+    h3{
+        font-size: var(--text-4xl);
+    }
+
+    p, a{
+        font-size: var(--text-lg);
+    }
+}
