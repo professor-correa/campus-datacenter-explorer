@@ -297,7 +297,7 @@ footer h3 {
     }
 }
 
-ul {
+.card-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,6 +343,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .card-front .content-wrapper img {
@@ -380,7 +381,7 @@ ul {
 }
 
 @media(min-width: 700px) {
-    ul {
+    .card-wrapper {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
