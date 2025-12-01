@@ -5,22 +5,12 @@ class MobileNavbar {
         this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
 
-
         this.handleClick = this.handleClick.bind(this);
-    }
-
-    animateLinks() {
-        this.navLinks.forEach((link, index) => {
-            link.style.animation
-                ? (link.style.animation = "")
-                : (link.style.animation = `navLinkFade 0.5 ease forwards ${index / 7 + 0.3}s`);
-        });
-
     }
 
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
-        this.animateLinks();
+        this.mobileMenu.classList.toggle(this.activeClass);
     }
 
     addClickEvent() {
@@ -30,18 +20,16 @@ class MobileNavbar {
     init() {
         if (this.mobileMenu) {
             this.addClickEvent();
-        } else {
-            console.error("Menu element not found! Check your class names.");
+            console.log("Working")
         }
         return this;
     }
 }
 
-
 const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
+    ".mobile-menu-trigger", 
     ".nav-list",
     ".nav-list li",
 );
 
-mobileNavbar.init(); 
+mobileNavbar.init();
