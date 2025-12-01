@@ -144,6 +144,16 @@ ul>li {
 /* colaborador Bernardo was here */
 /* ---------- Section Services and Documentation ---------- */
 
+#adService,
+#vmwareService,
+#dnsService,
+#arduinoService,
+#adDocumentation {
+  scroll-margin-top: 80px;
+  /* ajuste conforme a altura do header fixo */
+}
+
+
 .services-documentation {
   display: flex;
   flex-direction: column;
