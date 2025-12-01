@@ -58,7 +58,7 @@ a{
 
 @media (min-width: 1280px) {
     h1{
-        font-size: var(--text-8xl);
+        font-size: var(--text-7xl);
     }
 
     h2{
