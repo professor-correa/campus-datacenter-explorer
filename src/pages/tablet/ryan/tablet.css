@@ -83,7 +83,7 @@ main {
 .titulo {
   margin-top: 80px;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .titulo-card {
@@ -91,6 +91,7 @@ main {
   font-size: 30px;
   margin-bottom: 40px;
   font-weight: 600;
+  color: var(--grey-c1000);
 }
 
 .banner {
@@ -155,7 +156,7 @@ ul>li {
 
 .services-documentation>h2 {
   padding-top: 20px;
-  width: 329px;
+  width: 100%;
   border-top: 2px solid var(--grey-c500);
   text-align: center;
   font-size: 30px;
@@ -179,6 +180,10 @@ ul>li {
   width: 100%;
 }
 
+.dropdown>img {
+  max-height: 1200px;
+}
+
 .dropdown>h3 {
   font-size: 20px;
   font-weight: 500;
@@ -197,8 +202,8 @@ img.none {
   gap: 20px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-  opacity: 0;
+  transition: max-height 0.5s ease;
+
 }
 
 .serviceContent.open {
@@ -210,6 +215,7 @@ img.none {
 .serviceContent>p {
   font-size: 16px;
   font-weight: 400;
+  color: var(--grey-c900);
 }
 
 .serviceContent:last-child {
@@ -235,7 +241,8 @@ footer {
   background-color: var(--red-v700);
 }
 
-footer>h2 {
+footer>.backInPage>h2 {
+  margin-bottom: 12px;
   font-size: 30px;
   font-weight: 600;
   color: var(--grey-c100);
@@ -277,13 +284,14 @@ footer>nav>ul>li>a {
   gap: 15px;
 }
 
-footer>h4 {
+footer>.contact>.acesseTambem>h4 {
+  margin-top: 30px;
   font-size: 20px;
   font-weight: 600;
   color: var(--grey-c100);
 }
 
-footer>a {
+footer>.contact>.acesseTambem>a {
   font-size: 16px;
   font-weight: 300;
   color: var(--grey-c100);
@@ -292,11 +300,9 @@ footer>a {
 
 /* ---------- Footer ---------- */
 /* colaborador Nikollas was here */
-@media (min-width: 768px) {
-
   /* ---------- main ---------- */
   main {
-    max-width: 900px;
+    /* max-width: 900px; */
     margin: 0 auto;
   }
 
@@ -304,11 +310,19 @@ footer>a {
     text-align: center;
     font-size: 72px;
     margin-bottom: 20px;
-    font-weight: 800;
+    font-weight: 700;
+    color: var(--grey-c1000);
   }
-
+  
   .titulo-card {
     font-size: 48px;
+    color: var(--grey-c1000);
+  }
+
+  .card>p, ul>li {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--grey-c700);
   }
 
   .banner {
@@ -316,7 +330,9 @@ footer>a {
   }
 
   .doc-link {
-    color: (var(--grey-c100));
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--grey-c900);
     /* Alteração de cor */
   }
 
@@ -330,14 +346,19 @@ footer>a {
   .services-documentation>h2 {
     width: 550px;
     font-size: 48px;
+    font-weight: 600;
   }
 
   .dropdown>h3 {
     font-size: 36px;
+    font-weight: 500;
+    color: var(--grey-c1000);
   }
 
   .serviceContent>p {
     font-size: 24px;
+    font-weight: 500;
+    color: var(--grey-c900);
   }
 
   .serviceContent>a {
@@ -347,29 +368,261 @@ footer>a {
   /* ---------- Services ans Documentation Section ---------- */
   /* ---------- Footer ----------*/
 
-  footer>h2 {
+  footer>.backInPage>h2 {
+    margin-bottom: 12px;
     font-size: 48px;
+    color: var(--grey-c100);
   }
 
-  footer>nav>ul>li>a {
+  footer>.backInPage>nav>ul>li>a {
     font-size: 24px;
+    color: var(--grey-c100);
+    font-weight: 300;
   }
 
   .contatos>h3 {
     font-size: 36px;
   }
 
-  .socialMedias {
-    scale: 1.4;
+  .acesseTambem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30px; */
   }
 
-  footer>h4 {
+  footer>.contact>.acesseTambem>h4 {
     font-size: 30px;
+    color: var(--grey-c100);
   }
 
-  footer>a {
+  footer>.contact>.acesseTambem>a {
     font-size: 24px;
+    color: var(--grey-c100);
+    font-weight: 300;
   }
 
   /* ---------- Footer ----------*/
+/* Tablet */
+@media (min-width: 768px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--grey-c1000);
+  }
+
+  .titulo-card {
+    font-size: 48px;
+    color: var(--grey-c1000);
+  }
+
+  .card > p,
+  ul > li {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--grey-c700);
+  }
+
+  .doc-link {
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--grey-c900); /* sem parênteses */
+  }
+
+  .services-documentation {
+    padding: 30px 32px;
+  }
+
+  .services-documentation > h2 {
+    width: 550px;
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  .dropdown > h3 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--grey-c1000);
+  }
+
+  .serviceContent > p {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--grey-c900);
+  }
+
+  .serviceContent > a {
+    font-size: 24px;
+  }
+
+  footer > .backInPage > h2 {
+    margin-bottom: 12px;
+    font-size: 48px;
+    color: var(--grey-c100);
+  }
+
+  footer > .backInPage > nav > ul > li > a {
+    font-size: 24px;
+    color: var(--grey-c100);
+    font-weight: 300;
+  }
+
+  .contatos > h3 {
+    font-size: 36px;
+  }
+
+  .acesseTambem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer > .contact > .acesseTambem > h4 {
+    font-size: 30px;
+    color: var(--grey-c100);
+  }
+
+  footer > .contact > .acesseTambem > a {
+    font-size: 24px;
+    color: var(--grey-c100);
+    font-weight: 300;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  main {
+    padding: 30px 40px;
+  }
+
+  .titulo {
+    font-size: 96px;
+    font-weight: 700;
+  }
+
+  .card > h2 {
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--grey-c1000);
+  }
+
+  .card > p,
+  .card > li {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey-c700);
+  }
+
+  .card > img {
+    display: none;
+  }
+
+  .card > a {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--grey-c900);
+  }
+
+  .services-documentation > h2 {
+    width: 100%;
+    font-size: 60px;
+    color: var(--grey-c1000);
+  }
+
+  .dropdown {
+    cursor: pointer;
+  }
+
+  .dropdown > h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--grey-c1000);
+  }
+  
+  .serviceContent > p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey-c700);
+  }
+  
+  .serviceContent > p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--grey-c700);
+  }
+
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: stretch;
+  }
+
+  .backInPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  footer > .backInPage > h2, .contact > .contatos > h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--grey-c100);
+  }
+
+  footer > .backInPage > nav > ul > li > a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey-c100);
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .backInPage > h2 {
+    color: var(--grey-c100);
+    font-size: 20px;
+  }
+
+
+  .contatos > .socialMedias > a img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .socialMedias {
+    transform: scale(1);
+  }
+
+  footer > .contact > .acesseTambem > h4 {
+    font-size: 20px;
+    color: var(--grey-c100);
+  }
+
+      footer > .contact > .acesseTambem > a {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--grey-c100);
+      }
+
+
+  .contact > .acesseTambem > a {
+    font-size: 16px;
+    color: var(--grey-c100);
+  }
 }
