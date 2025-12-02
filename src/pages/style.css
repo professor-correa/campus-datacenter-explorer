@@ -69,8 +69,8 @@ main h3 {
 }
 
 .about-fibra h2 {
-    font-size: var(--text-3xl);
-    font-weight: var(--font-weight-extrabold);
+    font-size: var(--text-7xl);
+    font-weight: var(--font-weight-semibold);
     font-family: var(--font-family-MS);
 }
 
