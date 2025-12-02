@@ -24,6 +24,7 @@ header {
     width: 100%;
     background-color: var(--red-v700);
     transition: gap 0.4s ease;
+    z-index: 1001;
 }
 
 header.noGap {
@@ -86,6 +87,96 @@ main {
     margin-top: 80px;
     font-size: 48px;
     font-weight: 800;
+}
+
+.imgPopUp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hotspots clicáveis */
+.imgService {
+    position: absolute;
+    border: 1px solid transparent;
+    /* só pra debug, pode tirar */
+    z-index: 999;
+}
+
+/* Cada hotspot em posição diferente */
+.imgService:nth-of-type(1) {
+    top: 110px;
+    left: 38px;
+    width: 130px;
+    height: 30px;
+}
+
+.imgService:nth-of-type(2) {
+    top: 150px;
+    left: 40px;
+    width: 127px;
+    height: 43px;
+}
+
+.imgService:nth-of-type(3) {
+    top: 200px;
+    left: 35px;
+    width: 130px;
+    height: 65px;
+}
+
+.imgService:nth-of-type(4) {
+    top: 275px;
+    left: 35px;
+    width: 130px;
+    height: 55px;
+}
+
+/* Pop-ups centralizados */
+.popUp {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    /* joga para o meio vertical */
+    left: 50%;
+    /* joga para o meio horizontal */
+    transform: translate(-50%, -50%);
+    /* corrige deslocamento */
+    display: none;
+    /* escondido por padrão */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 15px;
+    background-color: var(--red-v800);
+    width: 100%;
+    /* opcional: limita largura */
+    text-align: center;
+    /* centraliza texto dentro */
+}
+
+.popUp>p:nth-child(1) {
+    font-size: 24px;
+    /* já atualizado */
+    color: var(--grey-c100);
+    font-weight: 400;
+}
+
+.popUp>p:nth-child(2) {
+    font-size: 18px;
+    /* já atualizado */
+    color: var(--grey-c200);
+    font-weight: 400;
+}
+
+.popUp>img.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
 }
 
 .titulo-card {
@@ -323,6 +414,51 @@ footer>.contact>.acesseTambem>a {
 @media (min-width: 768px) {
     main {
         margin: 0 auto;
+    }
+
+    .imgPopUp {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgService:nth-of-type(1) {
+        top: 60px;
+        left: 49px;
+        width: 180px;
+        height: 43px;
+    }
+
+    .imgService:nth-of-type(2) {
+        top: 110px;
+        left: 50px;
+        width: 180px;
+        height: 65px;
+    }
+
+    .imgService:nth-of-type(3) {
+        top: 180px;
+        left: 60px;
+        height: 95px;
+        width: 160px;
+    }
+
+    .imgService:nth-of-type(4) {
+        top: 283px;
+        left: 50px;
+        width: 180px;
+        height: 75px;
+    }
+
+    .popUp>p:nth-child(1) {
+        font-size: 24px;
+        color: var(--grey-c100);
+    }
+
+    .popUp>p:nth-child(2) {
+        font-size: 18px;
+        color: var(--grey-c200);
     }
 
     .titulo {
