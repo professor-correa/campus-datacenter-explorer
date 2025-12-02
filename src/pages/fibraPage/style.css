@@ -1,27 +1,110 @@
-@import url("../styles/global.css"); 
+@import url("../../styles/global.css");
+* {
+    text-decoration: none;
+    font-family: var(--font-family-MS), sans-serif;
+}
+.site-header {
+    background: var(--red-v700);
+    color: var(--grey-c100);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
 
-main {
+.header-bar {
+    display: flex;
+    padding: 14px 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 178px;
+    height: 45.254px;
+    aspect-ratio: 178 / 45.254;
+    object-fit: contain;
+    display: block;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* padrão da navBar */
+.main-nav {
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 20px;
+    gap: 0.75rem;
+}
+
+.main-nav a {
+    color: var(--grey-c100);
+    font-weight: 600;
+    padding: .5rem .75rem;
+    display: block;
+}
+
+.main-nav a:hover {
+    background: var(--red-v800);
+}
+
+.menu-open .main-nav {
+    height: auto;
+}
+
+.fibra-main {
     padding-inline: var(--text-base);
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-main h1 {
+.fibra-main h1 {
     font-size: var(--text-5xl);
     font-weight: var(--font-weight-extrabold);
     margin-bottom: 20px;
     font-family: var(--font-family-MS);
 }
 
-main h2 {
+.fibra-main h2 {
     font-size: var(--text-3xl);
     font-weight: var(--font-weight-semibold);
     text-align: center;
     font-family: var(--font-family-MS);
 }
 
-main h3 {
+.fibra-main h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,7 +208,7 @@ main h3 {
 
 /* ---- TABLET ---- */
 @media (min-width: 768px) and (max-width: 1023px) {
-    main {
+    .fibra-main {
         padding-inline: 32px;
     }
     
@@ -140,7 +223,7 @@ main h3 {
 
 /* ---- DESKTOP ---- */
 @media (min-width: 1024px) {
-    main {
+    .fibra-main {
         padding-inline: 32px;
     }
 
@@ -186,7 +269,7 @@ main h3 {
     width: 100%;
     flex-direction: column;
     aspect-ratio: 619/583.24;
-    background-image: url("../assets/images/fibra-popup-hack.png");
+    background-image: url("../../assets/images/fibra-popup-hack.png");
     background-size: contain;
     border: 1px solid black;
 }
