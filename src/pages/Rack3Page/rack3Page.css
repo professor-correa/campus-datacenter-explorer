@@ -417,6 +417,9 @@ footer>.contact>.acesseTambem>a {
 /* ---------- Fim do tablet ---------- */
 
 /* ---------- Início do Desktop ---------- */
+
+/* ---------- Manuela ---------- */
+
 @media (min-width: 1280px) {
     main {
         padding: 30px 40px;
@@ -471,6 +474,8 @@ footer>.contact>.acesseTambem>a {
         font-weight: 400;
         color: var(--grey-c700);
     }
+
+    /* ---------- Thiago ---------- */
 
     .serviceContent>p {
         font-size: 18px;
