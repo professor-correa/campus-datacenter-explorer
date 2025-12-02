@@ -2,49 +2,52 @@
 
 main {
     padding-inline: var(--text-base);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-/* ---- HERO ---- */
-.hero h1 {
+main h1 {
     font-size: var(--text-5xl);
     font-weight: var(--font-weight-extrabold);
     margin-bottom: 20px;
     font-family: var(--font-family-MS);
 }
 
-.hero {
-    margin-bottom: var(--text-3xl);
-    text-align: center;
-}
-
-/* ---- HEADINGS ---- */
-h2 {
+main h2 {
     font-size: var(--text-3xl);
     font-weight: var(--font-weight-semibold);
     text-align: center;
     font-family: var(--font-family-MS);
 }
 
-h3 {
+main h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: var(--font-family-MS);
 }
 
-/* ---- HERO IMG ---- */
+.hero {
+    margin-bottom: var(--text-3xl);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .hero img {
     display: block;
     margin: 0 auto;
 }
 
-/* ---- ABOUT ---- */
 .about-container {
     border: 1px solid var(--grey-c300);
     border-radius: 10px;
     padding: var(--text-3xl);
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin-bottom: var(--text-3xl);
 }
 
@@ -79,28 +82,33 @@ h3 {
 }
 
 /* ---- OUTROS SERVIÇOS ---- */
-.outros-servicos h3 {
+.other-services h3 {
     font-size: var(--text-2xl);
     font-weight: var(--font-weight-medium);
     margin-bottom: var(--text-xs);
     font-family: var(--font-family-MS);
 }
 
-.outros-servicos p {
+.other-services p {
     font-size: var(--text-lg);
     margin-bottom: var(--text-3xl);
     font-family: var(--font-family-MS);
 }
 
-/* ---- RACK FÍSICO ---- */
-.rack-fisico h3 {
+.other-services, .physical-rack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.physical-rack h3 {
     font-size: var(--text-2xl);
     font-weight: var(--font-weight-medium);
     margin-bottom: var(--text-sm);
     font-family: var(--font-family-MS);
 }
 
-.rack-fisico p {
+.physical-rack p {
     font-size: var(--text-lg);
     margin-bottom: 20px;
     font-family: var(--font-family-MS);
@@ -147,7 +155,7 @@ h3 {
     }
 
     .about-fibra h2 {
-        font-size: var(--text-6xl);
+        font-size: var(--text-3xl);
         font-weight: var(--font-weight-semibold);
     }
 
@@ -162,8 +170,9 @@ h3 {
         flex: 1;
     }
 }
-
-    .rack-component {
+    
+.rack-component {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
