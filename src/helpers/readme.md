@@ -1,2 +1,0 @@
-# helpers
-arquivos `.js`
