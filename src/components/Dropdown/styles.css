@@ -2,49 +2,58 @@
 @import url('../../styles/variables.css');
 
 .dropdown-container {
-      border: 1px solid #ffffff;
-      border-radius: 6px;
-      width: 100%;
-      max-width: 480px;
-      box-sizing: border-box;
-      font-family: "Montserrat", sans-serif;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .dropdown-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .dropdown-title {
-      margin: 0;
-      font-size: 1.05rem;
-    }
-    .dropdown-toggle {
-      background: none;
-      border: none;
-      padding: 6px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .dropdown-toggle img {
-      width: 18px;
-      height: 18px;
-      cursor: pointer;
-      transition: transform 200ms ease;
-    }
-    .dropdown-container:not(.open) .dropdown-content {
-      display: none;
-    }
-    .dropdown-container.open .dropdown-toggle img {
-      transform: rotate(180deg);
-    }
-    .dropdown-content {
-      line-height: 1.4;
-    }
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: var(--text-3xl);
+}
 
-    h3 {
-        font-weight: 500;
-    }
+.dropdown-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-title {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-toggle img {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+.dropdown-container:not(.open) .dropdown-content {
+    display: none;
+}
+
+.dropdown-container.open .dropdown-toggle img {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    line-height: 1.4;
+}
+
+h3 {
+    font-weight: 500;
+}

@@ -6,6 +6,7 @@
     <title>Main</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./Footer/styles.css">
+    <link rel="stylesheet" href="../../components/Dropdown/styles.css">
 </head>
 <body>
 <!--André-->
@@ -105,19 +106,37 @@
         </div>
     </section>
     <!--Leticia-->
-    <section id="#others" class="other-services">
-        <h3>
-            Outros Serviços
-            <img src="../../assets/icons/fibra-page-main-up-arrow-icon.svg" alt="">
-        </h3>
-        <p>Utilizamos o ARDUINO UNO para a aplicação de aferição de temperatura e umidade dos RACK's (Sensor de
+    <div class="dropdown-container" id="outros-servicos-dropdown" aria-expanded="false">
+        <div class="dropdown-header">
+            <h3 class="dropdown-title">Outros Serviços</h3>
+            <button class="dropdown-toggle" aria-label="Alternar outros serviços" aria-expanded="false"
+                    id="outros-servicos-button">
+                <img src="../../assets/icons/dropdown.svg" alt="">
+            </button>
+        </div>
+        <p class="dropdown-content" id="outros-servicos-content">
+            Utilizamos o ARDUINO UNO para a aplicação de aferição de temperatura e umidade dos RACK's (Sensor de
             temperatura), pensando no controle de um datacenter estes são controles essenciais, pois inferem diretamente
-            no funcionamento dos dispositivos.</p>
-    </section>
+            no funcionamento dos dispositivos.
+        </p>
+    </div>
     <!--Leticia-->
     <!--Ricardo-->
-    <section class="physical-rack">
-    </section>
+    <div class="dropdown-container" id="rack-fisico-dropdown" aria-expanded="false">
+        <div class="dropdown-header">
+            <h3 class="dropdown-title">Rack Físico</h3>
+            <button class="dropdown-toggle" aria-label="Alternar outros serviços" aria-expanded="false"
+                    id="rack-fisico-button">
+                <img src="../../assets/icons/dropdown.svg" alt="">
+            </button>
+        </div>
+        <div class="dropdown-content" id="rack-fisico-content">
+            <p>
+               Texto placegolder ui ui esperar os cara mandar foto e texto pra essa sessão
+            </p>
+            <img src="../../assets/images/fibra-page-main-provisional-rack-image.png" alt="placeholder-img">
+        </div>
+    </div>
     <!--Ricardo-->
 </main>
 <!--Francisco-->
@@ -186,6 +205,43 @@
 <!--Kelvin-->
 <script src="../../components/PopupRack/popupScript.js"></script>
 <script src="../../helpers/header.js"></script>
+<script>
+    // Toggle do dropdown
+    (function () {
+        const OScontainer = document.getElementById('outros-servicos-dropdown');
+        const OSbutton = document.getElementById('outros-servicos-button');
 
+        function toggle() {
+            const isOpen = OScontainer.classList.toggle('open');
+            OScontainer.setAttribute('aria-expanded', String(isOpen));
+            OSbutton.setAttribute('aria-expanded', String(isOpen));
+        }
+
+        // Clicar no botão alterna
+        OSbutton.addEventListener('click', toggle);
+
+        // Também permitir clicar no título (acessibilidade)
+        OScontainer.querySelector('.dropdown-title').addEventListener('click', toggle);
+    })();
+</script>
+<script>
+    // Toggle do dropdown
+    (function () {
+        const RFcontainer = document.getElementById('rack-fisico-dropdown');
+        const RFbutton = document.getElementById('rack-fisico-button');
+
+        function toggle() {
+            const isOpen = RFcontainer.classList.toggle('open');
+            RFcontainer.setAttribute('aria-expanded', String(isOpen));
+            RFbutton.setAttribute('aria-expanded', String(isOpen));
+        }
+
+        // Clicar no botão alterna
+        RFbutton.addEventListener('click', toggle);
+
+        // Também permitir clicar no título (acessibilidade)
+        RFcontainer.querySelector('.dropdown-title').addEventListener('click', toggle);
+    })();
+</script>
 </body>
 </html>
