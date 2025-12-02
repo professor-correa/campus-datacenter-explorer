@@ -4,6 +4,7 @@
 html{
     font-family: var(--font-family-MS);
     font-style: normal;
+    scroll-behavior: smooth;
 
     /* Coloquem o link da fonte no html de vocês, renderiza melhor colocando direto no hrml
      <link rel="preconnect" href="https://fonts.googleapis.com">
