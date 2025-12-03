@@ -71,21 +71,13 @@ header {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-<<<<<<< HEAD
-    line-height: 140%; /* 22.4px */
-=======
     line-height: 140%;
     /* 22.4px */
->>>>>>> test
     padding: 10px 25px;
     border-radius: 4px;
 }
 
-<<<<<<< HEAD
-.menu-options a:hover{
-=======
 .menu-options a:hover {
->>>>>>> test
     background-color: var(--red-v800);
 }
 
@@ -157,11 +149,7 @@ main {
     border: 1px solid var(--grey-c300, #B6B6B6);
 }
 
-<<<<<<< HEAD
-.rack-img{
-=======
 .rack-img {
->>>>>>> test
     width: 100%;
     max-width: 700px;
 }
@@ -331,10 +319,7 @@ footer h3 {
     position: relative;
     width: 250px;
     height: 250px;
-<<<<<<< HEAD
-=======
     transition: all 0.3s ease;
->>>>>>> test
 }
 
 .flip-card {
@@ -351,15 +336,6 @@ footer h3 {
 
 .card-front {
     position: absolute;
-<<<<<<< HEAD
-    display: flex;    
-    flex-direction: column;
-    
-    width: 100%;
-    height: 100%;
-    padding: 1rem 1rem;
-    
-=======
     display: flex;
     flex-direction: column;
 
@@ -367,7 +343,6 @@ footer h3 {
     height: 100%;
     padding: 1rem 1rem;
 
->>>>>>> test
     border-radius: 10px;
     color: var(--grey-c100);
     background-color: var(--red-v600);
@@ -383,13 +358,8 @@ footer h3 {
 }
 
 .card-front .content-wrapper img {
-<<<<<<< HEAD
-    width: 200px;
-    height: 200px;
-=======
     width: 180px;
     height: 180px;
->>>>>>> test
 }
 
 .card-back {
@@ -402,11 +372,6 @@ footer h3 {
     width: 100%;
     height: 100%;
     padding: 1rem 1rem;
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> test
     border-radius: 10px;
     color: var(--grey-c100);
     background-color: var(--red-v600);
@@ -414,21 +379,13 @@ footer h3 {
     transform: rotateY(180deg);
 }
 
-<<<<<<< HEAD
-.card-back .content-wrapper{
-=======
 .card-back .content-wrapper {
->>>>>>> test
     flex: 1;
     display: flex;
     align-items: center;
 }
 
-<<<<<<< HEAD
-.flip-icon{
-=======
 .flip-icon {
->>>>>>> test
     justify-self: end;
     align-self: end;
 }
@@ -439,27 +396,16 @@ footer h3 {
         flex-wrap: wrap;
         flex-direction: row;
     }
-<<<<<<< HEAD
-/* 
-    .flip-icon{
-        padding-bottom: 2rem;
-    } */
-
-=======
 
     
->>>>>>> test
     .card-container {
         width: 250px;
         height: 320px;
     }
 }
-<<<<<<< HEAD
-=======
 
 @media(min-width: 1280px) {
     .card-container:hover {
         transform: translateY(-5px);
     }
 }
->>>>>>> test
