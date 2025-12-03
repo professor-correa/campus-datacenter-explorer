@@ -116,6 +116,11 @@ h3 {
     flex-direction: column;
 }
 
+.hero img{
+    width: 100%;
+    max-width: 500px;
+}
+
 .hero h1 {
     margin: 8px;
 }
@@ -353,8 +358,8 @@ footer h3 {
 }
 
 .card-front .content-wrapper img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 
 .card-back {
