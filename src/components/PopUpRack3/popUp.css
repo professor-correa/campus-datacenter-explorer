@@ -1,0 +1,163 @@
+/* Este é o css do pop-up e de como que ele ficaria estilizado dentrodas
+telas Copiem tudo o que está aqui e colem no css de vocês, se forem usar. */
+.imgPopUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    aspect-ratio: 619/583.24;
+    background-size: contain;
+    background-image: url(/src/assets/images/ad1RackIlustration.svg);
+    border-radius: 8px;
+}
+
+/* Hotspots clicáveis */
+.imgService {
+    position: relative;
+    margin: 8% 0 0 8%;
+    border: 1px solid transparent;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.imgService:nth-of-type(1) {
+    top: 2.5%;
+    left: 0.8%;
+    width: 35%;
+    height: 10%;
+}
+
+.imgService:nth-of-type(2) {
+    margin-top: 3.5%;
+    top: 0.3%;
+    left: 1.8%;
+    width: 33%;
+    height: 13%;
+}
+
+.imgService:nth-of-type(3) {
+    margin-top: 0.2%;
+    top: 1%;
+    left: 3%;
+    width: 30%;
+    height: 18%;
+}
+
+.imgService:nth-of-type(4) {
+    margin-top: 0.5%;
+    top: 3%;
+    left: 2%;
+    width: 32%;
+    height: 15%;
+}
+
+.popUp {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 15px;
+    background-color: var(--red-v800);
+    width: 75%;
+    text-align: center;
+}
+
+.popUp.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+}
+
+.popUp>p:nth-child(1) {
+    font-size: 24px;
+    color: var(--grey-c100);
+    font-weight: 400;
+}
+
+.popUp>p:nth-child(2) {
+    font-size: 18px;
+    color: var(--grey-c200);
+    font-weight: 400;
+}
+
+.popUp>img.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Este css deverá ser usado no breakpoint: */
+@media (min-width: 768px) {
+    .imgPopUp {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 619/583.24;
+        background-size: contain;
+        background-image: url(/src/assets/images/ad1RackIlustration.svg);
+        border-radius: 8px;
+    }
+    
+    /* Hotspots clicáveis */
+    .imgService {
+        position: relative;
+        margin: 8% 0 0 8%;
+        border: 1px solid transparent;
+        z-index: 999;
+    }
+    
+    .popUp>p:nth-child(1) {
+        font-size: 24px;
+        color: var(--grey-c100);
+    }
+    
+    .popUp>p:nth-child(2) {
+        font-size: 18px;
+        color: var(--grey-c200);
+    }
+    
+    .popUp {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+    
+    .popUp.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Este css deverá ser usado no breakpoint: */
+@media (min-width: 1280px) {
+    .imgPopUp {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .popUp {
+        top: 90%;
+        transform: translate(-50%, -90%) translateY(30px);
+    }
+
+    .popUp.active {
+        transform: translate(-50%, -90%) translateY(0);
+    }
+}
