@@ -99,10 +99,9 @@ h1 {
 }
 
 hero img {
-  width: 100%;
+  width: 30%;
   max-height: 560px;
   max-width: 1200px;
-  aspect-ratio: 15/7;
 }
 
 main {
@@ -146,7 +145,6 @@ main h2 {
   width: 49%;
   height: auto;
   flex: 1 0 0;
-  aspect-ratio: 558/259.53;
   max-width: 556px;
 }
 
@@ -389,6 +387,10 @@ details p {
     padding: 30px 32px;
   }
 
+  hero img {
+    width: 60%;
+  }
+
   h1 {
     text-align: center;
     font-size: 72px;
@@ -419,7 +421,7 @@ details p {
   }
 
   .content-main img {
-    width: 100%;
+    width: 60%;
   }
 
   summary {
