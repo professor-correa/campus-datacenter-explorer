@@ -116,6 +116,11 @@ h3 {
     flex-direction: column;
 }
 
+.hero img{
+    width: 100%;
+    max-width: 500px;
+}
+
 .hero h1 {
     margin: 8px;
 }
