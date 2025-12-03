@@ -3,115 +3,229 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/src/helpers/rack5Page/dropdown.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../header/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../footer/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rack-05</title>
   </head>
   <body>
-    <div class="services-document">
+    <header>
+      <nav>
+        <div class="mobile-menu">
+          <a href="" class="senai-logo">
+            <img
+              src="../../../../assets/icons/header-senai-icon.svg"
+              alt="Logotipo do SENAI(voltar para a Landingpage)"
+            />
+          </a>
+        </div>
+
+        <button
+          class="mobile-menu-trigger"
+          aria-label="Abrir menu de navegação"
+        >
+          <img
+            class="icon-hamburger"
+            src="../../../../assets/icons/header-hamburger-menu-icon.svg"
+            alt="Menu hambúrguer"
+          />
+
+          <img
+            class="icon-close"
+            src="../../../../assets/icons/header-arrow-top-icon.svg"
+            alt="Fechar menu"
+          />
+        </button>
+
+        <ul class="nav-list">
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Link</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="services-document">
         <h2>Serviços</h2>
-        <div class="service-document">
-        <div class="service-dropdown">
-            <h3>1</h3>
-            <img
-              class="icon-open"
-              src="/src/assets/icons/arrowDownRack3.svg"
-              alt="arrow down icon"
-            />
-            <img
-              class="icon-closed"
-              src="/src/assets/icons/arrowUpRack3.svg"
-              alt="arrow up icon"
-            />
-          </div>
-          <div class="service-content">
-            <p>
-            1
-            </p>
-            <img
-              src="/src/assets/images/fibra-physicalRack-image.png"
-              alt="hero image do serviço active diretory"
-            />
-            <a href="#ad-documentation">Veja a documentação técnica</a>
-          </div>
-        </div>
+
+        <!-- Service 1 -->
         <div class="service-document">
           <div class="service-dropdown">
-            <h3>2</h3>
+            <h3>1. Sistema Operacional – Linux</h3>
             <img
               class="icon-open"
-              src="/src/assets/icons/arrowDownRack3.svg"
+              src="../../../../assets/icons/arrowDownRack3.svg"
               alt="arrow down icon"
             />
             <img
               class="icon-closed"
-              src="/src/assets/icons/arrowUpRack3.svg"
+              src="../../../../assets/icons/arrowUpRack3.svg"
               alt="arrow up icon"
             />
           </div>
           <div class="service-content">
             <p>
-            2
+              Ambiente baseado em Linux para garantir alta estabilidade,
+              segurança nativa, flexibilidade de configuração e suporte robusto
+              para serviços de monitoramento e segurança.
             </p>
             <img
-              src="/src/assets/images/fibra-physicalRack-image.png"
-              alt="hero image do serviço vmware"
+              src="../../../../assets/images/fibra-physicalRack-image.png"
+              alt="Linux Service Image"
             />
-            <a href="#vmware-documentation">Veja a documentação técnica</a>
+            <a href="#linux-documentation">Veja a documentação técnica</a>
           </div>
         </div>
+
+        <!-- Service 2 -->
         <div class="service-document">
           <div class="service-dropdown">
-            <h3>3</h3>
+            <h3>2. Monitoramento de Rede – Zabbix</h3>
             <img
               class="icon-open"
-              src="/src/assets/icons/arrowDownRack3.svg"
+              src="../../../../assets/icons/arrowDownRack3.svg"
               alt="arrow down icon"
             />
             <img
               class="icon-closed"
-              src="/src/assets/icons/arrowUpRack3.svg"
+              src="../../../../assets/icons/arrowUpRack3.svg"
               alt="arrow up icon"
             />
           </div>
           <div class="service-content">
             <p>
-            3
+              Zabbix é utilizado para monitorar disponibilidade, desempenho e
+              métricas de rede em tempo real, com alertas automáticos e
+              dashboards para acompanhamento da infraestrutura.
             </p>
             <img
-              src="/src/assets/images/fibra-physicalRack-image.png"
-              alt="hero image do serviço dns"
+              src="../../../../assets/images/fibra-physicalRack-image.png"
+              alt="Zabbix Service Image"
             />
-            <a href="#dns-documentation">Veja a documentação técnica</a>
+            <a href="#zabbix-documentation">Veja a documentação técnica</a>
           </div>
         </div>
+
+        <!-- Service 3 -->
         <div class="service-document">
           <div class="service-dropdown">
-            <h3>4</h3>
+            <h3>3. Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
             <img
               class="icon-open"
-              src="/src/assets/icons/arrowDownRack3.svg"
+              src="../../../../assets/icons/arrowDownRack3.svg"
               alt="arrow down icon"
             />
             <img
               class="icon-closed"
-              src="/src/assets/icons/arrowUpRack3.svg"
+              src="../../../../assets/icons/arrowUpRack3.svg"
               alt="arrow up icon"
             />
           </div>
           <div class="service-content">
             <p>
-            4
+              Wazuh realiza detecção de intrusão, análise de integridade, coleta
+              de logs e eventos de segurança. Esses dados são enviados ao
+              Splunk, que faz correlação avançada, análise centralizada e
+              visualização, proporcionando uma visão completa de segurança em
+              tempo real.
             </p>
             <img
-              src="/src/assets/images/fibra-physicalRack-image.png"
-              alt="hero image do serviço arduíno"
+              src="../../../../assets/images/fibra-physicalRack-image.png"
+              alt="Splunk Wazuh Service Image"
             />
-            <a href="#arduino-documentation">Veja a documentação técnica</a>
+            <a href="#splunk-documentation">Veja a documentação técnica</a>
           </div>
         </div>
-    </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div class="footer-group footer-group--links">
+          <ul class="footer-links">
+            <li>
+              <a
+                class="footer-back-to-top"
+                href="#rack5-top"
+                aria-label="Voltar para o topo da página"
+                >Voltar ao topo</a
+              >
+            </li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-group footer-group--contacts">
+          <h2 class="footer-title">Contatos</h2>
+          <ul class="social">
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/professor-correa/campus-datacenter-explorer"
+                aria-label="GitHub"
+                ><img
+                  src="../../../../assets/icons/footer-github-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/senai.suico/"
+                aria-label="Instagram"
+                ><img
+                  src="../../../../assets/icons/footer-instagram-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.figma.com/design/LOPdanvag4cYtjxpLDYfoK/DataCenter---Design-System?node-id=1-3&m=dev"
+                aria-label="Figma"
+                ><img
+                  src="../../../../assets/icons/footer-figma-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/school/senaisp-suico/posts/?feedView=all"
+                aria-label="LinkedIn"
+                ><img
+                  src="../../../../assets/icons/footer-linkedin-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-group footer-group--access">
+          <h2 class="footer-title">Acesse Também</h2>
+          <div class="access-links">
+            <p>
+              <a href="https://www.sp.senai.br/" target="_blank" rel="noopener"
+                >SENAI Suíço Brasileira</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../../../../helpers/rack5Page/dropdown.js"></script>
+    <script src="../../../../helpers/rack5Page/header.js"></script>
   </body>
 </html>
