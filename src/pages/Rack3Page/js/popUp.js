@@ -4,7 +4,7 @@ const closeBtns = document.querySelectorAll(".closeBtn");
 
 // Função para esconder todos os popups
 function hideAllPopups() {
-  popups.forEach(p => p.style.display = "none");
+  popups.forEach(p => p.classList.remove("active"));
 }
 
 // Clique no hotspot → mostra pop-up correspondente
@@ -13,7 +13,7 @@ hotspots.forEach(hotspot => {
     event.stopPropagation(); // evita que o clique no hotspot seja capturado pelo document
     hideAllPopups();
     const index = hotspot.getAttribute("data-popup");
-    popups[index].style.display = "flex"; // usa flex porque o CSS define flexbox
+    popups[index].classList.add("active"); // ativa transição suave
   });
 });
 
