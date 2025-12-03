@@ -3,6 +3,9 @@
     text-decoration: none;
     font-family: var(--font-family-MS), sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 .site-header {
     background: var(--red-v700);
     color: var(--grey-c100);
@@ -122,6 +125,9 @@
 
 .hero img {
     display: block;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
     margin: 0 auto;
 }
 
@@ -272,7 +278,6 @@
     aspect-ratio: 619/583.24;
     background-image: url("../../assets/images/fibra-popup-hack.png");
     background-size: contain;
-    border: 1px solid black;
 }
 
 .rack-component h6 {
