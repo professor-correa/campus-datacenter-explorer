@@ -106,30 +106,30 @@ main {
 
 /* Cada hotspot em posição diferente */
 .imgService:nth-of-type(1) {
-    top: 110px;
-    left: 38px;
-    width: 130px;
+    top: 122px;
+    left: 28px;
+    width: 125px;
     height: 30px;
 }
 
 .imgService:nth-of-type(2) {
-    top: 150px;
-    left: 40px;
-    width: 127px;
+    top: 157px;
+    left: 33px;
+    width: 113px;
     height: 43px;
 }
 
 .imgService:nth-of-type(3) {
     top: 200px;
     left: 35px;
-    width: 130px;
+    width: 110px;
     height: 65px;
 }
 
 .imgService:nth-of-type(4) {
-    top: 275px;
-    left: 35px;
-    width: 130px;
+    top: 270px;
+    left: 33px;
+    width: 115px;
     height: 55px;
 }
 
