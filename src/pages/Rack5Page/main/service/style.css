@@ -91,3 +91,59 @@ img.icon-closed {
     font-weight: 300;
     color: var(--grey-c700);
 }
+
+/* Reponsividade */
+
+@media (min-width: 768px) {
+ .services-document {
+        padding: 30px 32px;
+    }
+
+    .services-document>h2 {
+        width: 550px;
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .service-dropdown>h3 {
+        font-size: 36px;
+        font-weight: 500;
+        color: var(--grey-c1000);
+    }
+
+    .service-content>p {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--grey-c900);
+    }
+
+    .service-content>a {
+        font-size: 24px;
+    }
+}
+
+
+@media (min-width: 1280px) {
+
+    .services-document>h2 {
+        width: 100%;
+        font-size: 60px;
+        color: var(--grey-c1000);
+    }
+
+    .service-dropdown {
+        cursor: pointer;
+    }
+
+    .service-dropdown>h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--grey-c1000);
+    }
+
+    .service-content>p {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--grey-c700);
+    }
+}
