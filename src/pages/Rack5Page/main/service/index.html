@@ -52,6 +52,168 @@
       </nav>
     </header>
     <main>
+
+       <section class="whas_is">
+        <h1>Rack 05</h1>
+        <img src="../../../../assets/images/rack5-image.png" alt="" />
+
+
+
+        <div class="conteine-rack5">
+            <div class="conteine-title">
+                <h2>O que é o Rack 05</h2>
+            </div>
+            <div class="conteiner-text">
+
+                <p>
+                    Imagina um servidor central que é o coração da rede.
+                <ul>
+                    <li>
+                        ele é focado em
+                        Linux (escolhido por ser prático e familiar para a equipe).
+                    </li>
+                    <li>
+                        ele concentra os serviços mais importantes: monitoramento, segurança e
+                        armazenamento.
+                    </li>
+                    <li>
+                        ele permite que a equipe administre e visualize a saúde
+                        de toda a infraestrutura de TI em um só lugar.
+                    </li>
+                </ul>
+                <p>
+                    O que o Rack 05 faz? O
+                    Rack 05 é o centro de operações que:
+                </p>
+
+                <ul>
+                    <li>
+                        Controla a Rede: Hospeda o
+                        Zabbix, que monitora cada máquina e serviço 24/7.
+                    </li>
+                    <li>
+                        Garante a Segurança:
+                        Recebe os logs de todas as máquinas para identificar e alertar sobre
+                        anormalidades de segurança (usando ferramentas como Zabbix e SIEM).
+                    </li>
+                    <li>
+                        Organiza os Recursos: Disponibiliza o Serviço de Arquivos (como um
+                        drive central) para que alunos e equipe possam baixar materiais como
+                        imagens ISO.
+                    </li>
+                </ul>
+
+                <p>Exemplo prático:</p>
+                <ul>
+                    <li>
+                        Um computador na rede começa a
+                        apresentar tráfego de dados incomum.
+                    </li>
+                    <li>
+                        Zabbix (rodando no Linux do
+                        Rack 05) recebe o log dessa máquina.
+                    </li>
+                    <li>
+                        O Ele verifica o evento, identifica
+                        a anormalidade e informa imediatamente o administrador da rede sobre o
+                        problema.
+                    </li>
+                </ul>
+                <p>Em resumo: O Rack 05 é um serviço Microsoft que funciona
+                    como:</p>
+                <ul>
+                    <li>
+                        um cadastro central de pessoas e equipamentos.
+                    </li>
+                    <li>
+                        um sistema de
+                        segurança que garante que só quem deve ter acesso, tenha.
+                    </li>
+
+                    <li>
+                        organizador que deixa tudo mais fácil de administrar em redes grandes.
+                        Componentes Chave
+                    </li>
+                    <li>
+                        Linux (Servidor Principal): Roda o Zabbix para
+                        monitoramento de rede e segurança.
+                    </li>
+                    <li>
+                        AD1 e AD2 (Windows Server):
+                        Controladores de domínio primário e de reserva (replicação),
+                        gerenciando usuários e DNS.
+                    </li>
+                    <li>
+                        EVE: Simulador de redes para testes e
+                        treinamentos em um ambiente próximo ao real
+                    </li>
+                    <li>
+                        Fibra e Armazenamento:
+                        Ponto de conexão de alta velocidade e espaço para arquivos e backups.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="conteiner-link">
+                <a href="">veja a documentação técnica</a>
+            </div>
+
+            <div class="rack-component">
+                <h6>Clique nas imagens e veja mais sobre</h6>
+                <div class="rack-container">
+                    <span data-popup="distribution" class="rack-button distribution"></span>
+                    <span data-popup="switch" class="rack-button switch"></span>
+                    <span data-popup="monitor" class="rack-button monitor"></span>
+                    <span data-popup="server" class="rack-button server"></span>
+                    <span data-popup="patch" class="rack-button patch"></span>
+
+                    <div class="popup" data-popup-id="distribution">
+                        <span class="close-popup">&times;</span>
+                        <h3>Distribuição</h3>
+                        <p>Ele é basicamente uma "caixa" ou painel onde os cabos de fibra que vêm da rua ou de outros
+                            andares (chamados de backbone) chegam e são conectados aos equipamentos ativos da rede (como
+                            switches, roteadores ou conversores de mídia).</p>
+                    </div>
+
+                    <div class="popup" data-popup-id="switch">
+                        <span class="close-popup">&times;</span>
+                        <h3>Switch</h3>
+                        <p>Ele é um equipamento de hardware que conecta vários dispositivos (computadores, impressoras,
+                            servidores, câmeras IP) dentro de uma mesma rede (LAN), permitindo que eles conversem entre
+                            si de forma eficiente.</p>
+                    </div>
+
+                    <div class="popup" data-popup-id="monitor">
+                        <span class="close-popup">&times;</span>
+                        <h3>Monitor</h3>
+                        <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma única estrutura. Ele
+                            permite controlar vários servidores a partir de um único console, economizando espaço e
+                            facilitando a gestão.</p>
+                    </div>
+
+                    <div class="popup" data-popup-id="server">
+                        <span class="close-popup">&times;</span>
+                        <h3>Servidor</h3>
+                        <p>
+                            Um servidor é um computador mas diferente do seu computador pessoal (onde você joga, digita
+                            textos ou navega na internet), o
+                            trabalho do servidor não é atender a uma pessoa sentada na frente dele. O trabalho dele é
+                            atender (servir) outros computadores.</p>
+                    </div>
+
+                    <div class="popup" data-popup-id="patch">
+                        <span class="close-popup">&times;</span>
+                        <h3>Patch Panel</h3>
+                        <p>O Patch Panel é um painel passivo (não usa energia) cheio de portas de rede (RJ45), que serve
+                            como um ponto intermediário entre os cabos que vêm das paredes e o Switch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <script src="../../../../components/PopupRack/popupScript.js"></script>
+
+        </div>
+    </section>
       <!-- Service -->
 
       <section class="service">
