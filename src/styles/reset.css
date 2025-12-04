@@ -40,12 +40,7 @@ dd {
 }
 
 /* 5. Estilos de lista (opcional - dependendo do seu projeto) */
-ul,
-ol {
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0;
-    margin: 0;
-}
+
 
 /* 6. Garanta que inputs, textareas e buttons herdem a fonte */
 input,
