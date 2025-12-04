@@ -46,7 +46,6 @@ main {
   justify-content: center;
   gap: 20px;
   width: 100%;
-  border-bottom: 1px solid var(--grey-c300); /* Optional separator */
   padding-bottom: 20px;
 }
 
