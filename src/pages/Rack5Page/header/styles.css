@@ -64,6 +64,7 @@ a {
     letter-spacing: 3px;
     opacity: 0;
     transition: opacity 0.5s ease;
+    margin-bottom: 20px;
 }
 
 .nav-list.active {

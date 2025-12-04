@@ -1,0 +1,121 @@
+@import url("../../../../styles/global.css");
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+.services-document {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Limit width for better readability on large screens */
+  margin: 0 auto;
+}
+
+.services-document > h2 {
+  padding-top: 20px;
+  width: 100%;
+  border-top: 2px solid var(--grey-c500);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--grey-c1000);
+  margin-bottom: 20px;
+}
+
+.service-document {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.service-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.service-dropdown > h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--grey-c1000);
+}
+
+img.icon-closed {
+  display: none;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  width: 100%;
+}
+
+.service-content.open {
+  max-height: 2000px; /* Arbitrary large height for animation */
+  opacity: 1;
+}
+
+.service-content > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-c900);
+  text-align: justify;
+  width: 100%;
+}
+
+.service-content > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-content > a {
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--grey-c700);
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .services-document > h2 {
+    font-size: 48px;
+  }
+  .service-dropdown > h3 {
+    font-size: 24px;
+  }
+  .service-content > p {
+    font-size: 18px;
+  }
+}
