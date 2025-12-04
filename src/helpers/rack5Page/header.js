@@ -13,8 +13,16 @@ class MobileNavbar {
         this.mobileMenu.classList.toggle(this.activeClass);
     }
 
+    closeMenu() {
+        this.navList.classList.remove(this.activeClass);
+        this.mobileMenu.classList.remove(this.activeClass);
+    }
+
     addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
+        this.navLinks.forEach((link) => {
+            link.addEventListener("click", () => this.closeMenu());
+        });
     }
 
     init() {
