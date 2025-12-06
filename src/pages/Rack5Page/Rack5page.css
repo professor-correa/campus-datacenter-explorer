@@ -77,6 +77,7 @@ header nav {
   margin-bottom: 25px;
   transition: height 0.5s ease-in-out;
   z-index: 999;
+
 }
 
 .nav-list li {
@@ -109,6 +110,10 @@ header nav {
   cursor: pointer;
   color: var(--grey-c1000);
 }
+
+/* =========================================
+   Main / What-is
+   ========================================= */
 
 .whas_is {
   display: flex;
@@ -305,7 +310,7 @@ header nav {
 }
 
 /* =========================================
-   Main / Service Styles (Existing)
+   Main / Service Styles
    ========================================= */
 .services-document {
   display: flex;
