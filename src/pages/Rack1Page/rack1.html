@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rack 1 - Fibra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/pages/Rack1Page/rack1.css" />
+  <script src="/src/pages/Rack3Page/js/hamburgerMenu.js" defer></script>
+  <script src="/src/pages/Rack3Page/js/dropdown.js" defer></script>
+  <script src="/src/pages/Rack3Page/js/scroll.js" defer></script>
+  <script src="/src/pages/Rack3Page/js/popUp.js" defer></script>
+</head>
+
+<body>
+  <!-- Ryan -->
+  <div id="topo" class="scrollLink"></div>
+  <header class="noGap">
+    <div class="imagesWrap">
+      <img src="/src/assets/icons/LogotipoSenaiRack3.svg" alt="logotipo do senai" />
+      <button id="hamburgerMenu">
+        <img id="arrowUp" src="/src/assets/icons/arrowUpHeaderRack3.svg" alt="ícone seta para cima" />
+        <img id="hamburgerIcon" src="/src/assets/icons/hamburgerMenuRack3.svg" alt="ícone menu hamburguer" />
+      </button>
+    </div>
+    <nav id="links">
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="#topo">Rack 1 - Armazenamento, Apache e FTP</a></li>
+        <li><a href="../rack-02-virtualizacao/rack02.html">Rack 2 - VMware ESXi e pfSense</a></li>
+        <li><a href="#">Rack 3 - Active Directory (AD) e DNS</a></li>
+        <li><a href="../Rack4Page/Rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
+        <li><a href="../Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
+        <li><a href="">Rack 6 - Central de Câmeras e GitLab</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Nikollas -->
+  <main>
+    <h1 class="titulo">Armazenamento</h1>
+
+    <div class="imgPopUp">
+      <!-- <img src="/src/assets/images/ad1RackIlustration.svg" alt="Rack AD1 ilustration" class="banner" /> -->
+
+      <!-- Hotspots clicáveis -->
+      <div class="imgService" data-popup="0"></div>
+      <div class="imgService" data-popup="1"></div>
+      <div class="imgService" data-popup="2"></div>
+      <div class="imgService" data-popup="3"></div>
+
+      <!-- Pop-ups -->
+      <div class="popUp">
+        <p>Serviço 1</p>
+        <p>esta é uma breve descrição do serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve descrição do
+          serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve
+          descrição do serviço 1</p>
+        <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
+      </div>
+      <div class="popUp">
+        <p>Serviço 2</p>
+        <p>esta é uma breve descrição do serviço 2esta é uma breve descrição do serviço 2</p>
+        <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
+      </div>
+      <div class="popUp">
+        <p>Serviço 3</p>
+        <p>esta é uma breve descrição do serviço 3</p>
+        <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
+      </div>
+      <div class="popUp">
+        <p>Serviço 4</p>
+        <p>esta é uma breve descrição do serviço 4</p>
+        <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
+      </div>
+    </div>
+    <div id="ad" class="scrollLink"></div>
+    <section class="card">
+      <h2 class="titulo-card">Servidor de armazenamento</h2>
+      <div class="armazenamentoContent">
+        <div class="armazenamentoExplanation">
+          <p><span>O que é ?</span><br>Imagine um armário digital gigante.
+
+            Esse armário guarda arquivos, fotos, vídeos e documentos, mas em vez de ficar na sua casa, ele está em um
+            computador especial chamado servidor.
+
+            O servidor é feito para ficar ligado o tempo todo, com bastante espaço e segurança, para que várias pessoas
+            ou
+            sistemas possam acessar os dados quando precisarem.</p>
+          <p><span>Como funciona na prática</span><br>
+            Você salva seus arquivos nesse servidor, em vez de salvar só no seu computador pessoal.
+
+            Quando precisa, pode abrir, compartilhar ou editar esses arquivos de qualquer lugar da rede (por exemplo,
+            dentro de uma empresa ou até pela internet).
+
+            É como ter um Google Drive ou OneDriv, só que dentro da empresa, controlado por ela.</p>
+          <p><span>Por que usar?</span><br>
+            Centralização: todos os dados ficam em um só lugar, mais fácil de organizar.
+
+            Segurança: dá para colocar regras de acesso (quem pode ver, editar ou apagar).
+
+            Backup: evita perder arquivos se um computador quebrar.
+
+            Escalabilidade: se faltar espaço, basta adicionar mais discos ao servidor.</p>
+        </div>
+        <img src="/src/assets/images/armazenamentoRack1HeroImage.svg" alt="ilustração dos serviço de armazenamento"
+          class="diagram" />
+      </div>
+      <a href="#adDocumentation" class="doc-link">veja a documentação técnica</a>
+    </section>
+  </main>
+  <!-- Ryan was here bro -->
+  <!-- Links para os serviços -->
+  <div id="armazenamento" class="scrollLink"></div>
+  <div id="ssh" class="scrollLink"></div>
+  <div id="apache" class="scrollLink"></div>
+  <div id="ftp" class="scrollLink"></div>
+  <section class="services-documentation">
+    <h2>Serviços</h2>
+    <!-- Serviço Armazenamento -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>Armazenamento</h3>
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          É como um HD gigante compartilhado.
+
+          Serve para guardar arquivos (documentos, fotos, vídeos) em um servidor.
+
+          Várias pessoas ou sistemas podem acessar esses arquivos pela rede, em vez de cada um guardar só no próprio
+          computador.
+        </p>
+        <img src="/src/assets/images/activeDirectoryHeroImage.svg" alt="hero image do serviço active diretory" />
+        <a href="#adDocumentation">Veja a documentação técnica</a>
+      </div>
+    </div>
+    <!-- Serviço VMWare -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>SSH</h3>
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          Pense nele como uma porta secreta e segura para entrar em um servidor.
+
+          Com o SSH, você consegue controlar o servidor à distância, digitando comandos.
+
+          É como se fosse um controle remoto para computadores, mas protegido por senha e criptografia.
+        </p>
+        <img src="/src/assets/images/vmwareHeroImage.svg" alt="hero image do serviço vmware" />
+        <a href="#vmwareDocumentation">Veja a documentação técnica</a>
+      </div>
+    </div>
+    <!-- Serviço DNS -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>Apache</h3>
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          É um servidor web.
+
+          Ele pega páginas (como sites em HTML) e entrega para quem acessa pelo navegador.
+
+          Exemplo: quando você digita www.exemplo.com, o Apache pode ser o responsável por mostrar essa página.
+        </p>
+        <img src="/src/assets/images/dnsHeroImage.svg" alt="hero image do serviço dns" />
+        <a href="#dnsDocumentation">Veja a documentação técnica</a>
+      </div>
+    </div>
+    <!-- Serviço Arduino -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>FTP</h3>
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          É um correio digital para arquivos.
+
+          Permite enviar e receber arquivos entre seu computador e o servidor.
+
+          Muito usado para colocar sites no ar (mandar os arquivos do site para o servidor).
+        </p>
+        <img src="/src/assets/images/arduinoHeroImage.svg" alt="hero image do serviço arduíno" />
+        <a href="#arduinoDocumentation">Veja a documentação técnica</a>
+      </div>
+    </div>
+  </section>
+  <!-- links que são redirecionados pra documentação técnica -->
+  <div id="adDocumentation" class="scrollLink"></div>
+  <div id="vmwareDocumentation" class="scrollLink"></div>
+  <div id="dnsDocumentation" class="scrollLink"></div>
+  <div id="arduinoDocumentation" class="scrollLink"></div>
+
+  <section class="services-documentation">
+    <h2>Documentação Técnica</h2>
+    <!-- Documentação AD -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>Armazenamento</h3>
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p><span> Definição:</span> Serviço responsável por guardar e disponibilizar dados em um servidor ou
+          infraestrutura de rede.</p>
+        <p><span>Arquitetura:</span> Discos físicos/virtuais: HDDs ou SSDs.
+
+          Sistema de arquivos: NTFS, EXT4, ZFS, etc.
+
+          Gerenciamento: RAID, SAN, NAS.
+
+          Acesso: via protocolos como SMB, NFS ou iSCSI.</p>
+        <p><span>Funcionalidades:</span> Centralização de dados.
+
+          Controle de permissões de acesso.
+
+          Backup e recuperação.
+
+          Escalabilidade (expansão de capacidade).</p>
+        <p><span>Casos de uso:</span> Data centers.
+
+          Armazenamento corporativo.
+
+          Serviços em nuvem.</p>
+        <a href="#armazenamento">Veja o serviço</a>
+      </div>
+      <!-- Documentação VMWare -->
+      <div class="dropdown">
+        <h3>SSH</h3>
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p><span> Definição:</span> Protocolo de comunicação segura para acesso remoto a servidores.</p>
+        <p><span>Arquitetura:</span> Software usado para conectar (ex.: OpenSSH).
+
+          Servidor SSH: serviço rodando no servidor.
+
+          Criptografia: RSA, AES, ou chaves públicas/privadas.</p>
+        <p><span>Funcionalidades:</span> Login remoto seguro.
+
+          Execução de comandos em linha de comando.
+
+          Tunelamento de conexões (port forwarding).
+
+          Transferência de arquivos via SCP ou SFTP.</p>
+        <p><span>Casos de uso:</span> Administração de servidores Linux/Unix.
+
+          Automação de tarefas remotas.
+
+          Conexões seguras em redes públicas.</p>
+        <a href="#ssh">Veja o serviço</a>
+      </div>
+      <!-- Documentação DNS -->
+      <div class="dropdown">
+        <h3>Apache</h3>
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p><span> Definição:</span> Servidor web open-source que entrega páginas e aplicações via protocolo HTTP/HTTPS.
+        </p>
+        <p><span>Arquitetura:</span> Módulos: extensões para autenticação, segurança, cache.
+
+          Configuração: arquivos httpd.conf ou apache2.conf.
+
+          Processos: modelo multi-thread ou multi-processo.</p>
+        <p><span>Funcionalidades:</span> Hospedagem de sites e aplicações.
+
+          Suporte a linguagens (PHP, Python, Perl).
+
+          Balanceamento de carga.
+
+          Logs e monitoramento de acessos.</p>
+        <p><span>Casos de uso:</span> Hospedagem de sites institucionais.
+
+          Aplicações web corporativas.
+
+          Ambientes de teste e produção.</p>
+        <a href="#apache">Veja o serviço</a>
+      </div>
+      <!-- Documentação Arduino -->
+      <div class="dropdown">
+        <h3>FTP</h3>
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p><span> Definição:</span> Protocolo para transferência de arquivos entre cliente e servidor.
+        </p>
+        <p><span>Arquitetura:</span> Cliente FTP: software como FileZilla.
+
+          Servidor FTP: serviço rodando em portas padrão (21).
+
+          Modos de operação: ativo e passivo.
+
+          Configuração: arquivos httpd.conf ou apache2.conf.
+
+          Processos: modelo multi-thread ou multi-processo.</p>
+        <p><span>Funcionalidades:</span> Upload e download de arquivos.
+
+          Gerenciamento de diretórios.
+
+          Controle de permissões de usuários.
+
+          Suporte a autenticação com usuário/senha.</p>
+        <p><span>Casos de uso:</span> Publicação de sites.
+
+          Compartilhamento de arquivos internos.
+
+          Backup remoto.</p>
+        <a href="#ftp">Veja o serviço</a>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="scrollLink">
+    <div class="backInPage">
+      <h2>Voltar na Página</h2>
+      <nav>
+        <ul>
+          <li><a href="#topo">Topo</a></li>
+          <li><a href="#armazenamento">Serviços</a></li>
+          <li><a href="#adDocumentation">Documentação Técnica</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="contact">
+      <nav class="contatos">
+        <h3>Contatos</h3>
+        <div class="socialMedias">
+          <a href="https://github.com/professor-correa/campus-datacenter-explorer"><img
+              src="/src/assets/icons/githubRack3.svg" alt="logo do github" /></a>
+          <a href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
+              src="/src/assets/icons/instagramRack3.svg" alt="logo do instagram" /></a>
+          <a href=""><img src="/src/assets/icons/figmaRack3.svg" alt="logo do figma" /></a>
+          <a href="https://www.linkedin.com/school/senaisp-suico/"><img src="/src/assets/icons/linkedinRack3.svg"
+              alt="logo do linkedin" /></a>
+        </div>
+      </nav>
+      <div class="acesseTambem">
+        <h4>Acesse Também</h4>
+        <a href="https://sp.senai.br/unidade/suicobrasileira/">Senai suiço-brasileira</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

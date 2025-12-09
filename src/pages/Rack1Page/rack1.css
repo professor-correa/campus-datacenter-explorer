@@ -1,0 +1,772 @@
+@import url(/src/styles/global.css);
+
+/* ////////////////////////// Ryan ////////////////////////// */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ////////////////////////// Caue ////////////////////////// */
+
+/* ---------- Início do Header ---------- */
+
+/* ---------- Mobiel first ---------- */
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 30px;
+    width: 100%;
+    background-color: var(--red-v700);
+    transition: gap 0.4s ease;
+    z-index: 1001;
+}
+
+header.noGap {
+    gap: 0px;
+}
+
+header>.imagesWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: gap 0.4s ease;
+}
+
+.imagesWrap>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+#links.open {
+    max-height: 380px;
+}
+
+nav>ul>li:nth-child(2)>a {
+    text-decoration: underline;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+nav>ul>li>a {
+    font-size: 1rem;
+    color: var(--grey-c100);
+    text-decoration: none;
+}
+
+/* ---------- Fim do Header ---------- */
+
+/* ---------- Início do Main ---------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.titulo {
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.imgPopUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    aspect-ratio: 619/583.24;
+    background-size: contain;
+    background-image: url(/src/assets/images/ad1RackIlustration.svg);
+    border-radius: 8px;
+}
+
+/* Hotspots clicáveis */
+.imgService {
+    position: relative;
+    margin: 8% 0 0 8%;
+    border: 1px solid transparent;
+    /* só pra debug, pode tirar */
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* Cada hotspot em posição diferente */
+.imgService:nth-of-type(1) {
+    top: 2.5%;
+    left: 0.8%;
+    width: 35%;
+    height: 10%;
+}
+
+.imgService:nth-of-type(2) {
+    margin-top: 3.5%;
+    top: 0.3%;
+    left: 1.8%;
+    width: 33%;
+    height: 13%;
+}
+
+.imgService:nth-of-type(3) {
+    margin-top: 0.2%;
+    top: 1%;
+    left: 3%;
+    width: 30%;
+    height: 18%;
+}
+
+.imgService:nth-of-type(4) {
+    margin-top: 0.5%;
+    top: 3%;
+    left: 2%;
+    width: 32%;
+    height: 15%;
+}
+
+/* Pop-ups centralizados */
+.popUp {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    /* começa levemente menor */
+    opacity: 0;
+    /* invisível por padrão */
+    pointer-events: none;
+    /* não clicável quando invisível */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* animação suave */
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 15px;
+    background-color: var(--red-v800);
+    width: 75%;
+    text-align: center;
+}
+
+/* Estado ativo */
+.popUp.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    /* volta ao tamanho normal */
+    pointer-events: auto;
+    /* agora pode ser clicado */
+}
+
+.popUp>p:nth-child(1) {
+    font-size: 24px;
+    /* já atualizado */
+    color: var(--grey-c100);
+    font-weight: 400;
+}
+
+.popUp>p:nth-child(2) {
+    font-size: 18px;
+    /* já atualizado */
+    color: var(--grey-c200);
+    font-weight: 400;
+}
+
+.popUp>img.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.titulo-card {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: var(--grey-c1000);
+}
+
+
+.card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #b6b6b6;
+    border-radius: 10px;
+}
+
+.armazenamentoExplanation>p>span {
+    font-weight: bold;
+}
+
+.card>p,
+ul>li {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey-c700);
+}
+
+.card p>ul>li {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    margin: 0 20px 25px;
+}
+
+.doc-link {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    color: (var(--grey-c900));
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.diagram {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* ---------- Fim do Main ---------- */
+
+/* ////////////////////////// Bernardo ////////////////////////// */
+
+/* ---------- Início das Sections Services and Documentation ---------- */
+
+#ad,
+#adService,
+#vmwareService,
+#dnsService,
+#arduinoService,
+#adDocumentation {
+    scroll-margin-top: 80px;
+}
+
+.services-documentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.services-documentation>h2 {
+    padding-top: 20px;
+    width: 100%;
+    border-top: 2px solid var(--grey-c500);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--grey-c1000);
+}
+
+.service-documentation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+}
+
+.dropdown>img {
+    max-height: 1200px;
+}
+
+.dropdown>h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--grey-c1000);
+}
+
+img.none {
+    display: none;
+}
+
+.serviceContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.serviceContent>p>span {
+    font-weight: bold;
+}
+
+.serviceContent.open {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+.serviceContent>p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-c900);
+}
+
+.serviceContent>img {
+    align-self: center;
+    max-width: 247px;
+}
+
+
+
+.serviceContent>a {
+    align-self: flex-end;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--grey-c700);
+}
+
+/* ----------- Fim das Sections Services and Documentation ----------*/
+
+/* ////////////////////////// Ryan ////////////////////////// */
+
+/* ---------- Início do Footer ---------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 30px;
+    background-color: var(--red-v700);
+}
+
+footer>.backInPage>h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--grey-c100);
+}
+
+footer>nav>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+footer>nav>ul>li>a {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--grey-c100);
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.contatos>h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--grey-c100);
+}
+
+.socialMedias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer>.contact>.acesseTambem>h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--grey-c100);
+}
+
+footer>.contact>.acesseTambem>a {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--grey-c100);
+    text-decoration: underline;
+}
+
+/* ---------- Fim do Footer ---------- */
+
+/* ////////////////////////// Nikollas ////////////////////////// */
+
+/* ---------- Início das Responsividade ---------- */
+
+/* ---------- Início do Tablet ---------- */
+@media (min-width: 768px) {
+    main {
+        margin: 0 auto;
+    }
+
+    .imgPopUp {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 619/583.24;
+        background-size: contain;
+        background-image: url(/src/assets/images/ad1RackIlustration.svg);
+        border-radius: 8px;
+    }
+
+    /* Hotspots clicáveis */
+    .imgService {
+        position: relative;
+        margin: 8% 0 0 8%;
+        border: 1px solid transparent;
+        /* só pra debug, pode tirar */
+        z-index: 999;
+    }
+
+    .popUp>p:nth-child(1) {
+        font-size: 24px;
+        color: var(--grey-c100);
+    }
+
+    .popUp>p:nth-child(2) {
+        font-size: 18px;
+        color: var(--grey-c200);
+    }
+
+    .popUp {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.95);
+        /* começa menor */
+    }
+
+    .popUp.active {
+        transform: translate(-50%, -50%) scale(1);
+        /* cresce suavemente */
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 72px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: var(--grey-c1000);
+    }
+
+    .titulo-card {
+        font-size: 48px;
+        color: var(--grey-c1000);
+    }
+
+    .card>p,
+    ul>li {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--grey-c700);
+    }
+
+    .serviceContent>img {
+        align-self: center;
+        max-width: 680px;
+    }
+
+    .doc-link {
+        font-size: 24px;
+        font-weight: 300;
+        color: var(--grey-c900);
+    }
+
+    /* ////////////////////////// ryan ////////////////////////// */
+
+    .services-documentation {
+        padding: 30px 32px;
+    }
+
+    .services-documentation>h2 {
+        width: 550px;
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .dropdown>h3 {
+        font-size: 36px;
+        font-weight: 500;
+        color: var(--grey-c1000);
+    }
+
+    .serviceContent>p {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--grey-c900);
+    }
+
+    .serviceContent>a {
+        font-size: 24px;
+    }
+
+    footer>.backInPage>h2 {
+        margin-bottom: 12px;
+        font-size: 48px;
+        color: var(--grey-c100);
+    }
+
+    footer>.backInPage>nav>ul>li>a {
+        font-size: 24px;
+        color: var(--grey-c100);
+        font-weight: 300;
+    }
+
+    .contatos>h3 {
+        font-size: 36px;
+    }
+
+    .acesseTambem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer>.contact>.acesseTambem>h4 {
+        font-size: 30px;
+        color: var(--grey-c100);
+    }
+
+    footer>.contact>.acesseTambem>a {
+        font-size: 24px;
+        color: var(--grey-c100);
+        font-weight: 300;
+    }
+}
+
+/* ---------- Fim do tablet ---------- */
+
+/* ---------- Início do Desktop ---------- */
+
+/* ---------- Manuela ---------- */
+
+@media (min-width: 1280px) {
+    main {
+        padding: 30px 40px;
+    }
+
+    .imgPopUp {
+        width: 100%;
+        height: 100%;
+    }
+
+    .popUp {
+        top: 90%;
+        transform: translate(-50%, -90%) translateY(30px);
+        /* começa deslocado pra baixo */
+    }
+
+    .popUp.active {
+        transform: translate(-50%, -90%) translateY(0);
+        /* desliza pra cima */
+    }
+
+    .titulo {
+        font-size: 96px;
+        font-weight: 700;
+    }
+
+    .armazenamentoContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .armazenamentoExplanation>p>span {
+        font-weight: bold;
+    }
+
+    .armazenamentoContent>img {
+        max-width: 550px;
+    }
+
+    .doc-link {
+        align-items: start;
+    }
+
+    .card>h2 {
+        font-size: 60px;
+        font-weight: 500;
+        color: var(--grey-c1000);
+    }
+
+    .card>p,
+    .card>ul>li {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--grey-c700);
+    }
+
+    .serviceContent {
+        align-items: start;
+    }
+
+
+
+    .serviceContent>img {
+        align-self: center;
+        max-width: 1200px;
+    }
+
+    .card>a {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--grey-c900);
+    }
+
+    .services-documentation>h2 {
+        width: 100%;
+        font-size: 60px;
+        color: var(--grey-c1000);
+    }
+
+    .dropdown {
+        cursor: pointer;
+    }
+
+    .dropdown>h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--grey-c1000);
+    }
+
+    .serviceContent>p {
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--grey-c700);
+    }
+
+    /* ---------- Thiago ---------- */
+
+    .serviceContent>p {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--grey-c700);
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        align-items: stretch;
+    }
+
+    .backInPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    footer>.backInPage>h2,
+    .contact>.contatos>h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--grey-c100);
+    }
+
+    footer>.backInPage>nav>ul>li>a {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--grey-c100);
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .backInPage>h2 {
+        color: var(--grey-c100);
+        font-size: 20px;
+    }
+
+
+    .contatos>.socialMedias>a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .socialMedias {
+        transform: scale(1);
+    }
+
+    footer>.contact>.acesseTambem>h4 {
+        font-size: 20px;
+        color: var(--grey-c100);
+    }
+
+    footer>.contact>.acesseTambem>a {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--grey-c100);
+    }
+
+
+    .contact>.acesseTambem>a {
+        font-size: 16px;
+        color: var(--grey-c100);
+    }
+}
+
+/* ---------- Fim do desktop ---------- */
+
+/* ---------- Fim das responsividades ---------- */
