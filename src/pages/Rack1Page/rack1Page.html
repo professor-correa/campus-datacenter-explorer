@@ -2,360 +2,316 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rack 1 - Fibra</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../styles/global.css">
-  <link rel="stylesheet" href="/src/pages/Rack1Page/rack1.css" />
-  <script src="/src/pages/Rack3Page/js/hamburgerMenu.js" defer></script>
-  <script src="/src/pages/Rack3Page/js/dropdown.js" defer></script>
-  <script src="/src/pages/Rack3Page/js/scroll.js" defer></script>
-  <script src="/src/pages/Rack3Page/js/popUp.js" defer></script>
-  <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rack 1 - ARM, Apache & FTP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/src/pages/Rack1Page/rack1.css"/>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <script src="/src/pages/Rack3Page/js/hamburgerMenu.js" defer></script>
+    <script src="/src/pages/Rack3Page/js/dropdown.js" defer></script>
+    <script src="/src/pages/Rack3Page/js/scroll.js" defer></script>
+    <script src="/src/pages/Rack3Page/js/popUp.js" defer></script>
+    <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Ryan -->
-  <div id="topo" class="scrollLink"></div>
-  <header class="noGap">
+<div id="topo" class="scrollLink"></div>
+<header class="noGap">
     <div class="imagesWrap">
-      <img src="/src/assets/icons/LogotipoSenaiRack3.svg" alt="logotipo do senai" />
-      <button id="hamburgerMenu">
-        <img id="arrowUp" src="/src/assets/icons/arrowUpHeaderRack3.svg" alt="ícone seta para cima" />
-        <img id="hamburgerIcon" src="/src/assets/icons/hamburgerMenuRack3.svg" alt="ícone menu hamburguer" />
-      </button>
+        <a href="../../../index.html"><img src="/src/assets/icons/LogotipoSenaiRack3.svg" alt="logotipo do senai"/></a>
+        <button id="hamburgerMenu">
+            <img id="arrowUp" src="/src/assets/icons/arrowUpHeaderRack3.svg" alt="ícone seta para cima"/>
+            <img id="hamburgerIcon" src="/src/assets/icons/hamburgerMenuRack3.svg" alt="ícone menu hamburguer"/>
+        </button>
     </div>
     <nav id="links">
-      <ul>
-        <li><a href="../../../index.html">Home</a></li>
-        <li><a href="#">Rack 1 - Armazenamento, Apache e FTP</a></li>
-        <li><a href="../Rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a></li>
-        <li><a href="../Rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a></li>
-        <li><a href="../Rack4Page/Rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
-        <li><a href="../Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
-        <li><a href="../Rack4Page/Rack4Page.html">Rack 6 - Central de Câmeras e GitLab</a></li>
-      </ul>
+        <ul>
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="#topo">Rack 1 - ARM, Apache & FTP</a></li>
+            <li><a href="../Rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a></li>
+            <li><a href="../Rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a></li>
+            <li><a href="../Rack4Page/Rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
+            <li><a href="../Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
+            <li><a href="../Rack6Page/rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a></li>
+        </ul>
     </nav>
-  </header>
-  <!-- Nikollas -->
-  <main>
-    <h1 class="titulo">Armazenamento</h1>
+</header>
+<main>
+    <h1 class="titulo">ARM, Apache e FTP</h1>
+    <img src="../../assets/images/dropdawn-image.png" alt="placeholder-img">
 
-    <div class="imgPopUp">
-      <!-- <img src="/src/assets/images/ad1RackIlustration.svg" alt="Rack AD1 ilustration" class="banner" /> -->
-
-      <!-- Hotspots clicáveis -->
-      <div class="imgService" data-popup="0"></div>
-      <div class="imgService" data-popup="1"></div>
-      <div class="imgService" data-popup="2"></div>
-      <div class="imgService" data-popup="3"></div>
-
-      <!-- Pop-ups -->
-      <div class="popUp">
-        <p>Serviço 1</p>
-        <p>esta é uma breve descrição do serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve descrição do
-          serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve
-          descrição do serviço 1</p>
-        <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
-      </div>
-      <div class="popUp">
-        <p>Serviço 2</p>
-        <p>esta é uma breve descrição do serviço 2esta é uma breve descrição do serviço 2</p>
-        <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
-      </div>
-      <div class="popUp">
-        <p>Serviço 3</p>
-        <p>esta é uma breve descrição do serviço 3</p>
-        <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
-      </div>
-      <div class="popUp">
-        <p>Serviço 4</p>
-        <p>esta é uma breve descrição do serviço 4</p>
-        <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
-      </div>
-    </div>
     <div id="ad" class="scrollLink"></div>
     <section class="card">
-      <h2 class="titulo-card">Servidor de armazenamento</h2>
-      <div class="armazenamentoContent">
-        <div class="armazenamentoExplanation">
-          <p><span>O que é ?</span><br>Imagine um armário digital gigante.
-
-            Esse armário guarda arquivos, fotos, vídeos e documentos, mas em vez de ficar na sua casa, ele está em um
-            computador especial chamado servidor.
-
-            O servidor é feito para ficar ligado o tempo todo, com bastante espaço e segurança, para que várias pessoas
-            ou
-            sistemas possam acessar os dados quando precisarem.</p>
-          <p><span>Como funciona na prática</span><br>
-            Você salva seus arquivos nesse servidor, em vez de salvar só no seu computador pessoal.
-
-            Quando precisa, pode abrir, compartilhar ou editar esses arquivos de qualquer lugar da rede (por exemplo,
-            dentro de uma empresa ou até pela internet).
-
-            É como ter um Google Drive ou OneDriv, só que dentro da empresa, controlado por ela.</p>
-          <p><span>Por que usar?</span><br>
-            Centralização: todos os dados ficam em um só lugar, mais fácil de organizar.
-
-            Segurança: dá para colocar regras de acesso (quem pode ver, editar ou apagar).
-
-            Backup: evita perder arquivos se um computador quebrar.
-
-            Escalabilidade: se faltar espaço, basta adicionar mais discos ao servidor.</p>
+        <h2 class="titulo-card">O que esse servidor faz?</h2>
+        <div class="armazenamentoContent">
+            <div class="armazenamentoExplanation">
+                <p>Diferente dos demais Racks presentes no nosso datacenter, o Rack 1 possui uma particularidade, <span>ele é
+                    aberto,</span> com isso é possível ver toda a sua estrutura, além de trazer um aspecto visual
+                    diferente
+                    para o datacenter.
+                    Ele é responsável pelos serviços de <span>armazenamento e hospedagem de dados,</span> este rack
+                    reúne e organiza
+                    os equipamentos essenciais para que a rede funcione de forma estruturada. Dentro dele estão
+                    concentrados o servidor <span>Apache</span>, responsável por disponibilizar páginas webs para os
+                    usuários, e o
+                    servidor <span>FTP</span>, que permite a transferência e o gerenciamento de arquivos dentro da
+                    própria rede.
+                    Dessa forma, ele atua como um ponto central onde os dados são guardados, acessados e compartilhados
+                    de maneira segura e eficiente.
+                    Com esse rack podemos ver que existem diversos tipos e formatos de racks diferentes em nossa
+                    escola.</p>
+            </div>
+            <img src="/src/assets/images/armazenamentoRack1HeroImage.svg" alt="ilustração dos serviço de armazenamento"
+                 class="diagram"/>
         </div>
-        <img src="/src/assets/images/armazenamentoRack1HeroImage.svg" alt="ilustração dos serviço de armazenamento"
-          class="diagram" />
-      </div>
-      <a href="#adDocumentation" class="doc-link">veja a documentação técnica</a>
+        <div class="rack-component">
+            <h6>Clique nas imagens e veja mais sobre</h6>
+            <div class="rack-container">
+                <span data-popup="distribution" class="rack-button distribution"></span>
+                <span data-popup="switch" class="rack-button switch"></span>
+                <span data-popup="monitor" class="rack-button monitor"></span>
+                <span data-popup="server" class="rack-button server"></span>
+                <span data-popup="nas-server" class="rack-button nas"></span>
+                <span data-popup="bk-nas-server" class="rack-button bk-nas"></span>
+
+                <div class="popup" data-popup-id="distribution">
+                    <span class="close-popup">&times;</span>
+                    <h3>Distribuição</h3>
+                    <p>Ele é basicamente uma "caixa" ou painel onde os cabos de fibra que vêm da rua ou de outros
+                        andares (chamados de backbone) chegam e são conectados aos equipamentos ativos da rede (como
+                        switches, roteadores ou conversores de mídia).</p>
+                </div>
+
+                <div class="popup" data-popup-id="switch">
+                    <span class="close-popup">&times;</span>
+                    <h3>Switch</h3>
+                    <p>Informações do switch.</p>
+                </div>
+
+                <div class="popup" data-popup-id="monitor">
+                    <span class="close-popup">&times;</span>
+                    <h3>Monitor</h3>
+                    <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma única estrutura. Ele
+                        permite controlar vários servidores a partir de um único console, economizando espaço e
+                        facilitando a gestão.</p>
+                </div>
+
+                <div class="popup" data-popup-id="server">
+                    <span class="close-popup">&times;</span>
+                    <h3>Servidor</h3>
+                    <p>Um servidor é um computador, mas diferente do seu computador pessoal (onde você joga, digita
+                        textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
+                        frente dele. O trabalho dele é atender (servir) outros computadores.</p>
+                </div>
+
+                <div class="popup" data-popup-id="nas-server">
+                    <span class="close-popup">&times;</span>
+                    <h3>Servidor NAS Principal</h3>
+                    <p>Temos dois servidores de Gerenciamento de armazenamento (NAS), sendo esse o principal.</p>
+                </div>
+                <div class="popup" data-popup-id="bk-nas-server">
+                    <span class="close-popup">&times;</span>
+                    <h3>Servidor NAS (Backup)</h3>
+                    <p>Esse outro servidor foi usado para guardar um backup dos dados presentes no NAS principal.</p>
+                </div>
+
+            </div>
+        </div>
+        <a href="#adDocumentation" class="doc-link">veja a documentação técnica</a>
     </section>
-  </main>
-  <!-- Ryan was here bro -->
-  <!-- Links para os serviços -->
-  <div id="armazenamento" class="scrollLink"></div>
-  <div id="ssh" class="scrollLink"></div>
-  <div id="apache" class="scrollLink"></div>
-  <div id="ftp" class="scrollLink"></div>
-  <section class="services-documentation">
+</main>
+<div id="armazenamento" class="scrollLink"></div>
+<div id="ssh" class="scrollLink"></div>
+<div id="apache" class="scrollLink"></div>
+<div id="ftp" class="scrollLink"></div>
+<section class="services-documentation">
     <h2>Serviços</h2>
-    <!-- Serviço Armazenamento -->
     <div class="service-documentation">
-      <div class="dropdown">
-        <h3>Armazenamento</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-      </div>
-      <div class="serviceContent">
-        <p>
-          É como um HD gigante compartilhado.
-
-          Serve para guardar arquivos (documentos, fotos, vídeos) em um servidor.
-
-          Várias pessoas ou sistemas podem acessar esses arquivos pela rede, em vez de cada um guardar só no próprio
-          computador.
-        </p>
-        <img src="/src/assets/images/activeDirectoryHeroImage.svg" alt="hero image do serviço active diretory" />
-        <a href="#adDocumentation">Veja a documentação técnica</a>
-      </div>
+        <div class="dropdown">
+            <h3>Falando mais sobre armazenamento</h3>
+            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+        </div>
+        <div class="serviceContent">
+            <p>
+                O dispositivo de armazenamento desse rack é um equipamento usado para <span>guardar grande quantidade de dados</span>
+                em um só lugar. Ele utiliza vários discos juntos para aumentar a velocidade e manter as informações
+                seguras, mesmo se algum deles falhar. Esse tipo de sistema é muito usado em empresas e centros de
+                tecnologia para armazenar arquivos importantes, fazer backups e manter dados acessíveis de forma rápida
+                e confiável para todos que precisam utilizá-los na rede.
+            </p>
+            <img src="/src/assets/images/activeDirectoryHeroImage.svg" alt="hero image do serviço active diretory"/>
+            <a href="#adDocumentation">Veja a documentação técnica</a>
+        </div>
     </div>
-    <!-- Serviço VMWare -->
     <div class="service-documentation">
-      <div class="dropdown">
-        <h3>SSH</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-      </div>
-      <div class="serviceContent">
-        <p>
-          Pense nele como uma porta secreta e segura para entrar em um servidor.
-
-          Com o SSH, você consegue controlar o servidor à distância, digitando comandos.
-
-          É como se fosse um controle remoto para computadores, mas protegido por senha e criptografia.
-        </p>
-        <img src="/src/assets/images/vmwareHeroImage.svg" alt="hero image do serviço vmware" />
-        <a href="#vmwareDocumentation">Veja a documentação técnica</a>
-      </div>
+        <div class="dropdown">
+            <h3>O que é SSH</h3>
+            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+        </div>
+        <div class="serviceContent">
+            <p>
+                Pense nele como uma <span>porta secreta e segura</span> para entrar em um servidor.
+                Com o SSH, você consegue controlar o servidor à distância, digitando comandos.
+                É como se fosse um controle remoto para computadores, mas
+                <span>protegido por senha e criptografia.</span>
+            </p>
+            <img src="/src/assets/images/vmwareHeroImage.svg" alt="hero image do serviço vmware"/>
+            <a href="#vmwareDocumentation">Veja a documentação técnica</a>
+        </div>
     </div>
-    <!-- Serviço DNS -->
     <div class="service-documentation">
-      <div class="dropdown">
-        <h3>Apache</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-      </div>
-      <div class="serviceContent">
-        <p>
-          É um servidor web.
-
-          Ele pega páginas (como sites em HTML) e entrega para quem acessa pelo navegador.
-
-          Exemplo: quando você digita www.exemplo.com, o Apache pode ser o responsável por mostrar essa página.
-        </p>
-        <img src="/src/assets/images/dnsHeroImage.svg" alt="hero image do serviço dns" />
-        <a href="#dnsDocumentation">Veja a documentação técnica</a>
-      </div>
+        <div class="dropdown">
+            <h3>O que é Apache?</h3>
+            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+        </div>
+        <div class="serviceContent">
+            <p>
+                O <span>Apache</span> é um programa usado para <span>hospedar sites.</span> Ele
+                <span>recebe os pedidos</span> que fazemos pelo navegador e
+                <span>envia de volta</span> as páginas que queremos ver. Muito flexível, ele permite adicionar recursos
+                de segurança,
+                login, compressão e suporte a outras linguagens. Por ser estável e funcionar em vários sistemas,
+                tornou-se um dos servidores <span>mais populares do mundo</span> para colocar sites no ar.
+            </p>
+            <img src="/src/assets/images/dnsHeroImage.svg" alt="hero image do serviço dns"/>
+            <a href="#dnsDocumentation">Veja a documentação técnica</a>
+        </div>
     </div>
-    <!-- Serviço Arduino -->
     <div class="service-documentation">
-      <div class="dropdown">
-        <h3>FTP</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-      </div>
-      <div class="serviceContent">
-        <p>
-          É um correio digital para arquivos.
-
-          Permite enviar e receber arquivos entre seu computador e o servidor.
-
-          Muito usado para colocar sites no ar (mandar os arquivos do site para o servidor).
-        </p>
-        <img src="/src/assets/images/arduinoHeroImage.svg" alt="hero image do serviço arduíno" />
-        <a href="#arduinoDocumentation">Veja a documentação técnica</a>
-      </div>
+        <div class="dropdown">
+            <h3>FTP</h3>
+            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+        </div>
+        <div class="serviceContent">
+            <p>
+                O <span>FTP</span> é um método usado para <span>enviar e receber arquivos</span> entre um servidor e um
+                computador. Ele é fácil de usar e funciona bem, mas não possui criptografia própria, o que significa que
+                os dados podem ficar expostos se não houver outras opções de segurança junto com ele.
+            </p>
+            <img src="/src/assets/images/arduinoHeroImage.svg" alt="hero image do serviço arduíno"/>
+            <a href="#arduinoDocumentation">Veja a documentação técnica</a>
+        </div>
     </div>
-  </section>
-  <!-- links que são redirecionados pra documentação técnica -->
-  <div id="adDocumentation" class="scrollLink"></div>
-  <div id="vmwareDocumentation" class="scrollLink"></div>
-  <div id="dnsDocumentation" class="scrollLink"></div>
-  <div id="arduinoDocumentation" class="scrollLink"></div>
+</section>
+<div id="adDocumentation" class="scrollLink"></div>
+<div id="vmwareDocumentation" class="scrollLink"></div>
+<div id="dnsDocumentation" class="scrollLink"></div>
+<div id="arduinoDocumentation" class="scrollLink"></div>
 
-  <section class="services-documentation">
+<section class="services-documentation">
     <h2>Documentação Técnica</h2>
-    <!-- Documentação AD -->
     <div class="service-documentation">
-      <div class="dropdown">
-        <h3>Armazenamento</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-      </div>
-      <div class="serviceContent">
-        <p><span> Definição:</span> Serviço responsável por guardar e disponibilizar dados em um servidor ou
-          infraestrutura de rede.</p>
-        <p><span>Arquitetura:</span> Discos físicos/virtuais: HDDs ou SSDs.
+        <div class="dropdown">
+            <h3>Armazenamento</h3>
+            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+        </div>
+        <div class="serviceContent">
+            O dispositivo de armazenamento em um rack de redes, também conhecido como <span>Storage</span> ou <span>Servidor
+            de Armazenamento,</span> é um equipamento dedicado a concentrar e gerenciar grandes volumes de dados de
+            forma centralizada. Ele é composto por vários discos rígidos
+            <span>(HDs ou SSDs)</span> organizados em arranjos <span>RAID</span>, garantindo desempenho, redundância e
+            segurança das informações. Esse tipo de equipamento é amplamente utilizado em ambientes corporativos e data
+            centers para armazenar arquivos, backups e bancos de dados, permitindo acesso rápido e confiável pelos
+            servidores e usuários da rede.
+            <a href="#armazenamento">Veja o serviço</a>
+        </div>
+        <div class="dropdown">
+            <h3>SSH</h3>
+            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+        </div>
+        <div class="serviceContent">
+            <p><span> Definição:</span> Protocolo de comunicação segura para acesso remoto a servidores.</p>
+            <p><span>Arquitetura:</span> Software usado para conectar (ex.: OpenSSH).
 
-          Sistema de arquivos: NTFS, EXT4, ZFS, etc.
+                Servidor SSH: serviço rodando no servidor.
 
-          Gerenciamento: RAID, SAN, NAS.
+                Criptografia: RSA, AES, ou chaves públicas/privadas.</p>
+            <p><span>Funcionalidades:</span> Login remoto seguro.
 
-          Acesso: via protocolos como SMB, NFS ou iSCSI.</p>
-        <p><span>Funcionalidades:</span> Centralização de dados.
+                Execução de comandos em linha de comando.
 
-          Controle de permissões de acesso.
+                Tunelamento de conexões (port forwarding).
 
-          Backup e recuperação.
+                Transferência de arquivos via SCP ou SFTP.</p>
+            <p><span>Casos de uso:</span> Administração de servidores Linux/Unix.
 
-          Escalabilidade (expansão de capacidade).</p>
-        <p><span>Casos de uso:</span> Data centers.
+                Automação de tarefas remotas.
 
-          Armazenamento corporativo.
-
-          Serviços em nuvem.</p>
-        <a href="#armazenamento">Veja o serviço</a>
-      </div>
-      <!-- Documentação VMWare -->
-      <div class="dropdown">
-        <h3>SSH</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-      </div>
-      <div class="serviceContent">
-        <p><span> Definição:</span> Protocolo de comunicação segura para acesso remoto a servidores.</p>
-        <p><span>Arquitetura:</span> Software usado para conectar (ex.: OpenSSH).
-
-          Servidor SSH: serviço rodando no servidor.
-
-          Criptografia: RSA, AES, ou chaves públicas/privadas.</p>
-        <p><span>Funcionalidades:</span> Login remoto seguro.
-
-          Execução de comandos em linha de comando.
-
-          Tunelamento de conexões (port forwarding).
-
-          Transferência de arquivos via SCP ou SFTP.</p>
-        <p><span>Casos de uso:</span> Administração de servidores Linux/Unix.
-
-          Automação de tarefas remotas.
-
-          Conexões seguras em redes públicas.</p>
-        <a href="#ssh">Veja o serviço</a>
-      </div>
-      <!-- Documentação DNS -->
-      <div class="dropdown">
-        <h3>Apache</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-      </div>
-      <div class="serviceContent">
-        <p><span> Definição:</span> Servidor web open-source que entrega páginas e aplicações via protocolo HTTP/HTTPS.
-        </p>
-        <p><span>Arquitetura:</span> Módulos: extensões para autenticação, segurança, cache.
-
-          Configuração: arquivos httpd.conf ou apache2.conf.
-
-          Processos: modelo multi-thread ou multi-processo.</p>
-        <p><span>Funcionalidades:</span> Hospedagem de sites e aplicações.
-
-          Suporte a linguagens (PHP, Python, Perl).
-
-          Balanceamento de carga.
-
-          Logs e monitoramento de acessos.</p>
-        <p><span>Casos de uso:</span> Hospedagem de sites institucionais.
-
-          Aplicações web corporativas.
-
-          Ambientes de teste e produção.</p>
-        <a href="#apache">Veja o serviço</a>
-      </div>
-      <!-- Documentação Arduino -->
-      <div class="dropdown">
-        <h3>FTP</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-      </div>
-      <div class="serviceContent">
-        <p><span> Definição:</span> Protocolo para transferência de arquivos entre cliente e servidor.
-        </p>
-        <p><span>Arquitetura:</span> Cliente FTP: software como FileZilla.
-
-          Servidor FTP: serviço rodando em portas padrão (21).
-
-          Modos de operação: ativo e passivo.
-
-          Configuração: arquivos httpd.conf ou apache2.conf.
-
-          Processos: modelo multi-thread ou multi-processo.</p>
-        <p><span>Funcionalidades:</span> Upload e download de arquivos.
-
-          Gerenciamento de diretórios.
-
-          Controle de permissões de usuários.
-
-          Suporte a autenticação com usuário/senha.</p>
-        <p><span>Casos de uso:</span> Publicação de sites.
-
-          Compartilhamento de arquivos internos.
-
-          Backup remoto.</p>
-        <a href="#ftp">Veja o serviço</a>
-      </div>
+                Conexões seguras em redes públicas.</p>
+            <a href="#ssh">Veja o serviço</a>
+        </div>
+        <div class="dropdown">
+            <h3>Apache</h3>
+            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+        </div>
+        <div class="serviceContent">
+            O <span>Apache</span> é um servidor web de código aberto amplamente utilizado para <span>hospedar sites e
+            aplicações na internet.</span> Ele funciona como intermediário entre o navegador do usuário e o servidor que
+            contém os arquivos do site, processando requisições
+            <span>HTTP</span> e entregando páginas webs ao cliente. Altamente configurável, o Apache suporta módulos que
+            adicionam recursos como autenticação, segurança, compressão e suporte a linguagens como PHP. Sua
+            estabilidade, flexibilidade e compatibilidade com diversos sistemas operacionais fazem dele uma das soluções
+            mais populares para servidores web no mundo
+            <a href="#apache">Veja o serviço</a>
+        </div>
+        <!-- Documentação Arduino -->
+        <div class="dropdown">
+            <h3>FTP</h3>
+            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+        </div>
+        <div class="serviceContent">
+            O <span>File Transfer Protocol</span> (FTP) é um protocolo usado para <span>transferência de arquivos</span>
+            entre cliente e servidor. Apesar de simples e eficiente, ele não oferece criptografia nativa, o que pode
+            representar riscos de segurança se não for utilizado em conjunto com mecanismos adicionais.
+            <a href="#ftp">Veja o serviço</a>
+        </div>
     </div>
-  </section>
-  <footer id="footer" class="scrollLink">
+</section>
+<footer id="footer" class="scrollLink">
     <div class="backInPage">
-      <h2>Voltar na Página</h2>
-      <nav>
-        <ul>
-          <li><a href="#topo">Topo</a></li>
-          <li><a href="#armazenamento">Serviços</a></li>
-          <li><a href="#adDocumentation">Documentação Técnica</a></li>
-        </ul>
-      </nav>
+        <h2>Voltar na Página</h2>
+        <nav>
+            <ul>
+                <li><a href="#topo">Topo</a></li>
+                <li><a href="#armazenamento">Serviços</a></li>
+                <li><a href="#adDocumentation">Documentação Técnica</a></li>
+            </ul>
+        </nav>
     </div>
     <div class="contact">
-      <nav class="contatos">
-        <h3>Contatos</h3>
-        <div class="socialMedias">
-          <a href="https://github.com/professor-correa/campus-datacenter-explorer"><img
-              src="/src/assets/icons/githubRack3.svg" alt="logo do github" /></a>
-          <a href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
-              src="/src/assets/icons/instagramRack3.svg" alt="logo do instagram" /></a>
-          <a href=""><img src="/src/assets/icons/figmaRack3.svg" alt="logo do figma" /></a>
-          <a href="https://www.linkedin.com/school/senaisp-suico/"><img src="/src/assets/icons/linkedinRack3.svg"
-              alt="logo do linkedin" /></a>
+        <nav class="contatos">
+            <h3>Contatos</h3>
+            <div class="socialMedias">
+                <a target="_blank" href="https://github.com/professor-correa/campus-datacenter-explorer"><img
+                        src="/src/assets/icons/githubRack3.svg" alt="logo do github"/></a>
+                <a target="_blank" href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
+                        src="/src/assets/icons/instagramRack3.svg" alt="logo do instagram"/></a>
+                <a target="_blank"
+                   href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1253139837118322148"><img
+                        src="/src/assets/icons/figmaRack3.svg" alt="logo do figma"/></a>
+                <a target="_blank" href="https://www.linkedin.com/school/senaisp-suico/"><img
+                        src="/src/assets/icons/linkedinRack3.svg" alt="logo do linkedin"/></a>
+            </div>
+        </nav>
+        <div class="acesseTambem">
+            <h4>Acesse Também</h4>
+            <a target="_blank" href="https://sp.senai.br/unidade/suicobrasileira/">Senai suiço-brasileira</a>
         </div>
-      </nav>
-      <div class="acesseTambem">
-        <h4>Acesse Também</h4>
-        <a href="https://sp.senai.br/unidade/suicobrasileira/">Senai suiço-brasileira</a>
-      </div>
     </div>
-  </footer>
+</footer>
+
+<script src="../../components/PopupRack/popupScript.js"></script>
 </body>
 
 </html>
