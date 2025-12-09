@@ -1,11 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suico DC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataCenter SENAI</title>
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+  </noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="/src/styles/index.css" />
+  <meta name="description" content="Esta página é a principal página do projeto 'Data-Center SENAI', seja bem-vindo!">
+
+  <link rel="preload icon" as="image" type="image/svg+xml" sizes="32x32"
+    href="./src/pages/LandingPage/src/assets/img/logo/logo-site.svg">
+  <link rel="preload" as="image" href="./src/pages/LandingPage/src/assets/img/logo/logo_branco_vermelho.svg">
 </head>
+
 <body>
-    <h1>Suico DC</h1>
+
+  <header>
+    <div class="header-container">
+      <img src="./src/pages/LandingPage/src/assets/img/logo/logo_branco_vermelho.svg" alt="Logo SENAI" class="logo"
+        loading="eager" />
+      <nav>
+        <div class="nav-links" role="navigation" aria-label="Menu de servidores">
+          <p>Servidor 1: </p>
+          <p><a href="./src/pages/Rack1Page/rack1Page.html">Armazenamento, Apache e FTP</a></p>
+          <p>Servidor 2: </p>
+          <p><a href="./src/pages/Rack2Page/rack2Page.html">VMware ESXi e pfSense</a></p>
+          <p>Servidor 3: </p>
+          <p><a href="./src/pages/Rack3Page/rack3Page.html">Active Directory (AD) e DNS</a></p>
+          <p>Servidor 4: </p>
+          <p><a href="./src/pages/Rack4Page/rack4Page.html">AD de Leitura e DNS Secundário</a></p>
+          <p>Servidor 5: </p>
+          <p><a href="./src/pages/Rack5Page/rack5Page.html">Zabbix, Splunk/Wazuh e VMware ESXi</a></p>
+          <p>Servidor 6: </p>
+          <p><a href="./src/pages/Rack6Page/rack6Page.html">Central de Câmeras e GitLab</a></p>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <img src="./src/pages/LandingPage/src/assets/img/components/menu_hamburger.svg" alt="Menu" loading="eager" />
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h1>DataCenter SENAI</h1>
+      <p class="frase-impacto">"Conectando servidores, integrando ideias."</p>
+    </section>
+
+    <section class="descricao-breve" id="racks">
+      <p>O DataCenter SENAI é um ambiente dedicado à gestão e monitoramento de servidores de alta performance,
+        promovendo integração tecnológica e inovação no ensino técnico e profissionalizante. Aqui, cada servidor
+        representa uma peça fundamental para garantir a eficiência e a confiabilidade das operações digitais.</p>
+    </section>
+
+    <section class="carrossel-servidores">
+      <button class="nav-btn prev" aria-label="Servidor anterior">❮</button>
+      <div class="hack-container">
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="hack" data-index="0">
+                <img src="./src/pages/LandingPage/src/assets/img/racks/rack_vermelho.svg" alt="Rack 1"
+                  loading="eager" />
+                <h3>Servidor 1</h3>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>Armazenamento, Apache e FTP</h3>
+              <p>Servidor dedicado à hospedagem de dados e transferência segura de arquivos.</p>
+              <div class="btn-projeto">
+                <a href="./src/pages/Rack1Page/rack1Page.html" class="botao-acesso"> Acessar
+                  <img src="./src/pages/LandingPage/src/assets/img/components/seta-acessar.svg" alt="Acessar Servidor 1"
+                    class="seta-acesso">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="hack" data-index="1">
+                <img src="./src/pages/LandingPage/src/assets/img/racks/rack_cinza.svg" alt="Rack 2" loading="eager" />
+                <h3>Servidor 2</h3>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>VMware ESXi e pfSense</h3>
+              <p>Responsável pela virtualização de sistemas e proteção do tráfego de rede.</p>
+              <div class="btn-projeto">
+                <a href="./src/pages/Rack2Page/rack2Page.html" class="botao-acesso"> Acessar
+                  <img src="./src/pages/LandingPage/src/assets/img/components/seta-acessar.svg" alt="Acessar Servidor 2"
+                    class="seta-acesso">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="hack" data-index="2">
+                <img src="./src/pages/LandingPage/src/assets/img/racks/rack_cinza.svg" alt="Rack 3" loading="eager" />
+                <h3>Servidor 3</h3>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>Active Directory (AD) e DNS</h3>
+              <p>Gerencia usuários e dispositivos e garante a comunicação entre servidores.</p>
+              <div class="btn-projeto">
+                <a href="./src/pages/Rack3Page/rack3Page.html" class="botao-acesso"> Acessar
+                  <img src="./src/pages/LandingPage/src/assets/img/components/seta-acessar.svg" alt="Acessar Servidor 3"
+                    class="seta-acesso">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="hack" data-index="3">
+                <img src="./src/pages/LandingPage/src/assets/img/racks/rack_cinza.svg" alt="Rack 4" loading="lazy" />
+                <h3>Servidor 4</h3>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>AD de Leitura e DNS Secundário</h3>
+              <p>Fornece redundância e estabilidade ao sistema principal de autenticação e nomes.</p>
+              <div class="btn-projeto">
+                <a href="./src/pages/Rack4Page/rack4Page.html" class="botao-acesso"> Acessar
+                  <img src="./src/pages/LandingPage/src/assets/img/components/seta-acessar.svg" alt="Acessar Servidor 4"
+                    class="seta-acesso">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="hack" data-index="4">
+                <img src="./src/pages/LandingPage/src/assets/img/racks/rack_cinza.svg" alt="Rack 5" loading="lazy" />
+                <h3>Servidor 5</h3>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>Zabbix, Splunk/Wazuh e VMware ESXi</h3>
+              <p>Realiza o monitoramento da rede e a análise de desempenho e segurança.</p>
+              <div class="btn-projeto">
+                <a href="./src/pages/Rack5Page/rack5Page.html" class="botao-acesso"> Acessar
+                  <img src="./src/pages/LandingPage/src/assets/img/components/seta-acessar.svg" alt="Acessar Servidor 5"
+                    class="seta-acesso">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <div class="hack" data-index="5">
+                <img src="./src/pages/LandingPage/src/assets/img/racks/rack_cinza.svg" alt="Rack 6" loading="lazy" />
+                <h3>Servidor 6</h3>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>Central de Câmeras e GitLab</h3>
+              <p>Integra o monitoramento físico e o gerenciamento de código e sistemas.</p>
+              <div class="btn-projeto">
+                <a href="./src/pages/Rack6Page/rack6Page.html" class="botao-acesso"> Acessar
+                  <img src="./src/pages/LandingPage/src/assets/img/components/seta-acessar.svg" alt="Acessar Servidor 6"
+                    class="seta-acesso">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="nav-btn next" aria-label="Próximo servidor">❯</button>
+    </section>
+
+    <section class="descricao-detalhada">
+      <p>Nosso DataCenter é equipado com hardware de ponta e sistemas de monitoramento contínuo. Cada servidor é
+        configurado para desempenho otimizado, segurança de dados e suporte a múltiplas aplicações simultaneamente.</p>
+
+      <p>Além disso, promovemos a integração entre alunos, professores e projetos tecnológicos, tornando o DataCenter um
+        ambiente de aprendizado e inovação prática.</p>
+    </section>
+
+    <div class="btn-projeto">
+      <a href="./src/pages/LandingPage/src/assets/docs/Sobre o Projeto Redes Senai.pdf"
+        download="Sobre o Projeto Redes Senai.pdf" class="botao-acesso">
+        Veja a documentação do projeto
+        <img src="./src/pages/LandingPage/src/assets/img/components/seta-acessar.svg" alt="" class="seta-acesso">
+      </a>
+    </div>
+
+    <section class="carrossel-participantes" id="participantes">
+      <h2>Responsáveis pelo Projeto</h2>
+      <div class="carometro-wrapper">
+        <div class="carometro" id="carometro"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="btn-fotos">
+    <a href="./src/pages/LandingPage/src/pages/pessoas/pessoas.html" class="botao-acesso">
+      Confira todos os participantes
+      <img src="./src/pages/LandingPage/src/assets/img/components/seta-acessar.svg" alt="" class="seta-acesso">
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h4>Voltar na Página</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#racks">Servidores</a></li>
+          <li><a href="#participantes">Equipe</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h4>Contatos</h4>
+        <ul class="icons">
+          <li><a href="https://github.com/professor-correa/campus-datacenter-explorer" target="_blank"><img
+                src="./src/pages/LandingPage/src/assets/img/components/github_logo.svg" alt="GitHub"></a></li>
+
+          <li><a href="https://www.instagram.com/senai.suico/" target="_blank"><img
+                src="./src/pages/LandingPage/src/assets/img/components/instagram_logo.svg" alt="Instagram"></a></li>
+
+          <li><a
+              href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1486053466291671162"
+              target="_blank"><img src="./src/pages/LandingPage/src/assets/img/components/figma_logo.svg"
+                alt="Figma"></a></li>
+
+          <li><a href="https://www.linkedin.com/school/senaisp-suico/posts/?feedView=all" target="_blank"><img
+                src="./src/pages/LandingPage/src/assets/img/components/linkedin_logo.svg" alt="LinkedIn"></a></li>
+        </ul>
+        <p class="acesso"><strong>Acesse Também</strong><br><a href="https://sp.senai.br/unidade/suicobrasileira/"
+            target="_blank">SENAI
+            Suíço-Brasileira</a></p>
+      </div>
+
+  </footer>
+
+  <script src="./src/pages/LandingPage/src/scripts/racks.js"></script>
+  <script src="./src/pages/LandingPage/src/scripts/hamburguer.js"></script>
+  <script src="./src/pages/LandingPage/src/scripts/carometro.js"></script>
 </body>
+
 </html>
