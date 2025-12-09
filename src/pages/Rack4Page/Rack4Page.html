@@ -29,12 +29,12 @@
     <nav id="primaryNav" class="main-nav" aria-label="Menu principal">
       <ul>
         <li><a href="../../../index.html">Home</a></li>
-        <li><a href="../Rack1Page/rack1.html">Rack 1 - Armazenamento, Apache e FTP</a></li>
-        <li><a href="../Rack2Page/rack02.html">Rack 2 - VMware ESXi e pfSense</a></li>
+        <li><a href="../Rack1Page/rack1Page.html">Rack 1 - Armazenamento, Apache e FTP</a></li>
+        <li><a href="../Rack2Page/Rack2Page.html">Rack 2 - VMware ESXi e pfSense</a></li>
         <li><a href="../Rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a></li>
-        <li><a href="../Rack4Page/Rack4Page.html" style="text-decoration: underline">Rack 4 - AD de Leitura e DNS Secundário</a></li>
+        <li><a href="#">Rack 4 - AD de Leitura e DNS Secundário</a></li>
         <li><a href="../Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
-        <li><a href="../Rack6Page/rack06.html">Rack 6 - Central de Câmeras e GitLab</a></li>
+        <li><a href="../Rack6Page/Rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a></li>
       </ul>
     </nav>
   </header>
@@ -44,7 +44,7 @@
       <h1>Rack 4 - AD2</h1>
       <img src="/src/assets/images/imagem-principal-ad2.webp" alt="Imagem sobre o AD" />
     </hero>
-    <main>
+    <main id="about">
       <h2>O que é....?</h2>
       <div class="content-main">
         <p>
@@ -133,7 +133,7 @@
       </section>
     </main>
     <details>
-      <summary>Outros Serviços</summary>
+      <summary id="other-services">Outros Serviços</summary>
       <div class="dropdown-content">
         <!-- <p>
             Servidor de Arquivos (File Server): Centraliza o armazenamento, o
@@ -193,12 +193,11 @@
   <footer class="site-footer">
     <div class="footer-columns">
       <div class="footer-group footer-group--links">
-        <h2 class="footer-title">Voltar na Página</h2>
+        <h2 class="footer-title"><a href="">Voltar na Página</a></h2>
         <ul class="footer-links">
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#instruction">O que cada um faz</a></li>
+          <li><a href="#other-services">Outros serviços</a></li>
         </ul>
       </div>
 
