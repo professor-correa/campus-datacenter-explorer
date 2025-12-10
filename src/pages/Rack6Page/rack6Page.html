@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../../styles/reset.css">
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../components/PopupRack/ppRack.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="components/virturalization-monitor/virtualization-monitor.css">
     <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
@@ -134,7 +135,56 @@
                 eveniet facere illo ipsa, itaque non numquam optio pariatur perspiciatis praesentium quas quia quisquam
                 rem, saepe sequi voluptates.</p>
             <h3 class="main-title" id="conections">Como tudo isso se conecta:</h3>
-            <img class="rack-img" src="../../assets/images/rack-illustration.png" alt="">
+            <div class="rack-component">
+                <h6>Clique nas imagens e veja mais sobre</h6>
+                <div class="rack-container">
+                    <span data-popup="distribution" class="rack-button distribution"></span>
+                    <span data-popup="switch" class="rack-button switch"></span>
+                    <span data-popup="monitor" class="rack-button monitor"></span>
+                    <span data-popup="server" class="rack-button server"></span>
+                    <span data-popup="patch" class="rack-button patch"></span>
+
+                    <div class="popup" data-popup-id="distribution">
+                        <span class="close-popup">&times;</span>
+                        <h3>Distribuição</h3>
+                        <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou de outros
+                            andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos da rede
+                            (como
+                            switches, roteadores ou conversores de mídia).</p>
+                    </div>
+
+                    <div class="popup" data-popup-id="switch">
+                        <span class="close-popup">&times;</span>
+                        <h3>Switch</h3>
+                        <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores, impressoras,
+                            servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem entre si
+                            de forma eficiente.</p>
+                    </div>
+
+                    <div class="popup" data-popup-id="monitor">
+                        <span class="close-popup">&times;</span>
+                        <h3>Monitor</h3>
+                        <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única estrutura.</span> Ele
+                            permite <span>controlar</span> vários servidores <span>a partir de um único console</span>, economizando espaço e
+                            facilitando a gestão.</p>
+                    </div>
+
+                    <div class="popup" data-popup-id="server">
+                        <span class="close-popup">&times;</span>
+                        <h3>Servidor</h3>
+                        <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você joga, digita
+                            textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
+                            frente dele. O trabalho dele é atender (servir) outros computadores.</p>
+                    </div>
+
+                    <div class="popup" data-popup-id="patch">
+                        <span class="close-popup">&times;</span>
+                        <h3>Patch Panel</h3>
+                        <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede (RJ45), que serve como um
+                            <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -190,6 +240,7 @@
     <script src="helpers/dropdown-helper.js"></script>
     <script src="helpers/flip-card.js"></script>
     <script src="helpers/menu-options.js"></script>
+    <script src="../../components/PopupRack/popupScript.js"></script>
 </body>
 
 </html>
