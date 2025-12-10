@@ -1,8 +1,79 @@
+@import url("../styles/global.css");
+
 /* ==================== HERO ==================== */
 .hero {
     text-align: center;
     padding: 40px 10px;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 30px;
+    width: 100%;
+    background-color: var(--red-v700);
+    transition: gap 0.4s ease;
+    z-index: 1001;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--grey-c100);
+}
+
+header.noGap {
+    gap: 0;
+}
+
+header > .imagesWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: gap 0.4s ease;
+}
+
+.imagesWrap > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+#links.open {
+    max-height: 380px;
+}
+
+nav > ul > li:nth-child(2) > a {
+    text-decoration: underline;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+nav > ul > li > a {
+    font-size: 1rem;
+    color: var(--grey-c100);
+    text-decoration: none;
+}
+
 
 .hero h1 {
     font-size: 2rem;
@@ -61,7 +132,7 @@
     transition: all 0.4s ease;
 }
 
-.hack h3 {
+.hack p {
     width: 100%;
     text-align: center;
     background: rgba(255, 255, 255, 0.9);
@@ -89,7 +160,7 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -116,6 +187,7 @@
     transform: rotateY(180deg);
 
 }
+
 /**/
 
 .card-front,
@@ -185,6 +257,7 @@
     text-align: center;
     transition: background-color 0.3s ease;
 }
+
 .botao-acesso:hover {
     background-color: #ffffff;
     color: #000;
@@ -208,62 +281,6 @@
     padding: 40px;
 }
 
-/* ====== SETAS CARROSSEL ====== */
-
-/* ====== MENU HAMBURGUER ====== */
-.nav-links {
-    list-style: none;
-    flex-direction: column;
-    background: #e30613;
-    position: absolute;
-    top: calc(100% + 4px);
-    right: 16px;
-    padding: 12px 16px;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-    z-index: 997;
-    min-width: 410px;
-    min-height: 400px;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: transform 0.35s ease, opacity 0.35s ease;
-    pointer-events: none;
-}
-
-.nav-links.show {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
-/* ====== UNDERLINE LINKS ====== */
-nav a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffc1c1;
-}
-
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: #ffc1c1;
-    transition: width 0.3s ease;
-    border-radius: 2px;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
 
 /* ===================== CARÔMETRO ===================== */
 .carrossel-participantes {
@@ -385,6 +402,79 @@ nav a:hover::after {
     justify-content: flex-start;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 30px;
+    background-color: var(--red-v700);
+}
+
+footer > .backInPage > h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--grey-c100);
+}
+
+footer > nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+footer > nav > ul > li > a {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--grey-c100);
+}
+
+.backInPage nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.contatos > h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--grey-c100);
+}
+
+.socialMedias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer > .contact > .acesseTambem > h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--grey-c100);
+}
+
+footer > .contact > .acesseTambem > a {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--grey-c100);
+    text-decoration: underline;
+}
+
 /* ===================== RESPONSIVIDADE ===================== */
 @media (max-width: 500px) {
     h1 {
@@ -409,7 +499,7 @@ nav a:hover::after {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .botao-acesso {
         margin-bottom: 30px;
     }
@@ -553,5 +643,28 @@ nav a:hover::after {
 
     .caro-btn {
         display: none;
+    }
+
+    footer > .backInPage > h2 {
+        margin-bottom: 12px;
+        font-size: 48px;
+        color: var(--grey-c100);
+    }
+
+    footer > .backInPage > nav > ul > li > a {
+        font-size: 24px;
+        color: var(--grey-c100);
+        font-weight: 300;
+    }
+
+    footer > .contact > .acesseTambem > h4 {
+        font-size: 30px;
+        color: var(--grey-c100);
+    }
+
+    footer > .contact > .acesseTambem > a {
+        font-size: 24px;
+        color: var(--grey-c100);
+        font-weight: 300;
     }
 }
