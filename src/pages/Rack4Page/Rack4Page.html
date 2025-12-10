@@ -2,261 +2,193 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rack 4 - AD2</title>
-  <link rel="stylesheet" href="/src/styles/reset.css" />
-  <link rel="stylesheet" href="./styles/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rack 4 - AD2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../../components/PopupRack/ppRack.css">
+    <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="header-bar">
-      <!-- logo -->
-      <a class="logo left-icon" href="#" aria-label="Logo SENAI">
-        <img src="/src/assets/icons/logo-senai.svg" alt="Logo SENAI" />
-      </a>
 
-      <!-- menu -->
-      <button class="menu-toggle right-icon" id="menuToggle" aria-expanded="false" aria-controls="primaryNav"
-        aria-label="Abrir menu principal">
-        <img src="/src/assets/icons/menu-icon.svg" alt="" />
-      </button>
+<header>
+    <div class="header-content">
+        <img src="../../assets/icons/logo-senai.svg" alt="Logo escrito senai em maiúsculo">
+        <img class="menu-button" src="../../assets/icons/menu-icon.svg"
+             alt="icone de menu sendo três linhas horizontais com um espaçamento entre elas">
     </div>
-
-    <!-- Expandir -->
-    <nav id="primaryNav" class="main-nav" aria-label="Menu principal">
-      <ul>
-        <li><a href="../../../index.html">Home</a></li>
-        <li><a href="../Rack1Page/rack1Page.html">Rack 1 - Armazenamento, Apache e FTP</a></li>
-        <li><a href="link">Rack 2 - VMware ESXi e pfSense</a></li>
-        <li><a href="../Rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a></li>
-        <li><a href="#">Rack 4 - AD de Leitura e DNS Secundário</a></li>
-        <li><a href="../Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
-        <li><a href="">Rack 6 - Central de Câmeras e GitLab</a></li>
-      </ul>
+    <nav class="menu-options">
+        <a href="../../../index.html">Home</a>
+        <a href="../Rack1Page/rack1Page.html">Rack 1 - Armazenamento, Apache e FTP</a>
+        <a href="../Rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a>
+        <a href="../Rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a>
+        <a href="#">Rack 4 - AD de Leitura e DNS Secundário</a>
+        <a href="../Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a>
+        <a href="../Rack6Page/rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a>
     </nav>
-  </header>
+</header>
 
-  <div class="all-page">
-    <hero>
-      <h1>Rack 4 - AD2</h1>
-      <img src="/src/assets/images/imagem-principal-ad2.webp" alt="Imagem sobre o AD" />
-    </hero>
-    <main>
-      <h2>O que é....?</h2>
-      <div class="content-main">
-        <p>
-          O Servidor Rack 4 funciona como o plano B da rede, pronto para
-          entrar em ação se algo der errado. Ele não só serve para guardar
-          arquivos, mas também para manter tudo funcionando. O mesmo cuida de
-          serviços críticos, como o login e o acesso à rede. Na prática, se o
-          servidor principal (AD1) cair, o Rack 4 assume e garante que ninguém
-          fique sem acesso ou tenha o trabalho interrompido. Isso evita a
-          perda de dados importantes e impede que a rede pare, economizando
-          tempo e evitando prejuízo
-        </p>
-        <img src="/src/assets/images/imagem-secundaria-ad2.png" alt="Logo do AD" />
-      </div>
-      <h2 id="instruction">
-        Clique nos componentes para descobrir o que cada um faz!
-      </h2>
-      <section class="rack-container">
-        <img src="/src/assets/images/rack-illustration.png" alt="Rack de Servidor" />
-
-        <input type="radio" name="popup" id="hs1" class="hotspot"
-          style="top: 12%; left: 8.6%; width: 34.6%; height: 8.1%" />
-        <input type="radio" name="popup" id="hs2" class="hotspot"
-          style="top: 22.2%; left: 10%; width: 31.8%; height: 12.5%" />
-        <input type="radio" name="popup" id="hs3" class="hotspot"
-          style="top: 36%; left: 10.7%; width: 30%; height: 18.2%" />
-        <input type="radio" name="popup" id="hs4" class="hotspot"
-          style="top: 57.1%; left: 9.8%; width: 31.9%; height: 14.2%" />
-        <input type="radio" name="popup" id="hs5" class="hotspot"
-          style="top: 74.9%; left: 8.2%; width: 34.8%; height: 10.7%" />
-
-        <!-- Arrumar o texto desses popups -->
-        <div class="popup white" id="popup1">
-          <label for="hs1" class="overlay"></label>
-          <div class="content">
-            <h3>Painel de Distribuição Óptica</h3>
-            <p>
-              Gerencia as conexões de fibra óptica entre diferentes
-              dispositivos.
-            </p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <div class="popup black" id="popup2">
-          <label for="hs2" class="overlay"></label>
-          <div class="content">
-            <h3>Switch</h3>
-            <p>Conecta e gerencia a comunicação entre os dispositivos.</p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <div class="popup red" id="popup3">
-          <label for="hs3" class="overlay"></label>
-          <div class="content">
-            <h3>Tela de Monitor</h3>
-            <p>
-              Usada para controle e visualização do sistema em tempo real.
-            </p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <div class="popup white" id="popup4">
-          <label for="hs4" class="overlay"></label>
-          <div class="content">
-            <h3>Servidor</h3>
-            <p>
-              Controlador de domínio — autenticação e gerenciamento da rede.
-            </p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <div class="popup black" id="popup5">
-          <label for="hs5" class="overlay"></label>
-          <div class="content">
-            <h3>Patch Panel</h3>
-            <p>Organiza e interliga cabos de rede entre salas e racks.</p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <input type="radio" name="popup" id="none" checked hidden />
-      </section>
-    </main>
-    <details>
-      <summary>Outros Serviços</summary>
-      <div class="dropdown-content">
-        <!-- <p>
-            Servidor de Arquivos (File Server): Centraliza o armazenamento, o
-            acesso e o backup de dados e arquivos importantes da rede em um
-            local seguro. 
-            Servidor DHCP: Distribui endereços IP automaticamente
-            para os dispositivos (PCs, celulares) assim que eles se conectam na
-            rede, evitando configuração manual. Firewall e Proxy: Atuam como a
-            segurança principal da rede. O Firewall bloqueia ataques externos,
-            enquanto o Proxy gerencia e filtra o acesso dos usuários à internet.
-            Monitoramento de Software (Ex: Zabbix): Acompanha a "saúde" digital
-            do servidor (CPU, memória, disco) e alerta a equipe de TI sobre
-            problemas antes que eles causem uma falha.
-          </p> -->
-        <ul>
-          <li>
-            <span style="font-weight: 800">Servidor de Arquivos (File Server):</span>
-            Centraliza o armazenamento, o acesso e o backup de dados e
-            arquivos importantes da rede em um local seguro.
-          </li>
-          <li>
-            <span style="font-weight: 800">Servidor DHCP:</span> Distribui
-            endereços IP automaticamente para os dispositivos (PCs, celulares)
-            assim que eles se conectam na rede, evitando configuração manual.
-          </li>
-          <li>
-            <span style="font-weight: 800">Firewall e Proxy:</span> Atuam como
-            a segurança principal da rede. O Firewall bloqueia ataques
-            externos, enquanto o Proxy gerencia e filtra o acesso dos usuários
-            à internet.
-          </li>
-          <li>
-            <span style="font-weight: 800">Monitoramento de Software (Ex: Zabbix):</span>
-            Acompanha a "saúde" digital do servidor (CPU, memória, disco) e
-            alerta a equipe de TI sobre problemas antes que eles causem uma
-            falha.
-          </li>
-        </ul>
-      </div>
-    </details>
-    <details>
-      <summary>Rack Físico</summary>
-      <div class="dropdown-content">
-        <!-- <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            congue laoreet odio, eu venenatis nisl eleifend sed. Etiam pretium
-            leo in libero fringilla, a accumsan metus laoreet. Fusce non
-            malesuada massa, quis sodales nibh. Curabitur ut neque magna.
-            Integer commodo, nunc ut porta blandit, ligula urna fermentum nisi,
-          </p> -->
-        <img src="/src/assets/images/imagem-rack.png" alt="Imagem do Rack Físico" />
-      </div>
-    </details>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-columns">
-      <div class="footer-group footer-group--links">
-        <h2 class="footer-title">Voltar na Página</h2>
-        <ul class="footer-links">
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-          <li><a href="">Link</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-group footer-group--contacts">
-        <h2 class="footer-title">Contatos</h2>
-        <ul class="social">
-          <li>
-            <a href="https://github.com/" aria-label="GitHub"><img src="/src/assets/icons/github-icon.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href="https://instagram.com/" aria-label="Instagram"><img src="/src/assets/icons/instagram-icon.svg"
-                alt="" /></a>
-          </li>
-          <li>
-            <a href="https://figma.com/" aria-label="Figma"><img src="/src/assets/icons/figma-icon.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/" aria-label="LinkedIn"><img src="/src/assets/icons/linkedin-icon.svg"
-                alt="" /></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-group footer-group--access">
-        <h2 class="footer-title">Acesse Também</h2>
-        <div class="access-links">
-          <p>
-            <a href="https://www.sp.senai.br/" target="_blank" rel="noopener">SENAI Suíço Brasileira</a>
-          </p>
-        </div>
-      </div>
+<main>
+    <div class="hero">
+        <h1>Rack 4 - AD2</h1>
+        <img src="/src/assets/images/imagem-principal-ad2.webp" alt="">
     </div>
-  </footer>
 
-  <script>
-    function togglePopup(id) {
-      const popup = document.getElementById(id);
-      const allPopups = document.querySelectorAll(".popup");
-      allPopups.forEach((p) => p.classList.remove("active"));
-      popup.classList.toggle("active");
-    }
+    <div class="main-content" id="about">
+        <h2>O que é....?</h2>
+        <div class="main-content-wrapper"><p class="body2">O Servidor Rack 4 funciona como o plano B da rede, pronto
+            para
+            entrar em ação se algo der errado. Ele não só serve para guardar
+            arquivos, mas também para manter tudo funcionando. O mesmo cuida de
+            serviços críticos, como o login e o acesso à rede. Na prática, se o
+            servidor principal (AD1) cair, o Rack 4 assume e garante que ninguém
+            fique sem acesso ou tenha o trabalho interrompido. Isso evita a
+            perda de dados importantes e impede que a rede pare, economizando
+            tempo e evitando prejuízo.</p>
+            <img src="/src/assets/images/imagem-secundaria-ad2.png" alt="Logo do AD"/></div>
 
-    document.addEventListener("click", (e) => {
-      if (!e.target.classList.contains("hotspot")) {
-        document
-          .querySelectorAll(".popup")
-          .forEach((p) => p.classList.remove("active"));
-      }
-    });
-    // Header
-    // Menu expansível acessível
-    const toggle = document.getElementById("menuToggle");
-    const header = document.querySelector(".site-header");
-    toggle?.addEventListener("click", () => {
-      const expanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!expanded));
-      header.classList.toggle("menu-open");
-    });
-  </script>
+        <h3 class="main-title" id="conections">Clique nos componentes para descobrir o que cada um faz!</h3>
+        <div class="rack-component">
+            <h6>Clique nas imagens e veja mais sobre</h6>
+            <div class="rack-container">
+                <span data-popup="distribution" class="rack-button distribution"></span>
+                <span data-popup="switch" class="rack-button switch"></span>
+                <span data-popup="monitor" class="rack-button monitor"></span>
+                <span data-popup="server" class="rack-button server"></span>
+                <span data-popup="patch" class="rack-button patch"></span>
+
+                <div class="popup" data-popup-id="distribution">
+                    <span class="close-popup">&times;</span>
+                    <h3>Distribuição</h3>
+                    <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou de outros
+                        andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos da rede
+                        (como
+                        switches, roteadores ou conversores de mídia).</p>
+                </div>
+
+                <div class="popup" data-popup-id="switch">
+                    <span class="close-popup">&times;</span>
+                    <h3>Switch</h3>
+                    <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores, impressoras,
+                        servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem entre si
+                        de forma eficiente.</p>
+                </div>
+
+                <div class="popup" data-popup-id="monitor">
+                    <span class="close-popup">&times;</span>
+                    <h3>Monitor</h3>
+                    <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única estrutura.</span> Ele
+                        permite <span>controlar</span> vários servidores <span>a partir de um único console</span>, economizando espaço e
+                        facilitando a gestão.</p>
+                </div>
+
+                <div class="popup" data-popup-id="server">
+                    <span class="close-popup">&times;</span>
+                    <h3>Servidor</h3>
+                    <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você joga, digita
+                        textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
+                        frente dele. O trabalho dele é atender (servir) outros computadores.</p>
+                </div>
+
+                <div class="popup" data-popup-id="patch">
+                    <span class="close-popup">&times;</span>
+                    <h3>Patch Panel</h3>
+                    <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede (RJ45), que serve como um
+                        <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="other-services" class="dropdown">
+        <div class="dropdown-header">
+            <h2>Outros Serviços</h2>
+            <img class="dropdown-arrow" src="../../assets/icons/arrow-down.svg" alt="seta apontando para baixo">
+        </div>
+
+        <div class="dropdown-content">
+            <ul>
+                <li>
+                    <span style="font-weight: 800">Servidor de Arquivos (File Server):</span>
+                    Centraliza o armazenamento, o acesso e o backup de dados e
+                    arquivos importantes da rede em um local seguro.
+                </li>
+                <li>
+                    <span style="font-weight: 800">Servidor DHCP:</span> Distribui
+                    endereços IP automaticamente para os dispositivos (PCs, celulares)
+                    assim que eles se conectam na rede, evitando configuração manual.
+                </li>
+                <li>
+                    <span style="font-weight: 800">Firewall e Proxy:</span> Atuam como
+                    a segurança principal da rede. O Firewall bloqueia ataques
+                    externos, enquanto o Proxy gerencia e filtra o acesso dos usuários
+                    à internet.
+                </li>
+                <li>
+                    <span style="font-weight: 800">Monitoramento de Software (Ex: Zabbix):</span>
+                    Acompanha a "saúde" digital do servidor (CPU, memória, disco) e
+                    alerta a equipe de TI sobre problemas antes que eles causem uma
+                    falha.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="dropdown">
+        <div class="dropdown-header">
+            <h2>Rack Físico</h2>
+            <img class="dropdown-arrow" src="../../assets/icons/arrow-down.svg" alt="seta apontando para baixo">
+        </div>
+
+        <div class="dropdown-content rack-fisico">
+            <img class="dropdown-img" src="/src/assets/images/imagem-rack.png" alt="Imagem do Rack Físico" />
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <nav class="footer-nav">
+        <h2><a href="">Voltar na Página</a></h2>
+        <a href="#about">Sobre</a>
+        <a href="#conections">O que cada um faz</a>
+        <a href="#other-services">Outros serviços</a>
+    </nav>
+    <div class="footer-wrapper">
+        <div class="footer-content contact-wrapper">
+            <h3>Contatos</h3>
+            <div class="icons-wrapper">
+                <a href="https://github.com/professor-correa/campus-datacenter-explorer" target="_blank">
+                    <img src="../../assets/icons/github-icon-vector.svg" alt="logo do github">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../assets/icons/instagram-icon-vector.svg" alt="logo do instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../assets/icons/figma-icon-vector.svg" alt="logo do figma">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../assets/icons/linkedin-icon-vector.svg" alt="logo do linkedin">
+                </a>
+            </div>
+        </div>
+        <div class="footer-content access-too-wrapper">
+            <h3>Acesse Também</h3>
+            <a href="https://sp.senai.br/unidade/suicobrasileira/" target="_blank">Senai Suiço Brasileira</a>
+        </div>
+    </div>
+</footer>
+<script src="helpers/dropdown-helper.js"></script>
+<script src="helpers/menu-options.js"></script>
+<script src="../../components/PopupRack/popupScript.js"></script>
 </body>
 
 </html>

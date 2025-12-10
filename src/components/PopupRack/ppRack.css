@@ -1,14 +1,5 @@
 @import url("../../styles/variables.css");
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-    padding: 100px;
-}
-
 /*copiar daqui*/
 .rack-component {
     display: flex;
@@ -24,9 +15,8 @@ body {
     width: 100%;
     flex-direction: column;
     aspect-ratio: 619/583.24;
-    background-image: url("../../assets/images/fibra-popup-hack.png");
+    background-image: url("../../assets/images/rack-illustration.png");
     background-size: contain;
-    border: 1px solid black;
 }
 
 .rack-component h6 {
@@ -94,7 +84,7 @@ body {
     width: 40%;
     position: relative;
     left: 55.4%;
-    margin-top: -70%;
+    margin-top: -50%;
 }
 
 .popup h3 {
@@ -116,6 +106,10 @@ body {
     font-style: normal;
     font-weight: var(--font-weight-regular);
     line-height: 130%;
+}
+
+.popup p span {
+    font-weight: bold;
 }
 
 .popup.show {

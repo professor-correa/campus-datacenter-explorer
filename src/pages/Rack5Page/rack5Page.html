@@ -1,487 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./rack5Page.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Rack-05</title>
-  </head>
-  <body id="rack5-top">
-    <header>
-      <nav>
-        <div class="mobile-menu">
-          <a href="" class="senai-logo">
-            <img
-              src="../../assets/icons/header-senai-icon.svg"
-              alt="Logotipo do SENAI(voltar para a Landingpage)"
-            />
-          </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./rack5Page.css" />
+  <link rel="stylesheet" href="../../components/PopupRack/ppRack.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
+  <title>Rack-05</title>
+</head>
+
+<body id="rack5-top">
+  <header>
+    <nav>
+      <div class="mobile-menu">
+        <a href="" class="senai-logo">
+          <img src="../../assets/icons/header-senai-icon.svg" alt="Logotipo do SENAI(voltar para a Landingpage)" />
+        </a>
+      </div>
+
+      <button class="mobile-menu-trigger" aria-label="Abrir menu de navegação">
+        <img class="icon-hamburger" src="../../assets/icons/header-hamburger-menu-icon.svg" alt="Menu hambúrguer" />
+
+        <img class="icon-close" src="../../assets/icons/header-arrow-top-icon.svg" alt="Fechar menu" />
+      </button>
+
+      <ul class="nav-list">
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../Rack1Page/rack1Page.html">Rack 1 - Armazenamento, Apache e FTP</a></li>
+        <li><a href="../Rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a></li>
+        <li><a href="../Rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a></li>
+        <li><a href="../Rack4Page/Rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
+        <li><a href="#">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
+        <li><a href="../Rack6Page/rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="whas_is">
+      <h1>Rack 05</h1>
+      <img src="/src/assets/images/rack5-image.png" alt="" />
+
+
+
+      <div class="conteine-rack5">
+        <div class="conteine-title">
+          <h2>O que é o Rack 05 ?</h2>
+        </div>
+        <div class="conteiner-text">
+
+          <p>Imagina um servidor central que é o coração da rede. </p>
+          <ul>
+            <div class="lists">
+              <li>
+                Ele é focado em
+                Linux (escolhido por ser prático e familiar para a equipe).
+              </li>
+              <li>
+                Ele concentra os serviços mais importantes: monitoramento, segurança e
+                armazenamento.
+              </li>
+              <li>
+                Ele permite que a equipe administre e visualize a saúde
+                de toda a infraestrutura de TI em um só lugar.
+              </li>
+            </div>
+          </ul>
+          <p>
+            O que o Rack 05 faz?
+          </p>
+          <p>
+            O Rack 05 é o centro de operações que:
+          </p>
+
+          <ul>
+            <div class="lists">
+              <li>
+                Controla a Rede: Hospeda o
+                Zabbix, que monitora cada máquina e serviço 24/7.
+              </li>
+              <li>
+                Garante a Segurança:
+                Recebe os logs de todas as máquinas para identificar e alertar sobre
+                anormalidades de segurança (usando ferramentas como Zabbix e SIEM).
+              </li>
+              <li>
+                Organiza os Recursos: Disponibiliza o Serviço de Arquivos (como um
+                drive central) para que alunos e equipe possam baixar materiais como
+                imagens ISO.
+              </li>
+            </div>
+          </ul>
+
+          <p>Exemplo prático:</p>
+          <ul>
+            <div class="lists">
+              <li>
+                Um computador na rede começa a
+                apresentar tráfego de dados incomum.
+              </li>
+              <li>
+                Zabbix (rodando no Linux do
+                Rack 05) recebe o log dessa máquina.
+              </li>
+              <li>
+                O Ele verifica o evento, identifica
+                a anormalidade e informa imediatamente o administrador da rede sobre o
+                problema.
+              </li>
+            </div>
+          </ul>
+          <p>Em resumo: </p>
+          <p>O Rack 05 é um serviço Microsoft que funciona
+            como:</p>
+          <ul>
+            <div class="lists">
+              <li>
+                Um cadastro central de pessoas e equipamentos.
+              </li>
+              <li>
+                Um sistema de
+                segurança que garante que só quem deve ter acesso, tenha.
+              </li>
+              <li>
+                Organizador que deixa tudo mais fácil de administrar em redes grandes.
+              </li>
+            </div>
+            <p>
+              Componentes Chave:
+            </p>
+            <div class="lists">
+              <li>
+                Linux (Servidor Principal): Roda o Zabbix para
+                monitoramento de rede e segurança.
+              </li>
+              <li>
+                AD1 e AD2 (Windows Server):
+                Controladores de domínio primário e de reserva (replicação),
+                gerenciando usuários e DNS.
+              </li>
+              <li>
+                EVE: Simulador de redes para testes e
+                treinamentos em um ambiente próximo ao real
+              </li>
+              <li>
+                Fibra e Armazenamento:
+                Ponto de conexão de alta velocidade e espaço para arquivos e backups.
+              </li>
+            </div>
+          </ul>
+          </p>
+        </div>
+        <div class="conteiner-link">
+          <a href="#linuxDoc">veja a documentação técnica</a>
         </div>
 
-        <button
-          class="mobile-menu-trigger"
-          aria-label="Abrir menu de navegação"
-        >
-          <img
-            class="icon-hamburger"
-            src="../../assets/icons/header-hamburger-menu-icon.svg"
-            alt="Menu hambúrguer"
-          />
+          <div class="rack-component">
+              <h6>Clique nas imagens e veja mais sobre</h6>
+              <div class="rack-container">
+                  <span data-popup="distribution" class="rack-button distribution"></span>
+                  <span data-popup="switch" class="rack-button switch"></span>
+                  <span data-popup="monitor" class="rack-button monitor"></span>
+                  <span data-popup="server" class="rack-button server"></span>
+                  <span data-popup="patch" class="rack-button patch"></span>
 
-          <img
-            class="icon-close"
-            src="../../assets/icons/header-arrow-top-icon.svg"
-            alt="Fechar menu"
-          />
-        </button>
+                  <div class="popup" data-popup-id="distribution">
+                      <span class="close-popup">&times;</span>
+                      <h3>Distribuição</h3>
+                      <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou de outros
+                          andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos da rede
+                          (como
+                          switches, roteadores ou conversores de mídia).</p>
+                  </div>
 
-        <ul class="nav-list">
-          <li><a href="#rack5-top">Rack 5</a></li>
-          <li><a href="#linuxService">Serviços</a></li>
-          <li><a href="#linuxDoc">Documentação Técnica</a></li>
-          <li><a href="#footer">Mais Informações</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-           <section class="whas_is">
-        <h1>Rack 05</h1>
-        <img src="/src/assets/images/rack5-image.png" alt="" />
+                  <div class="popup" data-popup-id="switch">
+                      <span class="close-popup">&times;</span>
+                      <h3>Switch</h3>
+                      <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores, impressoras,
+                          servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem entre si
+                          de forma eficiente.</p>
+                  </div>
 
+                  <div class="popup" data-popup-id="monitor">
+                      <span class="close-popup">&times;</span>
+                      <h3>Monitor</h3>
+                      <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única estrutura.</span> Ele
+                          permite <span>controlar</span> vários servidores <span>a partir de um único console</span>, economizando espaço e
+                          facilitando a gestão.</p>
+                  </div>
 
+                  <div class="popup" data-popup-id="server">
+                      <span class="close-popup">&times;</span>
+                      <h3>Servidor</h3>
+                      <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você joga, digita
+                          textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
+                          frente dele. O trabalho dele é atender (servir) outros computadores.</p>
+                  </div>
 
-        <div class="conteine-rack5">
-            <div class="conteine-title">
-                <h2>O que é o Rack 05 ?</h2>
-            </div>
-           <div class="conteiner-text">
+                  <div class="popup" data-popup-id="patch">
+                      <span class="close-popup">&times;</span>
+                      <h3>Patch Panel</h3>
+                      <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede (RJ45), que serve como um
+                          <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.</p>
+                  </div>
+              </div>
+          </div>
 
-                <p>Imagina um servidor central que é o coração da rede. </p>
-                <ul>
-                    <div class="lists">
-                      <li>
-                          Ele é focado em
-                          Linux (escolhido por ser prático e familiar para a equipe).
-                      </li>
-                      <li>
-                          Ele concentra os serviços mais importantes: monitoramento, segurança e
-                          armazenamento.
-                      </li>
-                      <li>
-                          Ele permite que a equipe administre e visualize a saúde
-                          de toda a infraestrutura de TI em um só lugar.
-                      </li>
-                    </div>
-                </ul>
-                <p>
-                    O que o Rack 05 faz?
-                </p>
-                <p>
-                  O Rack 05 é o centro de operações que:
-                </p>
-
-                <ul>
-                    <div class="lists">
-                      <li>
-                          Controla a Rede: Hospeda o
-                          Zabbix, que monitora cada máquina e serviço 24/7.
-                      </li>
-                      <li>
-                          Garante a Segurança:
-                          Recebe os logs de todas as máquinas para identificar e alertar sobre
-                          anormalidades de segurança (usando ferramentas como Zabbix e SIEM).
-                      </li>
-                      <li>
-                          Organiza os Recursos: Disponibiliza o Serviço de Arquivos (como um
-                          drive central) para que alunos e equipe possam baixar materiais como
-                          imagens ISO.
-                      </li>
-                    </div>
-                </ul>
-
-                <p>Exemplo prático:</p>
-                <ul>
-                    <div class="lists">
-                      <li>
-                          Um computador na rede começa a
-                          apresentar tráfego de dados incomum.
-                      </li>
-                      <li>
-                          Zabbix (rodando no Linux do
-                          Rack 05) recebe o log dessa máquina.
-                      </li>
-                      <li>
-                          O Ele verifica o evento, identifica
-                          a anormalidade e informa imediatamente o administrador da rede sobre o
-                          problema.
-                      </li>
-                    </div>
-                </ul>
-                <p>Em resumo: </p>
-                <p>O Rack 05 é um serviço Microsoft que funciona
-                    como:</p>
-                <ul>
-                    <div class="lists">
-                      <li>
-                          Um cadastro central de pessoas e equipamentos.
-                      </li>
-                      <li>
-                          Um sistema de
-                          segurança que garante que só quem deve ter acesso, tenha.
-                      </li>
-                      <li>
-                          Organizador que deixa tudo mais fácil de administrar em redes grandes.
-                      </li>
-                    </div>
-                    <p>
-                      Componentes Chave:
-                    </p>
-                    <div class="lists">
-                      <li>
-                          Linux (Servidor Principal): Roda o Zabbix para
-                          monitoramento de rede e segurança.
-                      </li>
-                      <li>
-                          AD1 e AD2 (Windows Server):
-                          Controladores de domínio primário e de reserva (replicação),
-                          gerenciando usuários e DNS.
-                      </li>
-                      <li>
-                          EVE: Simulador de redes para testes e
-                          treinamentos em um ambiente próximo ao real
-                      </li>
-                      <li>
-                          Fibra e Armazenamento:
-                          Ponto de conexão de alta velocidade e espaço para arquivos e backups.
-                      </li>
-                    </div>
-                </ul>
-                </p>
-            </div>
-            <div class="conteiner-link">
-                <a href="#linuxDoc">veja a documentação técnica</a>
-            </div>
-
-            <div class="rack-component">
-                <h6>Clique nas imagens e veja mais sobre</h6>
-                <div class="rack-container">
-                    <span data-popup="distribution" class="rack-button distribution"></span>
-                    <span data-popup="switch" class="rack-button switch"></span>
-                    <span data-popup="monitor" class="rack-button monitor"></span>
-                    <span data-popup="server" class="rack-button server"></span>
-                    <span data-popup="patch" class="rack-button patch"></span>
-
-                    <div class="popup" data-popup-id="distribution">
-                        <span class="close-popup">&times;</span>
-                        <h3>Distribuição</h3>
-                        <p>Ele é basicamente uma "caixa" ou painel onde os cabos de fibra que vêm da rua ou de outros
-                            andares (chamados de backbone) chegam e são conectados aos equipamentos ativos da rede (como
-                            switches, roteadores ou conversores de mídia).</p>
-                    </div>
-
-                    <div class="popup" data-popup-id="switch">
-                        <span class="close-popup">&times;</span>
-                        <h3>Switch</h3>
-                        <p>Ele é um equipamento de hardware que conecta vários dispositivos (computadores, impressoras,
-                            servidores, câmeras IP) dentro de uma mesma rede (LAN), permitindo que eles conversem entre
-                            si de forma eficiente.</p>
-                    </div>
-
-                    <div class="popup" data-popup-id="monitor">
-                        <span class="close-popup">&times;</span>
-                        <h3>Monitor</h3>
-                        <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma única estrutura. Ele
-                            permite controlar vários servidores a partir de um único console, economizando espaço e
-                            facilitando a gestão.</p>
-                    </div>
-
-                    <div class="popup" data-popup-id="server">
-                        <span class="close-popup">&times;</span>
-                        <h3>Servidor</h3>
-                        <p>
-                            Um servidor é um computador mas diferente do seu computador pessoal (onde você joga, digita
-                            textos ou navega na internet), o
-                            trabalho do servidor não é atender a uma pessoa sentada na frente dele. O trabalho dele é
-                            atender (servir) outros computadores.</p>
-                    </div>
-
-                    <div class="popup" data-popup-id="patch">
-                        <span class="close-popup">&times;</span>
-                        <h3>Patch Panel</h3>
-                        <p>O Patch Panel é um painel passivo (não usa energia) cheio de portas de rede (RJ45), que serve
-                            como um ponto intermediário entre os cabos que vêm das paredes e o Switch.</p>
-                    </div>
-                </div>
-            </div>
-
-            <script src="/src/components/PopupRack/popupScript.js"></script>
-
-        </div>
+      </div>
     </section>
 
-      <!-- Service -->
+    <!-- Service -->
 
-      <section class="service">
-        <div id="linuxService" class="scrollLink"></div>
-        <div id="ZabbixService" class="scrollLink"></div>
-        <div id="SplunkService" class="scrollLink"></div>
+    <section class="service">
+      <div id="linuxService" class="scrollLink"></div>
+      <div id="ZabbixService" class="scrollLink"></div>
+      <div id="SplunkService" class="scrollLink"></div>
 
-        <div class="services-document">
-          <h2>Serviços</h2>
-          <!-- Service 1 -->
-          <div class="service-document">
-            <div class="service-dropdown">
-              <h3>1. Sistema Operacional – Linux</h3>
-              <img
-                class="icon-open"
-                src="../../assets/icons/arrowDownRack3.svg"
-                alt="arrow down icon"
-              />
-              <img
-                class="icon-closed"
-                src="../../assets/icons/arrowUpRack3.svg"
-                alt="arrow up icon"
-              />
-            </div>
-            <div class="service-content">
-              <p>
-                Ambiente baseado em Linux para garantir alta estabilidade,
-                segurança nativa, flexibilidade de configuração e suporte
-                robusto para serviços de monitoramento e segurança.
-              </p>
-              <a href="#linuxDoc">Veja a documentação técnica</a>
-            </div>
+      <div class="services-document">
+        <h2>Serviços</h2>
+        <!-- Service 1 -->
+        <div class="service-document">
+          <div class="service-dropdown">
+            <h3>1. Sistema Operacional – Linux</h3>
+            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
           </div>
-          <!-- Service 2 -->
-          <div class="service-document">
-            <div class="service-dropdown">
-              <h3>2. Monitoramento de Rede – Zabbix</h3>
-              <img
-                class="icon-open"
-                src="../../assets/icons/arrowDownRack3.svg"
-                alt="arrow down icon"
-              />
-              <img
-                class="icon-closed"
-                src="../../assets/icons/arrowUpRack3.svg"
-                alt="arrow up icon"
-              />
-            </div>
-            <div class="service-content">
-              <p>
-                Zabbix é utilizado para monitorar disponibilidade, desempenho e
-                métricas de rede em tempo real, com alertas automáticos e
-                dashboards para acompanhamento da infraestrutura.
-              </p>
-              <a href="#ZabbixDoc">Veja a documentação técnica</a>
-            </div>
-          </div>
-          <!-- Service 3 -->
-          <div class="service-document">
-            <div class="service-dropdown">
-              <h3>3. Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
-              <img
-                class="icon-open"
-                src="../../assets/icons/arrowDownRack3.svg"
-                alt="arrow down icon"
-              />
-              <img
-                class="icon-closed"
-                src="../../assets/icons/arrowUpRack3.svg"
-                alt="arrow up icon"
-              />
-            </div>
-            <div class="service-content">
-              <p>
-                Wazuh realiza detecção de intrusão, análise de integridade,
-                coleta de logs e eventos de segurança. Esses dados são enviados
-                ao Splunk, que faz correlação avançada, análise centralizada e
-                visualização, proporcionando uma visão completa de segurança em
-                tempo real.
-              </p>
-              <a href="#splunkDoc">Veja a documentação técnica</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Documentação Técnica -->
-
-      <section class="document-tec">
-        <div id="linuxDoc" class="scrollLink"></div>
-        <div id="ZabbixDoc" class="scrollLink"></div>
-        <div id="SplunkDoc" class="scrollLink"></div>
-
-        <div class="services-document">
-          <h2>Documentação Técnica</h2>
-          <!-- Service 1 -->
-          <div class="service-document">
-            <div class="service-dropdown">
-              <h3>1. Sistema Operacional – Linux</h3>
-              <img
-                class="icon-open"
-                src="../../assets/icons/arrowDownRack3.svg"
-                alt="arrow down icon"
-              />
-              <img
-                class="icon-closed"
-                src="../../assets/icons/arrowUpRack3.svg"
-                alt="arrow up icon"
-              />
-            </div>
-            <div class="service-content">
-              <p>
-                O ambiente utiliza Linux como base por sua estabilidade,
-                segurança e flexibilidade. O sistema oferece um kernel robusto,
-                excelente gerenciamento de processos e um modelo de permissões
-                que reforça a proteção contra acessos indevidos. Sua
-                compatibilidade com ferramentas de monitoramento e segurança
-                permite integração eficiente com Zabbix, Wazuh e Splunk,
-                tornando o Linux ideal para compor uma infraestrutura confiável
-                e escalável.
-              </p>
-              <a href="#linuxService">Veja o Serviço</a>
-            </div>
-          </div>
-          <!-- Service 2 -->
-          <div class="service-document">
-            <div class="service-dropdown">
-              <h3>2. Monitoramento de Rede – Zabbix</h3>
-              <img
-                class="icon-open"
-                src="../../assets/icons/arrowDownRack3.svg"
-                alt="arrow down icon"
-              />
-              <img
-                class="icon-closed"
-                src="../../assets/icons/arrowUpRack3.svg"
-                alt="arrow up icon"
-              />
-            </div>
-            <div class="service-content">
-              <p>
-                O Zabbix realiza o monitoramento da rede em tempo real,
-                coletando métricas como uso de CPU, memória, tráfego e
-                disponibilidade de serviços por meio de agentes, SNMP e outras
-                interfaces. A ferramenta identifica anomalias com triggers
-                configuráveis e emite alertas automáticos, permitindo ações
-                rápidas antes de falhas. Seus dashboards facilitam a
-                visualização do estado da infraestrutura, garantindo
-                acompanhamento contínuo e preciso."
-              </p>
-              <a href="#ZabbixService">Veja o Serviço</a>
-            </div>
-          </div>
-          <!-- Service 3 -->
-          <div class="service-document">
-            <div class="service-dropdown">
-              <h3>3. Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
-              <img
-                class="icon-open"
-                src="../../assets/icons/arrowDownRack3.svg"
-                alt="arrow down icon"
-              />
-              <img
-                class="icon-closed"
-                src="../../assets/icons/arrowUpRack3.svg"
-                alt="arrow up icon"
-              />
-            </div>
-            <div class="service-content">
-              <p>
-                A segurança é tratada pela integração entre Wazuh e Splunk. O
-                Wazuh coleta logs, detecta intrusões, monitora integridade e
-                identifica vulnerabilidades. Esses dados são enviados ao Splunk,
-                que os analisa e correlaciona para identificar padrões suspeitos
-                e possíveis incidentes. A combinação das duas ferramentas
-                oferece uma visão centralizada e detalhada da postura de
-                segurança, permitindo respostas mais rápidas e eficazes a
-                ameaças.
-              </p>
-              <a href="#SplunkService">Veja o Serviço</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <div id="footer" class="scrollLink"></div>
-    <footer class="site-footer">
-      <div class="footer-columns">
-        <div class="footer-group footer-group--links">
-          <ul class="footer-links">
-            <li>
-              <a
-                class="footer-back-to-top"
-                href="#rack5-top"
-                aria-label="Voltar para o topo da página"
-                >Voltar ao topo</a
-              >
-            </li>
-            <li><a href="#">Rack5</a></li>
-            <li><a href="#linuxService">Serviços</a></li>
-            <li><a href="#linuxDoc">Documentação Técnica</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-group footer-group--contacts">
-          <h2 class="footer-title">Contatos</h2>
-          <ul class="social">
-            <li>
-              <a
-                target="_blank"
-                href="https://github.com/professor-correa/campus-datacenter-explorer"
-                aria-label="GitHub"
-                ><img src="../../assets/icons/footer-github-icon.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/senai.suico/"
-                aria-label="Instagram"
-                ><img src="../../assets/icons/footer-instagram-icon.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.figma.com/design/LOPdanvag4cYtjxpLDYfoK/DataCenter---Design-System?node-id=1-3&m=dev"
-                aria-label="Figma"
-                ><img src="../../assets/icons/footer-figma-icon.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/school/senaisp-suico/posts/?feedView=all"
-                aria-label="LinkedIn"
-                ><img src="../../assets/icons/footer-linkedin-icon.svg" alt=""
-              /></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-group footer-group--access">
-          <h2 class="footer-title">Acesse Também</h2>
-          <div class="access-links">
+          <div class="service-content">
             <p>
-              <a href="https://www.sp.senai.br/" target="_blank" rel="noopener"
-                >SENAI Suíço Brasileira</a
-              >
+              Ambiente baseado em Linux para garantir alta estabilidade,
+              segurança nativa, flexibilidade de configuração e suporte
+              robusto para serviços de monitoramento e segurança.
             </p>
+            <a href="#linuxDoc">Veja a documentação técnica</a>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-document">
+          <div class="service-dropdown">
+            <h3>2. Monitoramento de Rede – Zabbix</h3>
+            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+          </div>
+          <div class="service-content">
+            <p>
+              Zabbix é utilizado para monitorar disponibilidade, desempenho e
+              métricas de rede em tempo real, com alertas automáticos e
+              dashboards para acompanhamento da infraestrutura.
+            </p>
+            <a href="#ZabbixDoc">Veja a documentação técnica</a>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-document">
+          <div class="service-dropdown">
+            <h3>3. Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
+            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+          </div>
+          <div class="service-content">
+            <p>
+              Wazuh realiza detecção de intrusão, análise de integridade,
+              coleta de logs e eventos de segurança. Esses dados são enviados
+              ao Splunk, que faz correlação avançada, análise centralizada e
+              visualização, proporcionando uma visão completa de segurança em
+              tempo real.
+            </p>
+            <a href="#splunkDoc">Veja a documentação técnica</a>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="./js/dropdown.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/popupScript.js"></script>
-  </body>
+    </section>
+
+    <!-- Documentação Técnica -->
+
+    <section class="document-tec">
+      <div id="linuxDoc" class="scrollLink"></div>
+      <div id="ZabbixDoc" class="scrollLink"></div>
+      <div id="SplunkDoc" class="scrollLink"></div>
+
+      <div class="services-document">
+        <h2>Documentação Técnica</h2>
+        <!-- Service 1 -->
+        <div class="service-document">
+          <div class="service-dropdown">
+            <h3>1. Sistema Operacional – Linux</h3>
+            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+          </div>
+          <div class="service-content">
+            <p>
+              O ambiente utiliza Linux como base por sua estabilidade,
+              segurança e flexibilidade. O sistema oferece um kernel robusto,
+              excelente gerenciamento de processos e um modelo de permissões
+              que reforça a proteção contra acessos indevidos. Sua
+              compatibilidade com ferramentas de monitoramento e segurança
+              permite integração eficiente com Zabbix, Wazuh e Splunk,
+              tornando o Linux ideal para compor uma infraestrutura confiável
+              e escalável.
+            </p>
+            <a href="#linuxService">Veja o Serviço</a>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-document">
+          <div class="service-dropdown">
+            <h3>2. Monitoramento de Rede – Zabbix</h3>
+            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+          </div>
+          <div class="service-content">
+            <p>
+              O Zabbix realiza o monitoramento da rede em tempo real,
+              coletando métricas como uso de CPU, memória, tráfego e
+              disponibilidade de serviços por meio de agentes, SNMP e outras
+              interfaces. A ferramenta identifica anomalias com triggers
+              configuráveis e emite alertas automáticos, permitindo ações
+              rápidas antes de falhas. Seus dashboards facilitam a
+              visualização do estado da infraestrutura, garantindo
+              acompanhamento contínuo e preciso."
+            </p>
+            <a href="#ZabbixService">Veja o Serviço</a>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-document">
+          <div class="service-dropdown">
+            <h3>3. Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
+            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
+            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+          </div>
+          <div class="service-content">
+            <p>
+              A segurança é tratada pela integração entre Wazuh e Splunk. O
+              Wazuh coleta logs, detecta intrusões, monitora integridade e
+              identifica vulnerabilidades. Esses dados são enviados ao Splunk,
+              que os analisa e correlaciona para identificar padrões suspeitos
+              e possíveis incidentes. A combinação das duas ferramentas
+              oferece uma visão centralizada e detalhada da postura de
+              segurança, permitindo respostas mais rápidas e eficazes a
+              ameaças.
+            </p>
+            <a href="#SplunkService">Veja o Serviço</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer" class="scrollLink"></div>
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-group footer-group--links">
+        <ul class="footer-links">
+          <li>
+            <a class="footer-back-to-top" href="#rack5-top" aria-label="Voltar para o topo da página">Voltar ao topo</a>
+          </li>
+          <li><a href="#">Rack5</a></li>
+          <li><a href="#linuxService">Serviços</a></li>
+          <li><a href="#linuxDoc">Documentação Técnica</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-group footer-group--contacts">
+        <h2 class="footer-title">Contatos</h2>
+        <ul class="social">
+          <li>
+            <a target="_blank" href="https://github.com/professor-correa/campus-datacenter-explorer"
+              aria-label="GitHub"><img src="../../assets/icons/footer-github-icon.svg" alt="" /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/senai.suico/" aria-label="Instagram"><img
+                src="../../assets/icons/footer-instagram-icon.svg" alt="" /></a>
+          </li>
+          <li>
+            <a target="_blank"
+              href="https://www.figma.com/design/LOPdanvag4cYtjxpLDYfoK/DataCenter---Design-System?node-id=1-3&m=dev"
+              aria-label="Figma"><img src="../../assets/icons/footer-figma-icon.svg" alt="" /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/school/senaisp-suico/posts/?feedView=all"
+              aria-label="LinkedIn"><img src="../../assets/icons/footer-linkedin-icon.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-group footer-group--access">
+        <h2 class="footer-title">Acesse Também</h2>
+        <div class="access-links">
+          <p>
+            <a href="https://www.sp.senai.br/" target="_blank" rel="noopener">SENAI Suíço Brasileira</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/dropdown.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/popupScript.js"></script>
+  <script src="/src/components/PopupRack/popupScript.js"></script>
+</body>
+
 </html>

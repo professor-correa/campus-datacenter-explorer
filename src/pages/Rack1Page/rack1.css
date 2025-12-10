@@ -1,16 +1,7 @@
-@import url(/src/styles/global.css);
-
-/* ////////////////////////// Ryan ////////////////////////// */
 
 html {
     scroll-behavior: smooth;
 }
-
-/* ////////////////////////// Caue ////////////////////////// */
-
-/* ---------- Início do Header ---------- */
-
-/* ---------- Mobiel first ---------- */
 
 header {
     position: fixed;
@@ -27,11 +18,16 @@ header {
     z-index: 1001;
 }
 
-header.noGap {
-    gap: 0px;
+header nav ul li a {
+    text-decoration: none;
+    color: var(--grey-c100);
 }
 
-header>.imagesWrap {
+header.noGap {
+    gap: 0;
+}
+
+header > .imagesWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +35,7 @@ header>.imagesWrap {
     transition: gap 0.4s ease;
 }
 
-.imagesWrap>button {
+.imagesWrap > button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -55,11 +51,11 @@ header>.imagesWrap {
     max-height: 380px;
 }
 
-nav>ul>li:nth-child(2)>a {
+nav > ul > li:nth-child(2) > a {
     text-decoration: underline;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +65,7 @@ nav>ul {
     height: 100%;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
     font-size: 1rem;
     color: var(--grey-c100);
     text-decoration: none;
@@ -86,6 +82,11 @@ main {
     align-items: center;
     padding: 20px;
     gap: 20px;
+}
+main img {
+    max-height: 450px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .titulo {
@@ -112,7 +113,6 @@ main {
 .imgService {
     position: relative;
     margin: 8% 0 0 8%;
-    border: 1px solid transparent;
     /* só pra debug, pode tirar */
     z-index: 999;
     cursor: pointer;
@@ -185,21 +185,21 @@ main {
     /* agora pode ser clicado */
 }
 
-.popUp>p:nth-child(1) {
+.popUp > p:nth-child(1) {
     font-size: 24px;
     /* já atualizado */
     color: var(--grey-c100);
     font-weight: 400;
 }
 
-.popUp>p:nth-child(2) {
+.popUp > p:nth-child(2) {
     font-size: 18px;
     /* já atualizado */
     color: var(--grey-c200);
     font-weight: 400;
 }
 
-.popUp>img.closeBtn {
+.popUp > img.closeBtn {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -222,18 +222,18 @@ main {
     border-radius: 10px;
 }
 
-.armazenamentoExplanation>p>span {
+.armazenamentoExplanation > p > span {
     font-weight: bold;
 }
 
-.card>p,
-ul>li {
+.card > p,
+ul > li {
     font-size: 16px;
     font-weight: 500;
     color: var(--grey-c700);
 }
 
-.card p>ul>li {
+.card p > ul > li {
     font-size: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -248,7 +248,7 @@ ul>li {
     flex-direction: column;
     align-items: end;
     width: 100%;
-    color: (var(--grey-c900));
+    color: var(--grey-c900);
     font-size: 16px;
     margin-top: 20px;
     text-decoration: underline;
@@ -284,10 +284,9 @@ ul>li {
     padding: 20px;
 }
 
-.services-documentation>h2 {
+.services-documentation > h2 {
     padding-top: 20px;
     width: 100%;
-    border-top: 2px solid var(--grey-c500);
     text-align: center;
     font-size: 30px;
     font-weight: 600;
@@ -311,11 +310,11 @@ ul>li {
     background: #fff;
 }
 
-.dropdown>img {
+.dropdown > img {
     max-height: 1200px;
 }
 
-.dropdown>h3 {
+.dropdown > h3 {
     font-size: 20px;
     font-weight: 500;
     color: var(--grey-c1000);
@@ -336,7 +335,7 @@ img.none {
     transition: max-height 0.5s ease;
 }
 
-.serviceContent>p>span {
+.serviceContent > p > span {
     font-weight: bold;
 }
 
@@ -345,20 +344,19 @@ img.none {
     opacity: 1;
 }
 
-.serviceContent>p {
+.serviceContent > p {
     font-size: 16px;
     font-weight: 400;
     color: var(--grey-c900);
 }
 
-.serviceContent>img {
+.serviceContent > img {
     align-self: center;
     max-width: 247px;
 }
 
 
-
-.serviceContent>a {
+.serviceContent > a {
     align-self: flex-end;
     font-size: 16px;
     font-weight: 300;
@@ -380,14 +378,14 @@ footer {
     background-color: var(--red-v700);
 }
 
-footer>.backInPage>h2 {
+footer > .backInPage > h2 {
     margin-bottom: 12px;
     font-size: 30px;
     font-weight: 600;
     color: var(--grey-c100);
 }
 
-footer>nav>ul {
+footer > nav > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -395,7 +393,7 @@ footer>nav>ul {
     gap: 12px;
 }
 
-footer>nav>ul>li>a {
+footer > nav > ul > li > a {
     font-size: 16px;
     font-weight: 300;
     color: var(--grey-c100);
@@ -410,7 +408,7 @@ footer>nav>ul>li>a {
     gap: 12px;
 }
 
-.contatos>h3 {
+.contatos > h3 {
     font-size: 24px;
     font-weight: 600;
     color: var(--grey-c100);
@@ -423,14 +421,14 @@ footer>nav>ul>li>a {
     gap: 15px;
 }
 
-footer>.contact>.acesseTambem>h4 {
+footer > .contact > .acesseTambem > h4 {
     margin-top: 30px;
     font-size: 20px;
     font-weight: 600;
     color: var(--grey-c100);
 }
 
-footer>.contact>.acesseTambem>a {
+footer > .contact > .acesseTambem > a {
     font-size: 16px;
     font-weight: 300;
     color: var(--grey-c100);
@@ -467,17 +465,16 @@ footer>.contact>.acesseTambem>a {
     .imgService {
         position: relative;
         margin: 8% 0 0 8%;
-        border: 1px solid transparent;
         /* só pra debug, pode tirar */
         z-index: 999;
     }
 
-    .popUp>p:nth-child(1) {
+    .popUp > p:nth-child(1) {
         font-size: 24px;
         color: var(--grey-c100);
     }
 
-    .popUp>p:nth-child(2) {
+    .popUp > p:nth-child(2) {
         font-size: 18px;
         color: var(--grey-c200);
     }
@@ -506,14 +503,14 @@ footer>.contact>.acesseTambem>a {
         color: var(--grey-c1000);
     }
 
-    .card>p,
-    ul>li {
+    .card > p,
+    ul > li {
         font-size: 24px;
         font-weight: 400;
         color: var(--grey-c700);
     }
 
-    .serviceContent>img {
+    .serviceContent > img {
         align-self: center;
         max-width: 680px;
     }
@@ -525,46 +522,45 @@ footer>.contact>.acesseTambem>a {
     }
 
     /* ////////////////////////// ryan ////////////////////////// */
-
     .services-documentation {
         padding: 30px 32px;
     }
 
-    .services-documentation>h2 {
+    .services-documentation > h2 {
         width: 550px;
         font-size: 48px;
         font-weight: 600;
     }
 
-    .dropdown>h3 {
+    .dropdown > h3 {
         font-size: 36px;
         font-weight: 500;
         color: var(--grey-c1000);
     }
 
-    .serviceContent>p {
+    .serviceContent > p {
         font-size: 24px;
         font-weight: 500;
         color: var(--grey-c900);
     }
 
-    .serviceContent>a {
+    .serviceContent > a {
         font-size: 24px;
     }
 
-    footer>.backInPage>h2 {
+    footer > .backInPage > h2 {
         margin-bottom: 12px;
         font-size: 48px;
         color: var(--grey-c100);
     }
 
-    footer>.backInPage>nav>ul>li>a {
+    footer > .backInPage > nav > ul > li > a {
         font-size: 24px;
         color: var(--grey-c100);
         font-weight: 300;
     }
 
-    .contatos>h3 {
+    .contatos > h3 {
         font-size: 36px;
     }
 
@@ -575,12 +571,12 @@ footer>.contact>.acesseTambem>a {
         align-items: center;
     }
 
-    footer>.contact>.acesseTambem>h4 {
+    footer > .contact > .acesseTambem > h4 {
         font-size: 30px;
         color: var(--grey-c100);
     }
 
-    footer>.contact>.acesseTambem>a {
+    footer > .contact > .acesseTambem > a {
         font-size: 24px;
         color: var(--grey-c100);
         font-weight: 300;
@@ -626,11 +622,11 @@ footer>.contact>.acesseTambem>a {
         gap: 20px;
     }
 
-    .armazenamentoExplanation>p>span {
+    .armazenamentoExplanation > p > span {
         font-weight: bold;
     }
 
-    .armazenamentoContent>img {
+    .armazenamentoContent > img {
         max-width: 550px;
     }
 
@@ -638,14 +634,14 @@ footer>.contact>.acesseTambem>a {
         align-items: start;
     }
 
-    .card>h2 {
+    .card > h2 {
         font-size: 60px;
         font-weight: 500;
         color: var(--grey-c1000);
     }
 
-    .card>p,
-    .card>ul>li {
+    .card > p,
+    .card > ul > li {
         font-size: 18px;
         font-weight: 500;
         color: var(--grey-c700);
@@ -656,19 +652,18 @@ footer>.contact>.acesseTambem>a {
     }
 
 
-
-    .serviceContent>img {
+    .serviceContent > img {
         align-self: center;
         max-width: 1200px;
     }
 
-    .card>a {
+    .card > a {
         font-size: 18px;
         font-weight: 300;
         color: var(--grey-c900);
     }
 
-    .services-documentation>h2 {
+    .services-documentation > h2 {
         width: 100%;
         font-size: 60px;
         color: var(--grey-c1000);
@@ -678,21 +673,20 @@ footer>.contact>.acesseTambem>a {
         cursor: pointer;
     }
 
-    .dropdown>h3 {
+    .dropdown > h3 {
         font-size: 24px;
         font-weight: 500;
         color: var(--grey-c1000);
     }
 
-    .serviceContent>p {
+    .serviceContent > p {
         font-size: 18px;
         font-weight: 400;
         color: var(--grey-c700);
     }
 
     /* ---------- Thiago ---------- */
-
-    .serviceContent>p {
+    .serviceContent > p {
         font-size: 18px;
         font-weight: 300;
         color: var(--grey-c700);
@@ -714,14 +708,14 @@ footer>.contact>.acesseTambem>a {
         gap: 12px;
     }
 
-    footer>.backInPage>h2,
-    .contact>.contatos>h3 {
+    footer > .backInPage > h2,
+    .contact > .contatos > h3 {
         font-size: 20px;
         font-weight: 600;
         color: var(--grey-c100);
     }
 
-    footer>.backInPage>nav>ul>li>a {
+    footer > .backInPage > nav > ul > li > a {
         font-size: 16px;
         font-weight: 500;
         color: var(--grey-c100);
@@ -734,13 +728,13 @@ footer>.contact>.acesseTambem>a {
         align-items: center;
     }
 
-    .backInPage>h2 {
+    .backInPage > h2 {
         color: var(--grey-c100);
         font-size: 20px;
     }
 
 
-    .contatos>.socialMedias>a img {
+    .contatos > .socialMedias > a img {
         width: 24px;
         height: 24px;
     }
@@ -749,23 +743,35 @@ footer>.contact>.acesseTambem>a {
         transform: scale(1);
     }
 
-    footer>.contact>.acesseTambem>h4 {
+    footer > .contact > .acesseTambem > h4 {
         font-size: 20px;
         color: var(--grey-c100);
     }
 
-    footer>.contact>.acesseTambem>a {
+    footer > .contact > .acesseTambem > a {
         font-size: 16px;
         font-weight: 400;
         color: var(--grey-c100);
     }
 
 
-    .contact>.acesseTambem>a {
+    .contact > .acesseTambem > a {
         font-size: 16px;
         color: var(--grey-c100);
     }
 }
+
+.nas, .bk-nas {
+    margin: 0.3% 0 0 0;
+    left: 9.7%;
+    width: 31.7%;
+    height: 7.9%;
+}
+
+.bk-nas {
+    height: 6.4%;
+}
+
 
 /* ---------- Fim do desktop ---------- */
 

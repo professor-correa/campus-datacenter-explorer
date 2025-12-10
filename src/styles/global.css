@@ -38,6 +38,10 @@ a{
     font-weight: 300;
 }
 
+a[href="#"] {
+    text-decoration: underline ;
+}
+
 @media (min-width: 747px){
     h1{
         font-size: var(--text-7xl);
@@ -52,7 +56,7 @@ a{
     }
 
     p, a{
-        font-size: var(--text-2xl);
+        font-size: var(--text-lg);
     }
 
 }
