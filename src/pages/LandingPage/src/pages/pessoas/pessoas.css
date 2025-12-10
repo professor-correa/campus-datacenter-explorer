@@ -1,332 +1,450 @@
-@import url(./../../styles/global-index.css);
+@import url("../../../../../styles/global.css");
 
 /* ==================== TÍTULOS ==================== */
+
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 30px;
+    width: 100%;
+    background-color: var(--red-v700);
+    transition: gap 0.4s ease;
+    z-index: 1001;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--grey-c100);
+}
+
+header.noGap {
+    gap: 0;
+}
+
+header > .imagesWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: gap 0.4s ease;
+}
+
+.imagesWrap > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+#links.open {
+    max-height: 380px;
+}
+
+nav > ul > li:nth-child(2) > a {
+    text-decoration: underline;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+nav > ul > li > a {
+    font-size: 1rem;
+    color: var(--grey-c100);
+    text-decoration: none;
+}
+
+main {
+    margin-top: 80px;
+}
+
 h1 {
-  text-align: center;
-  margin: 30px 0;
+    text-align: center;
+    margin: 30px 0;
 }
 
 h2 {
-  margin: 80px 100px 20px 100px;
-  background-color: #e30613;
-  color: #f0f0f0;
-  border-radius: 10px;
-  padding: 10px 0;
+    margin: 80px 100px 20px 100px;
+    background-color: #e30613;
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px 0;
 }
 
 h3 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 h1,
 h2,
 h3 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 /* ==================== CARROSSEL ==================== */
 .carrossel-container {
-  position: relative;
-  width: 95%;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  overflow-x: hidden;
-  margin: 0 auto 40px auto;
-  padding-bottom: 10px;
-  scrollbar-width: none;
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .carrossel-container::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .carrossel {
-  display: flex;
-  margin-left: 90px;
-  gap: 20px;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    padding: 20px 30px;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* ==================== CARDS ==================== */
 .card {
-  background: #f0f0f0;
-  width: 200px;
-  min-width: 200px;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  flex-shrink: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid red;
-  scroll-snap-align: center;
+    background: #f0f0f0;
+    width: 200px;
+    min-width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid red;
+    scroll-snap-align: center;
 }
 
 .card .foto {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .card .nome {
-  font-weight: 600;
-  margin-bottom: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 /* ================= BOTÃO (GITHUB/LINKEDIN) ================= */
 .card .botoes {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .card .botoes a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  background-size: cover;
-  border-radius: 50%;
-  background-color: red;
-  justify-content: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: red;
+    justify-content: center;
 }
 
 .card .botoes > a > img {
-  width: 20px;
-  height: 20px;
-  align-self: center;
+    width: 20px;
+    height: 20px;
+    align-self: center;
 }
 
 .botoes a img:hover {
-  scale: 1.3;
+    scale: 1.3;
 }
 
 .botao-linkedin,
 .botao-github {
-  padding: 10px;
-  transition: ease 0.4;
+    padding: 10px;
+    transition: ease 0.4s;
 }
 
 /* ==================== MENU HAMBÚRGUER ==================== */
 .nav-links {
-  list-style: none;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: calc(100% + 4px);
-  right: 16px;
-  background: #e30613;
-  padding: 12px 16px;
-  border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-  z-index: 997;
-  min-width: 410px;
-  min-height: 400px;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: transform 0.35s ease, opacity 0.35s ease;
-  padding-top: 40px;
-  margin: 6px 0;
-  pointer-events: none;
+    list-style: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 16px;
+    background: #e30613;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    z-index: 997;
+    min-width: 410px;
+    min-height: 400px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    padding-top: 40px;
+    margin: 6px 0;
+    pointer-events: none;
 }
 
 .nav-links.show {
-  display: flex;
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* Estilo base dos links na nav-bar */
-button.home-btn  {
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  padding: 4px 5px 5px 5px;
+button.home-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 4px 5px 5px 5px;
 }
 
 button.home-btn img {
-  width: 100%;
-  height: auto;
-  
+    width: 100%;
+    height: auto;
+
 }
 
 
 /* Efeito ao passar o mouse */
 button.home-btn:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 5px #ff0000);
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px #ff0000);
 }
 
 /* Efeito ao clicar */
 button.home-btn:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 nav a {
-  position: relative;
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffc1c1;
+    color: #ffc1c1;
 }
 
 nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background-color: #ffc1c1;
-  transition: width 0.5s ease;
-  border-radius: 2px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #ffc1c1;
+    transition: width 0.5s ease;
+    border-radius: 2px;
 }
 
 nav a:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 /* ==================== SETAS CARROSSEL ==================== */
 .prev,
 .next {
-  position: absolute;
-  top: 60%;
-  transform: translateY(-100%);
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  border-radius: 50%;
-  font-size: 2rem;
-  width: 50px;
-  height: 50px;
-  color: #e30613;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  z-index: 997;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-100%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    color: #e30613;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .prev:hover,
 .next:hover {
-  background: #e30613;
-  color: #fff;
+    background: #e30613;
+    color: #fff;
 }
 
 .prev {
-  left: 2%;
+    left: 2%;
 }
 
 .next {
-  right: 2%;
+    right: 2%;
 }
 
 /* ==================== FOOTER ==================== */
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 30px;
+    background-color: var(--red-v700);
 }
 
-.footer-left h4 {
-  text-align: center;
-  margin-bottom: 16px;
+footer > .backInPage > h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--grey-c100);
 }
 
-.footer-lists {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
+footer > nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
+footer > nav > ul > li > a {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--grey-c100);
+}
 
+.backInPage nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.contatos > h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--grey-c100);
+}
+
+.socialMedias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer > .contact > .acesseTambem > h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--grey-c100);
+}
+
+footer > .contact > .acesseTambem > a {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--grey-c100);
+    text-decoration: underline;
+}
 
 /* ==================== RESPONSIVO ==================== */
 @media (max-width: 768px) {
-  h1 {
-    margin-top: 130px;
-  }
+    h1 {
+        margin-top: 130px;
+    }
 
-  h2 {
-    margin-bottom: 15px;
-    padding-top: 15px;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+    h2 {
+        margin-bottom: 15px;
+        padding-top: 15px;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-  .card {
-    width: 140px;
-    min-width: 140px;
-    margin-left: 0;
-  }
+    .card {
+        width: 140px;
+        min-width: 140px;
+        margin-left: 0;
+    }
 
-  .card .foto {
-    width: 70px;
-    height: 70px;
-  }
+    .card .foto {
+        width: 70px;
+        height: 70px;
+    }
 
-  body,
-  html {
-    margin: 0;
-    padding: 0;
-  }
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+    }
 
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-  }
 
-  .carrossel-container {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    margin-left: 0;
-    padding-left: 0;
-  }
+    .carrossel-container {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        margin-left: 0;
+        padding-left: 0;
+    }
 
-  .prev,
-  .next {
-    display: none;
-  }
+    .prev,
+    .next {
+        display: none;
+    }
 
-  /* ========= MENU MOBILE ========= */
-  .nav-links {
-    flex-direction: column;
-    background: #e30613;
-    padding: 40px 20px;
-    z-index: 997;
-    width: 100%;
-    min-height: 80vh;
-    right: 0;
-    top: 0;
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: transform 0.35s ease, opacity 0.35s ease;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
-    border-radius: 0;
-    margin-top: 70px;
-  }
+    footer > .backInPage > h2 {
+        margin-bottom: 12px;
+        font-size: 48px;
+        color: var(--grey-c100);
+    }
 
-  .nav-links.show {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    footer > .backInPage > nav > ul > li > a {
+        font-size: 24px;
+        color: var(--grey-c100);
+        font-weight: 300;
+    }
+
+    footer > .contact > .acesseTambem > h4 {
+        font-size: 30px;
+        color: var(--grey-c100);
+    }
+
+    footer > .contact > .acesseTambem > a {
+        font-size: 24px;
+        color: var(--grey-c100);
+        font-weight: 300;
+    }
 }
