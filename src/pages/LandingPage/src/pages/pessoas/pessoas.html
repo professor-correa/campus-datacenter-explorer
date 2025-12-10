@@ -7,54 +7,34 @@
     <title>Pessoas - DataCenter SENAI</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./pessoas.css" />
-
     <link rel="preload icon" as="image" type="image/svg+xml" sizes="32x32" href="./../../assets/img/logo/logo-site.svg">
     <link rel="preload" as="image" href="./../../assets/img/logo/logo_branco_vermelho.svg">
+    <link rel="stylesheet" href="../../../../../styles/global.css">
+    <script src="/src/pages/Rack3Page/js/scroll.js" defer></script>
+    <script src="/src/pages/Rack3Page/js/hamburgerMenu.js" defer></script>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <img src="./../../assets/img/logo/logo_branco_vermelho.svg" alt="Logo SENAI" class="logo" />
-            <nav>
-                <div class="nav-links" role="navigation" aria-label="Menu de servidores">
-                    <p>Servidor 1:</p>
-                    <p>
-                        <a href="./../../../../Rack1Page/rack1Page">Armazenamento, Apache e FTP</a>
-                    </p>
-                    <p>Servidor 2:</p>
-                    <p>
-                        <a href="./../../../../Rack2Page/rack2Page">VMware ESXi e pfSense</a>
-                    </p>
-                    <p>Servidor 3:</p>
-                    <p>
-                        <a href="./../../../../Rack3Page/rack3Page.html">Active Directory (AD) e DNS</a>
-                    </p>
-                    <p>Servidor 4:</p>
-                    <p>
-                        <a href="./../../../../Rack4Page/Rack4Page.html">AD de Leitura e DNS Secundário</a>
-                    </p>
-                    <p>Servidor 5:</p>
-                    <p>
-                        <a href="./../../../../Rack5Page/rack5Page.html">Zabbix, Splunk/Wazuh e VMware
-                            ESXi</a>
-                    </p>
-                    <p>Servidor 6:</p>
-                    <p>
-                        <a href="./../../../../Rack6Page/rack6Page">Central de Câmeras e GitLab</a>
-                    </p>
-                </div>
-
-                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-                    <img src="./../../assets/img/components/menu_hamburger.svg" alt="Menu" />
-                </button>
-
-                <button class="home-btn" aria-expanded="false" onclick="location.href='/index.html'">
-                    <img src="./../../assets/img/components/home.svg" alt="Home" />
-                </button>
-            </nav>
+    <header class="noGap">
+        <div class="imagesWrap">
+            <a href="../../../index.html"><img src="/src/assets/icons/LogotipoSenaiRack3.svg" alt="logotipo do senai"/></a>
+            <button id="hamburgerMenu">
+                <img id="arrowUp" src="/src/assets/icons/arrowUpHeaderRack3.svg" alt="ícone seta para cima"/>
+                <img id="hamburgerIcon" src="/src/assets/icons/hamburgerMenuRack3.svg" alt="ícone menu hamburguer"/>
+            </button>
         </div>
+        <nav id="links">
+            <ul>
+                <li><a href="../../../../../../index.html">Home</a></li>
+                <li><a href="../../../../Rack1Page/rack1Page.html">Rack 1 - ARM, Apache & FTP</a></li>
+                <li><a href="../../../../Rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a></li>
+                <li><a href="../../../../Rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a></li>
+                <li><a href="../../../../Rack4Page/Rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
+                <li><a href="../../../../Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
+                <li><a href="../../../../Rack6Page/rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -1063,49 +1043,41 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <h4>Voltar na Página</h4>
-                <div class="footer-lists">
-                    <ul>
-                        <li><a href="#listaprofessores">Responsáveis</a></li>
-                        <li><a href="#landingpage">Landing Page</a></li>
-                        <li><a href="#servidor1">Servidor 1</a></li>
-                        <li><a href="#servidor2">Servidor 2</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#servidor3">Servidor 3</a></li>
-                        <li><a href="#servidor4">Servidor 4</a></li>
-                        <li><a href="#servidor5">Servidor 5</a></li>
-                        <li><a href="#servidor6">Servidor 6</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-right">
-                <h4>Contatos</h4>
-                <ul class="icons">
-                    <li>
-                        <a href="https://github.com/professor-correa/campus-datacenter-explorer" target="_blank"><img
-                                src="./../../assets/img/components/github_logo.svg" alt="GitHub" /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/senai.suico/" target="_blank"><img
-                                src="./../../assets/img/components/instagram_logo.svg" alt="Instagram" /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1486053466291671162" target="_blank"><img
-                                src="./../../assets/img/components/figma_logo.svg" alt="Figma" /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/school/senaisp-suico/posts/?feedView=all" target="_blank"><img
-                                src="./../../assets/img/components/linkedin_logo.svg" alt="LinkedIn" /></a>
-                    </li>
+    <footer id="footer" class="scrollLink">
+        <div class="backInPage">
+            <h2>Voltar na Página</h2>
+            <nav>
+                <ul>
+                    <li><a href="#landingpage">LandingPage</a></li>
+                    <li><a href="#servidor1">Servidor 1</a></li>
+                    <li><a href="#servidor2">Servidor 2</a></li>
+                    <li><a href="#servidor3">Servidor 3</a></li>
                 </ul>
-                <p class="acesso">
-                    <strong>Acesse Também</strong><br /><a href="https://sp.senai.br/unidade/suicobrasileira/" target="_blank">SENAI
-                        Suíço-Brasileira</a>
-                </p>
+                <ul>
+                    <li><a href="#servidor4">Servidor 4</a></li>
+                    <li><a href="#servidor5">Servidor 5</a></li>
+                    <li><a href="#servidor6">Servidor 6</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact">
+            <nav class="contatos">
+                <h3>Contatos</h3>
+                <div class="socialMedias">
+                    <a target="_blank" href="https://github.com/professor-correa/campus-datacenter-explorer"><img
+                            src="/src/assets/icons/githubRack3.svg" alt="logo do github"/></a>
+                    <a target="_blank" href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
+                            src="/src/assets/icons/instagramRack3.svg" alt="logo do instagram"/></a>
+                    <a target="_blank"
+                       href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1253139837118322148"><img
+                            src="/src/assets/icons/figmaRack3.svg" alt="logo do figma"/></a>
+                    <a target="_blank" href="https://www.linkedin.com/school/senaisp-suico/"><img
+                            src="/src/assets/icons/linkedinRack3.svg" alt="logo do linkedin"/></a>
+                </div>
+            </nav>
+            <div class="acesseTambem">
+                <h4>Acesse Também</h4>
+                <a target="_blank" href="https://sp.senai.br/unidade/suicobrasileira/">Senai suiço-brasileira</a>
             </div>
         </div>
     </footer>
