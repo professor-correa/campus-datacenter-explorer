@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/src/styles/reset.css" />
   <link rel="stylesheet" href="./styles/styles.css" />
   <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../components/PopupRack/ppRack.css">
 </head>
 
 <body>
@@ -59,78 +60,56 @@
         </p>
         <img src="/src/assets/images/imagem-secundaria-ad2.png" alt="Logo do AD" />
       </div>
-      <h2 id="instruction">
-        Clique nos componentes para descobrir o que cada um faz!
-      </h2>
-      <section class="rack-container">
-        <img src="/src/assets/images/rack-illustration.png" alt="Rack de Servidor" />
+        <div class="rack-component">
+            <h6>Clique nas imagens e veja mais sobre</h6>
+            <div class="rack-container">
+                <span data-popup="distribution" class="rack-button distribution"></span>
+                <span data-popup="switch" class="rack-button switch"></span>
+                <span data-popup="monitor" class="rack-button monitor"></span>
+                <span data-popup="server" class="rack-button server"></span>
+                <span data-popup="patch" class="rack-button patch"></span>
 
-        <input type="radio" name="popup" id="hs1" class="hotspot"
-          style="top: 12%; left: 8.6%; width: 34.6%; height: 8.1%" />
-        <input type="radio" name="popup" id="hs2" class="hotspot"
-          style="top: 22.2%; left: 10%; width: 31.8%; height: 12.5%" />
-        <input type="radio" name="popup" id="hs3" class="hotspot"
-          style="top: 36%; left: 10.7%; width: 30%; height: 18.2%" />
-        <input type="radio" name="popup" id="hs4" class="hotspot"
-          style="top: 57.1%; left: 9.8%; width: 31.9%; height: 14.2%" />
-        <input type="radio" name="popup" id="hs5" class="hotspot"
-          style="top: 74.9%; left: 8.2%; width: 34.8%; height: 10.7%" />
+                <div class="popup" data-popup-id="distribution">
+                    <span class="close-popup">&times;</span>
+                    <h3>Distribuição</h3>
+                    <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou de outros
+                        andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos da rede
+                        (como
+                        switches, roteadores ou conversores de mídia).</p>
+                </div>
 
-        <!-- Arrumar o texto desses popups -->
-        <div class="popup white" id="popup1">
-          <label for="hs1" class="overlay"></label>
-          <div class="content">
-            <h3>Painel de Distribuição Óptica</h3>
-            <p>
-              Gerencia as conexões de fibra óptica entre diferentes
-              dispositivos.
-            </p>
-            <label for="none" class="close-icon"></label>
-          </div>
+                <div class="popup" data-popup-id="switch">
+                    <span class="close-popup">&times;</span>
+                    <h3>Switch</h3>
+                    <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores, impressoras,
+                        servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem entre si
+                        de forma eficiente.</p>
+                </div>
+
+                <div class="popup" data-popup-id="monitor">
+                    <span class="close-popup">&times;</span>
+                    <h3>Monitor</h3>
+                    <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única estrutura.</span> Ele
+                        permite <span>controlar</span> vários servidores <span>a partir de um único console</span>, economizando espaço e
+                        facilitando a gestão.</p>
+                </div>
+
+                <div class="popup" data-popup-id="server">
+                    <span class="close-popup">&times;</span>
+                    <h3>Servidor</h3>
+                    <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você joga, digita
+                        textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
+                        frente dele. O trabalho dele é atender (servir) outros computadores.</p>
+                </div>
+
+                <div class="popup" data-popup-id="patch">
+                    <span class="close-popup">&times;</span>
+                    <h3>Patch Panel</h3>
+                    <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede (RJ45), que serve como um
+                        <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="popup black" id="popup2">
-          <label for="hs2" class="overlay"></label>
-          <div class="content">
-            <h3>Switch</h3>
-            <p>Conecta e gerencia a comunicação entre os dispositivos.</p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <div class="popup red" id="popup3">
-          <label for="hs3" class="overlay"></label>
-          <div class="content">
-            <h3>Tela de Monitor</h3>
-            <p>
-              Usada para controle e visualização do sistema em tempo real.
-            </p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <div class="popup white" id="popup4">
-          <label for="hs4" class="overlay"></label>
-          <div class="content">
-            <h3>Servidor</h3>
-            <p>
-              Controlador de domínio — autenticação e gerenciamento da rede.
-            </p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <div class="popup black" id="popup5">
-          <label for="hs5" class="overlay"></label>
-          <div class="content">
-            <h3>Patch Panel</h3>
-            <p>Organiza e interliga cabos de rede entre salas e racks.</p>
-            <label for="none" class="close-icon"></label>
-          </div>
-        </div>
-
-        <input type="radio" name="popup" id="none" checked hidden />
-      </section>
     </main>
     <details>
       <summary id="other-services">Outros Serviços</summary>
@@ -257,6 +236,8 @@
       header.classList.toggle("menu-open");
     });
   </script>
+
+  <script src="../../components/PopupRack/popupScript.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/src/pages/Rack1Page/rack1.css"/>
     <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../components/PopupRack/ppRack.css">
     <script src="/src/pages/Rack3Page/js/hamburgerMenu.js" defer></script>
     <script src="/src/pages/Rack3Page/js/dropdown.js" defer></script>
     <script src="/src/pages/Rack3Page/js/scroll.js" defer></script>
@@ -41,7 +42,7 @@
 </header>
 <main>
     <h1 class="titulo">ARM, Apache e FTP</h1>
-    <img src="../../assets/images/dropdawn-image.png" alt="placeholder-img">
+    <img src="../../assets/images/rack1-arm-img.jpg" alt="server-img-preview">
 
     <div id="ad" class="scrollLink"></div>
     <section class="card">
@@ -74,52 +75,50 @@
                 <span data-popup="switch" class="rack-button switch"></span>
                 <span data-popup="monitor" class="rack-button monitor"></span>
                 <span data-popup="server" class="rack-button server"></span>
-                <span data-popup="nas-server" class="rack-button nas"></span>
-                <span data-popup="bk-nas-server" class="rack-button bk-nas"></span>
+                <span data-popup="patch" class="rack-button patch"></span>
 
                 <div class="popup" data-popup-id="distribution">
                     <span class="close-popup">&times;</span>
                     <h3>Distribuição</h3>
-                    <p>Ele é basicamente uma "caixa" ou painel onde os cabos de fibra que vêm da rua ou de outros
-                        andares (chamados de backbone) chegam e são conectados aos equipamentos ativos da rede (como
+                    <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou de outros
+                        andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos da rede
+                        (como
                         switches, roteadores ou conversores de mídia).</p>
                 </div>
 
                 <div class="popup" data-popup-id="switch">
                     <span class="close-popup">&times;</span>
                     <h3>Switch</h3>
-                    <p>Informações do switch.</p>
+                    <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores, impressoras,
+                        servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem entre si
+                        de forma eficiente.</p>
                 </div>
 
                 <div class="popup" data-popup-id="monitor">
                     <span class="close-popup">&times;</span>
                     <h3>Monitor</h3>
-                    <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma única estrutura. Ele
-                        permite controlar vários servidores a partir de um único console, economizando espaço e
+                    <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única estrutura.</span> Ele
+                        permite <span>controlar</span> vários servidores <span>a partir de um único console</span>, economizando espaço e
                         facilitando a gestão.</p>
                 </div>
 
                 <div class="popup" data-popup-id="server">
                     <span class="close-popup">&times;</span>
                     <h3>Servidor</h3>
-                    <p>Um servidor é um computador, mas diferente do seu computador pessoal (onde você joga, digita
+                    <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você joga, digita
                         textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
                         frente dele. O trabalho dele é atender (servir) outros computadores.</p>
                 </div>
 
-                <div class="popup" data-popup-id="nas-server">
+                <div class="popup" data-popup-id="patch">
                     <span class="close-popup">&times;</span>
-                    <h3>Servidor NAS Principal</h3>
-                    <p>Temos dois servidores de Gerenciamento de armazenamento (NAS), sendo esse o principal.</p>
+                    <h3>Patch Panel</h3>
+                    <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede (RJ45), que serve como um
+                        <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.</p>
                 </div>
-                <div class="popup" data-popup-id="bk-nas-server">
-                    <span class="close-popup">&times;</span>
-                    <h3>Servidor NAS (Backup)</h3>
-                    <p>Esse outro servidor foi usado para guardar um backup dos dados presentes no NAS principal.</p>
-                </div>
-
             </div>
         </div>
+
         <a href="#adDocumentation" class="doc-link">veja a documentação técnica</a>
     </section>
 </main>
