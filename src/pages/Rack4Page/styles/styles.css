@@ -195,7 +195,6 @@ summary::after {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background-image: url("/src/assets/svgs/arrow-down.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -333,7 +332,7 @@ details p {
   }
 
   .li {
-    font-weight: 900 !;
+    font-weight: 900;
   }
 }
 /* HEADER */
@@ -388,7 +387,7 @@ details p {
 /* padrão da navBar */
 .main-nav {
   overflow: hidden;
-  transition: var(--transition);
+  transition: all 0.2s ease-in-out;
   height: 0;
   width: 100%;
 }
@@ -407,7 +406,7 @@ details p {
   color: var(--Tons-de-Cinza-c100);
   font-weight: 600;
   padding: 0.5rem 0.75rem;
-  border-radius: var(--radius-sm);
+  border-radius: 12px;
   display: block;
 }
 
