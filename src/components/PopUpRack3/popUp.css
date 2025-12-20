@@ -11,7 +11,7 @@ telas Copiem tudo o que está aqui e colem no css de vocês, se forem usar. */
     height: 100%;
     aspect-ratio: 619/583.24;
     background-size: contain;
-    background-image: url(/src/assets/images/ad1RackIlustration.svg);
+    background-image: url(/src/assets/images/ad1-rack-illustration.svg);
     border-radius: 8px;
 }
 
@@ -113,7 +113,7 @@ telas Copiem tudo o que está aqui e colem no css de vocês, se forem usar. */
         height: 100%;
         aspect-ratio: 619/583.24;
         background-size: contain;
-        background-image: url(/src/assets/images/ad1RackIlustration.svg);
+        background-image: url(/src/assets/images/ad1-rack-illustration.svg);
         border-radius: 8px;
     }
     
