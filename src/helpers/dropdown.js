@@ -1,4 +1,4 @@
-// Dropdown da services and documentation
+// dropdown da services and documentation
 document
   .querySelectorAll(".service-documentation .dropdown")
   .forEach((dropdown) => {
