@@ -6,7 +6,7 @@ let isMenuOpen = false;
 let animating = false;
 
 if (menuBtn && navLinks) {
-  const iconImg = menuBtn.querySelector("img");
+  const iconImg = menuBtn.querySelector("images");
 
   menuBtn.addEventListener("click", () => {
     if (animating) return;
@@ -25,7 +25,7 @@ if (menuBtn && navLinks) {
         iconImg.style.opacity = "0";
 
         setTimeout(() => {
-          iconImg.src = "./../../assets/img/components/arrow.svg";
+          iconImg.src = "./../../assets/images/components/arrow.svg";
           // Força o browser aplicar a mudança de src antes do fade-in
           requestAnimationFrame(() => {
             iconImg.style.transform = "translateY(0)";
@@ -46,7 +46,7 @@ if (menuBtn && navLinks) {
 
       setTimeout(() => {
         // Troca o src **após o fade out** e força o fade in
-        iconImg.src = "./../../assets/img/components/menu_hamburger.svg";
+        iconImg.src = "./../../assets/images/components/menu_hamburger.svg";
         requestAnimationFrame(() => {
           iconImg.style.transform = "translateY(0)";
           iconImg.style.opacity = "1";

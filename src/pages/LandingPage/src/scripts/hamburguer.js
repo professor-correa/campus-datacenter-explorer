@@ -4,7 +4,7 @@ const navLinks = document.querySelector(".nav-links");
 let isMenuOpen = false;
 
 if (menuBtn && navLinks) {
-  const iconImg = menuBtn.querySelector("img");
+  const iconImg = menuBtn.querySelector("images");
 
   menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("show");
@@ -16,8 +16,8 @@ if (menuBtn && navLinks) {
 
     setTimeout(() => {
       iconImg.src = isMenuOpen
-        ? "/src/pages/LandingPage/src/assets/img/components/arrow.svg"
-        : "/src/pages/LandingPage/src/assets/img/components/menu_hamburger.svg";
+        ? "/src/pages/LandingPage/src/assets/images/components/arrow.svg"
+        : "/src/pages/LandingPage/src/assets/images/components/menu_hamburger.svg";
 
       requestAnimationFrame(() => {
         iconImg.style.transform = "translateY(0)";

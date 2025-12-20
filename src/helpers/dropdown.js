@@ -1,10 +1,11 @@
+// Dropdown da services and documentation
 document
-  .querySelectorAll(".service-document .service-dropdown")
+  .querySelectorAll(".service-documentation .dropdown")
   .forEach((dropdown) => {
     dropdown.addEventListener("click", () => {
       const content = dropdown.nextElementSibling;
-      const arrowDown = dropdown.querySelector("img.icon-open");
-      const arrowUp = dropdown.querySelector("img.icon-closed");
+      const arrowDown = dropdown.querySelector("images.block");
+      const arrowUp = dropdown.querySelector("images.none");
 
       content.classList.toggle("open");
 
