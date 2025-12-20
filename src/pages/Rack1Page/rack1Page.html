@@ -10,22 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/src/pages/Rack1Page/rack1.css"/>
     <link rel="stylesheet" href="../../styles/global.css">
-    <link rel="stylesheet" href="../../components/PopupRack/ppRack.css">
-    <script src="/src/pages/Rack3Page/js/hamburgerMenu.js" defer></script>
-    <script src="/src/pages/Rack3Page/js/dropdown.js" defer></script>
-    <script src="/src/pages/Rack3Page/js/scroll.js" defer></script>
-    <script src="/src/pages/Rack3Page/js/popUp.js" defer></script>
-    <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../components/popup-rack/ppRack.css">
+    <script src="/src/helpers/hamburgerMenu.js" defer></script>
+    <script src="/src/helpers/dropdown.js" defer></script>
+    <script src="/src/helpers/scroll.js" defer></script>
+    <script src="/src/helpers/popup.js" defer></script>
+    <link rel="shortcut icon" href="../../assets/icons/favicon.png" type="image/x-icon">
 </head>
 
 <body>
 <div id="topo" class="scrollLink"></div>
 <header class="noGap">
     <div class="imagesWrap">
-        <a href="../../../index.html"><img src="/src/assets/icons/LogotipoSenaiRack3.svg" alt="logotipo do senai"/></a>
+        <a href="../../../index.html"><img src="/src/assets/icons/senai-logo.svg" alt="logotipo do senai"/></a>
         <button id="hamburgerMenu">
-            <img id="arrowUp" src="/src/assets/icons/arrowUpHeaderRack3.svg" alt="ícone seta para cima"/>
-            <img id="hamburgerIcon" src="/src/assets/icons/hamburgerMenuRack3.svg" alt="ícone menu hamburguer"/>
+            <img id="arrowUp" src="/src/assets/icons/header-arrow-icon.svg" alt="ícone seta para cima"/>
+            <img id="hamburgerIcon" src="/src/assets/icons/menu-icon.svg" alt="ícone menu hamburguer"/>
         </button>
     </div>
     <nav id="links">
@@ -42,7 +42,7 @@
 </header>
 <main>
     <h1 class="titulo">ARM, Apache e FTP</h1>
-    <img src="../../assets/images/rack1-arm-img.jpg" alt="server-img-preview">
+    <img src="../../assets/images/arm-hero-img.jpg" alt="server-img-preview">
 
     <div id="ad" class="scrollLink"></div>
     <section class="card">
@@ -65,7 +65,7 @@
                     Com esse rack podemos ver que existem diversos tipos e formatos de racks diferentes em nossa
                     escola.</p>
             </div>
-            <img src="/src/assets/images/armazenamentoRack1HeroImage.svg" alt="ilustração dos serviço de armazenamento"
+            <img src="/src/assets/images/arm-img.svg" alt="ilustração dos serviço de armazenamento"
                  class="diagram"/>
         </div>
         <div class="rack-component">
@@ -131,8 +131,8 @@
     <div class="service-documentation">
         <div class="dropdown">
             <h3>Falando mais sobre armazenamento</h3>
-            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
-            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+            <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon"/>
         </div>
         <div class="serviceContent">
             <p>
@@ -142,15 +142,15 @@
                 tecnologia para armazenar arquivos importantes, fazer backups e manter dados acessíveis de forma rápida
                 e confiável para todos que precisam utilizá-los na rede.
             </p>
-            <img src="/src/assets/images/activeDirectoryHeroImage.svg" alt="hero image do serviço active diretory"/>
+            <img src="/src/assets/images/hero-img.svg" alt="hero image do serviço active diretory"/>
             <a href="#adDocumentation">Veja a documentação técnica</a>
         </div>
     </div>
     <div class="service-documentation">
         <div class="dropdown">
             <h3>O que é SSH</h3>
-            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
-            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+            <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon"/>
         </div>
         <div class="serviceContent">
             <p>
@@ -159,15 +159,15 @@
                 É como se fosse um controle remoto para computadores, mas
                 <span>protegido por senha e criptografia.</span>
             </p>
-            <img src="/src/assets/images/vmwareHeroImage.svg" alt="hero image do serviço vmware"/>
+            <img src="/src/assets/images/vmware-hero-img.svg" alt="hero image do serviço vmware"/>
             <a href="#vmwareDocumentation">Veja a documentação técnica</a>
         </div>
     </div>
     <div class="service-documentation">
         <div class="dropdown">
             <h3>O que é Apache?</h3>
-            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
-            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+            <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon"/>
         </div>
         <div class="serviceContent">
             <p>
@@ -178,15 +178,15 @@
                 login, compressão e suporte a outras linguagens. Por ser estável e funcionar em vários sistemas,
                 tornou-se um dos servidores <span>mais populares do mundo</span> para colocar sites no ar.
             </p>
-            <img src="/src/assets/images/dnsHeroImage.svg" alt="hero image do serviço dns"/>
+            <img src="/src/assets/images/dns-img.svg" alt="hero image do serviço dns"/>
             <a href="#dnsDocumentation">Veja a documentação técnica</a>
         </div>
     </div>
     <div class="service-documentation">
         <div class="dropdown">
             <h3>FTP</h3>
-            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
-            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+            <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon"/>
         </div>
         <div class="serviceContent">
             <p>
@@ -194,7 +194,7 @@
                 computador. Ele é fácil de usar e funciona bem, mas não possui criptografia própria, o que significa que
                 os dados podem ficar expostos se não houver outras opções de segurança junto com ele.
             </p>
-            <img src="/src/assets/images/arduinoHeroImage.svg" alt="hero image do serviço arduíno"/>
+            <img src="/src/assets/images/arduino-img.svg" alt="hero image do serviço arduíno"/>
             <a href="#arduinoDocumentation">Veja a documentação técnica</a>
         </div>
     </div>
@@ -209,8 +209,8 @@
     <div class="service-documentation">
         <div class="dropdown">
             <h3>Armazenamento</h3>
-            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
-            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+            <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon"/>
         </div>
         <div class="serviceContent">
             O dispositivo de armazenamento em um rack de redes, também conhecido como <span>Storage</span> ou <span>Servidor
@@ -224,8 +224,8 @@
         </div>
         <div class="dropdown">
             <h3>SSH</h3>
-            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
-            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+            <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon"/>
         </div>
         <div class="serviceContent">
             <p><span> Definição:</span> Protocolo de comunicação segura para acesso remoto a servidores.</p>
@@ -250,8 +250,8 @@
         </div>
         <div class="dropdown">
             <h3>Apache</h3>
-            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
-            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+            <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon"/>
         </div>
         <div class="serviceContent">
             O <span>Apache</span> é um servidor web de código aberto amplamente utilizado para <span>hospedar sites e
@@ -266,8 +266,8 @@
         <!-- Documentação Arduino -->
         <div class="dropdown">
             <h3>FTP</h3>
-            <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon"/>
-            <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon"/>
+            <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon"/>
+            <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon"/>
         </div>
         <div class="serviceContent">
             O <span>File Transfer Protocol</span> (FTP) é um protocolo usado para <span>transferência de arquivos</span>
@@ -293,14 +293,14 @@
             <h3>Contatos</h3>
             <div class="socialMedias">
                 <a target="_blank" href="https://github.com/professor-correa/campus-datacenter-explorer"><img
-                        src="/src/assets/icons/githubRack3.svg" alt="logo do github"/></a>
+                        src="/src/assets/icons/github-icon.svg" alt="logo do github"/></a>
                 <a target="_blank" href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
-                        src="/src/assets/icons/instagramRack3.svg" alt="logo do instagram"/></a>
+                        src="/src/assets/icons/instagram-icon.svg" alt="logo do instagram"/></a>
                 <a target="_blank"
                    href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1253139837118322148"><img
-                        src="/src/assets/icons/figmaRack3.svg" alt="logo do figma"/></a>
+                        src="/src/assets/icons/figma-icon.svg" alt="logo do figma"/></a>
                 <a target="_blank" href="https://www.linkedin.com/school/senaisp-suico/"><img
-                        src="/src/assets/icons/linkedinRack3.svg" alt="logo do linkedin"/></a>
+                        src="/src/assets/icons/linkedin-icon.svg" alt="logo do linkedin"/></a>
             </div>
         </nav>
         <div class="acesseTambem">
@@ -310,7 +310,7 @@
     </div>
 </footer>
 
-<script src="../../components/PopupRack/popupScript.js"></script>
+<script src="../../components/popup-rack/popupScript.js"></script>
 </body>
 
 </html>
