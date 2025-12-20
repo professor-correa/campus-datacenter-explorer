@@ -1,13 +1,13 @@
 // ===================== CARÔMETRO 3D =====================
 const participantes = [
-  { nome: "Prof° Lucas Corrêa", foto: "/src/pages/LandingPage/src/assets/img/peoples/carometro/LucasCorrea.jpg"},
-  { nome: "Profª Fiama Brenda", foto: "/src/pages/LandingPage/src/assets/img/peoples/carometro/FiamaBrenda.webp" },
-  { nome: "Prof° Wellington", foto: "/src/pages/LandingPage/src/assets/img/peoples/pessoa.svg" },
-  { nome: "Prof° Matias", foto: "/src/pages/LandingPage/src/assets/img/peoples/pessoa.svg" },
-  { nome: "Prof° Carlos Fabbri", foto: "/src/pages/LandingPage/src/assets/img/peoples/pessoa.svg" }
+  { nome: "Prof° Lucas Corrêa", foto: "/src/pages/LandingPage/src/assets/images/peoples/carousel/LucasCorrea.jpg"},
+  { nome: "Profª Fiama Brenda", foto: "/src/pages/LandingPage/src/assets/images/peoples/carousel/FiamaBrenda.webp" },
+  { nome: "Prof° Wellington", foto: "/src/pages/LandingPage/src/assets/images/peoples/pessoa.svg" },
+  { nome: "Prof° Matias", foto: "/src/pages/LandingPage/src/assets/images/peoples/pessoa.svg" },
+  { nome: "Prof° Carlos Fabbri", foto: "/src/pages/LandingPage/src/assets/images/peoples/pessoa.svg" }
 ];
 
-const carometro = document.getElementById("carometro");
+const carometro = document.getElementById("carousel");
 let angulo = 0;
 const totalP = participantes.length;
 
@@ -28,7 +28,7 @@ setInterval(() => {
   });
 }, 2500);
 
-const wrapper = document.querySelector('.carometro-wrapper');
+const wrapper = document.querySelector('.carousel-wrapper');
 const btnPrev = document.querySelector('.caro-btn.prev');
 const btnNext = document.querySelector('.caro-btn.next');
 
@@ -49,7 +49,7 @@ const btnNext = document.querySelector('.caro-btn.next');
 
 // ===================== AJUSTE DINÂMICO DO CARÔMETRO =====================
 function ajustarRaioCarometro() {
-  const carometro = document.querySelector('.carometro');
+  const carometro = document.querySelector('.carousel');
   const participantes = document.querySelectorAll('.participante');
 
   if (!carometro || participantes.length === 0) return;

@@ -95,15 +95,15 @@ function atualizarCarrossel() {
   hacks.forEach((h, i) => {
     h.classList.remove("destaque");
     h.style.opacity = "0.6";
-    const img = h.querySelector("img");
-    if (img) img.src = "./../../assets/img/racks/rack_cinza.svg";
+    const img = h.querySelector("images");
+    if (img) img.src = "./../../assets/images/racks/rack_cinza.svg";
   });
 
   const ativo = hacks[current];
   ativo.classList.add("destaque");
   ativo.style.opacity = "1";
-  const imgAtivo = ativo.querySelector("img");
-  if (imgAtivo) imgAtivo.src = "./../../assets/img/racks/rack_vermelho.svg";
+  const imgAtivo = ativo.querySelector("images");
+  if (imgAtivo) imgAtivo.src = "./../../assets/images/racks/rack_vermelho.svg";
 
   const hackWidth = ativo.offsetWidth + parseInt(getComputedStyle(container).gap || 0);
   const containerWidth = container.offsetWidth;
