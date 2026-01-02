@@ -227,7 +227,7 @@ img.icon-closed {
     gap: 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: all 0.3s ease-in-out;
     width: 100%;
 }
 
