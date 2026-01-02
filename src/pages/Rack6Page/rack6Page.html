@@ -21,7 +21,8 @@
 
     <header>
         <div class="header-content">
-            <a href="../../../index.html"><img src="../../assets/icons/senai-logo.svg" alt="Logo escrito senai em maiúsculo"></a>
+            <a href="../../../index.html"><img src="../../assets/icons/senai-logo.svg"
+                    alt="Logo escrito senai em maiúsculo"></a>
             <img class="menu-button" src="../../assets/icons/menu-icon.svg"
                 alt="icone de menu sendo três linhas horizontais com um espaçamento entre elas">
         </div>
@@ -104,7 +105,12 @@
             </div>
 
             <h3 class="main-title" id="remote-access">Segurança e escalabilidade.</h3>
-            <p class="body2">A integração entre a central de monitoramento por câmeras e o GitLab reforça a importância de unir infraestrutura física e ferramentas de desenvolvimento para garantir operação eficiente, segura e continuamente atualizada. Esses elementos, apresentados nos cards anteriores, demonstram como a combinação de controle visual do ambiente e gestão estruturada de código cria uma base sólida para a confiabilidade do sistema, ampliando a capacidade de resposta, organização e evolução do projeto como um todo.</p>
+            <p class="body2">A integração entre a central de monitoramento por câmeras e o GitLab reforça a importância
+                de unir infraestrutura física e ferramentas de desenvolvimento para garantir operação eficiente, segura
+                e continuamente atualizada. Esses elementos, apresentados nos cards anteriores, demonstram como a
+                combinação de controle visual do ambiente e gestão estruturada de código cria uma base sólida para a
+                confiabilidade do sistema, ampliando a capacidade de resposta, organização e evolução do projeto como um
+                todo.</p>
             <h3 class="main-title" id="conections">Como tudo isso se conecta:</h3>
             <div class="rack-component">
                 <h6>Clique nas imagens e veja mais sobre</h6>
@@ -118,8 +124,10 @@
                     <div class="popup" data-popup-id="distribution">
                         <span class="close-popup">&times;</span>
                         <h3>Distribuição</h3>
-                        <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou de outros
-                            andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos da rede
+                        <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou
+                            de outros
+                            andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos
+                            da rede
                             (como
                             switches, roteadores ou conversores de mídia).</p>
                     </div>
@@ -127,23 +135,28 @@
                     <div class="popup" data-popup-id="switch">
                         <span class="close-popup">&times;</span>
                         <h3>Switch</h3>
-                        <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores, impressoras,
-                            servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem entre si
+                        <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores,
+                            impressoras,
+                            servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem
+                            entre si
                             de forma eficiente.</p>
                     </div>
 
                     <div class="popup" data-popup-id="monitor">
                         <span class="close-popup">&times;</span>
                         <h3>Monitor</h3>
-                        <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única estrutura.</span> Ele
-                            permite <span>controlar</span> vários servidores <span>a partir de um único console</span>, economizando espaço e
+                        <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única
+                                estrutura.</span> Ele
+                            permite <span>controlar</span> vários servidores <span>a partir de um único console</span>,
+                            economizando espaço e
                             facilitando a gestão.</p>
                     </div>
 
                     <div class="popup" data-popup-id="server">
                         <span class="close-popup">&times;</span>
                         <h3>Servidor</h3>
-                        <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você joga, digita
+                        <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você
+                            joga, digita
                             textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
                             frente dele. O trabalho dele é atender (servir) outros computadores.</p>
                     </div>
@@ -151,8 +164,10 @@
                     <div class="popup" data-popup-id="patch">
                         <span class="close-popup">&times;</span>
                         <h3>Patch Panel</h3>
-                        <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede (RJ45), que serve como um
-                            <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.</p>
+                        <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede
+                            (RJ45), que serve como um
+                            <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -212,6 +227,17 @@
     <script src="../../helpers/flip-card.js"></script>
     <script src="../../helpers/menu-options.js"></script>
     <script src="../../components/popup-rack/popupScript.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
