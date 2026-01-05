@@ -1,10 +1,10 @@
 // ===================== CARÔMETRO 3D =====================
 const participantes = [
-  { nome: "Prof° Lucas Corrêa", foto: "/src/pages/LandingPage/src/assets/images/peoples/carousel/LucasCorrea.jpg"},
-  { nome: "Profª Fiama Brenda", foto: "/src/pages/LandingPage/src/assets/images/peoples/carousel/FiamaBrenda.webp" },
-  { nome: "Prof° Wellington", foto: "/src/pages/LandingPage/src/assets/images/peoples/pessoa.svg" },
-  { nome: "Prof° Matias", foto: "/src/pages/LandingPage/src/assets/images/peoples/pessoa.svg" },
-  { nome: "Prof° Carlos Fabbri", foto: "/src/pages/LandingPage/src/assets/images/peoples/pessoa.svg" }
+  { nome: "Prof° Lucas Corrêa", foto: "/src/pages/landingPage/src/assets/images/peoples/carousel/LucasCorrea.jpg"},
+  { nome: "Profª Fiama Brenda", foto: "/src/pages/landingPage/src/assets/images/peoples/carousel/FiamaBrenda.webp" },
+  { nome: "Prof° Wellington", foto: "/src/pages/landingPage/src/assets/images/peoples/pessoa.svg" },
+  { nome: "Prof° Matias", foto: "/src/pages/landingPage/src/assets/images/peoples/pessoa.svg" },
+  { nome: "Prof° Carlos Fabbri", foto: "/src/pages/landingPage/src/assets/images/peoples/pessoa.svg" }
 ];
 
 const carometro = document.getElementById("carousel");
