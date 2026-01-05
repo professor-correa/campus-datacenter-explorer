@@ -20,6 +20,13 @@ header {
     transition: gap 0.4s ease;
     z-index: 1001;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 74px;
+}
 
 header nav ul li a {
     text-decoration: none;
@@ -547,9 +554,6 @@ footer > .contact > .acesseTambem > a {
         height: 70px;
     }
 
-    h1 {
-        margin-top: 90px;
-    }
 
     .nav-links {
         flex-direction: column;
