@@ -24,6 +24,7 @@ footer {
 
 main {
     flex: 1;
+    padding-top: 73px;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -34,6 +35,9 @@ main {
    ========================================= */
 header {
     background: var(--red-v700, #E30613);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .header-content {

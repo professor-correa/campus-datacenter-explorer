@@ -25,6 +25,9 @@ body {
 
 header {
     background: var(--red-v700, #E30613);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .header-content {
@@ -35,7 +38,6 @@ header {
     padding: 14px 30px;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .menu-button {
@@ -129,7 +131,7 @@ main {
     display: flex;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 30px 16px;
+    padding: 103px 16px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
