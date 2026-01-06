@@ -29,9 +29,6 @@ setInterval(() => {
 }, 2500);
 
 const wrapper = document.querySelector('.carometro-wrapper');
-const btnPrev = document.querySelector('.caro-btn.prev');
-const btnNext = document.querySelector('.caro-btn.next');
-
 
 // Rolagem automática
 let scrollPosition = 0;
