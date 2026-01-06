@@ -80,13 +80,13 @@ Este projeto segue um fluxo **Git Flow** simplificado:
 
 ## 👨‍💻 Colaboradores
 Veja os colaboradores de cada parte desse projeto!
-- [Rack 1]()
-- [Rack 2]()
-- [Rack 3]()
-- [Rack 4]()
-- [Rack 5]()
-- [Rack 6]()
-- [Landing Page]()
+- [Rack 1](src/pages/rack1Page/colabs.md)
+- [Rack 2](src/pages/rack2Page/colabs.md)
+- [Rack 3](src/pages/rack3Page/colabs.md)
+- [Rack 4](src/pages/rack4Page/colabs.md)
+- [Rack 5](src/pages/rack5Page/colabs.md)
+- [Rack 6](src/pages/rack6Page/colabs.md)
+- [Landing Page](src/pages/landingPage/colabs.md)
 
 ---
 
