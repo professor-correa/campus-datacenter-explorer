@@ -21,6 +21,14 @@ header {
     z-index: 1001;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 74px;
+}
+
 header nav ul li a {
     text-decoration: none;
     color: var(--grey-c100);
@@ -281,7 +289,6 @@ nav > ul > li > a {
     padding: 40px;
 }
 
-
 /* ===================== CARÔMETRO ===================== */
 .carrossel-participantes {
     text-align: center;
@@ -370,7 +377,9 @@ nav > ul > li > a {
     align-items: center;
     height: 100vh;
 }
-
+.btn-fotos {
+    margin-bottom: 30px;
+}
 .btn-fotos,
 .btn-projeto {
     width: 100%;
@@ -382,7 +391,6 @@ nav > ul > li > a {
 .btn-projeto {
     margin-top: 20px;
 }
-
 
 /* seta */
 .seta-acesso {
@@ -547,9 +555,6 @@ footer > .contact > .acesseTambem > a {
         height: 70px;
     }
 
-    h1 {
-        margin-top: 90px;
-    }
 
     .nav-links {
         flex-direction: column;
