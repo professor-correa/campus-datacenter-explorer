@@ -20,6 +20,7 @@ header {
     transition: gap 0.4s ease;
     z-index: 1001;
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -288,7 +289,6 @@ nav > ul > li > a {
     padding: 40px;
 }
 
-
 /* ===================== CARÔMETRO ===================== */
 .carrossel-participantes {
     text-align: center;
@@ -389,7 +389,6 @@ nav > ul > li > a {
 .btn-projeto {
     margin-top: 20px;
 }
-
 
 /* seta */
 .seta-acesso {
