@@ -377,7 +377,9 @@ nav > ul > li > a {
     align-items: center;
     height: 100vh;
 }
-
+.btn-fotos {
+    margin-bottom: 30px;
+}
 .btn-fotos,
 .btn-projeto {
     width: 100%;
