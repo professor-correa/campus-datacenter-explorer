@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rack 4 - AD de Leitura e DNS Secundário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="rack4.css">
+    <link rel="stylesheet" href="../../components/popup-rack/ppRack.css">
+    <link rel="shortcut icon" href="../../assets/icons/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <a href="../../../index.html"><img src="../../assets/icons/senai-logo.svg" alt="Logo escrito senai em maiúsculo"></a>
+        <img class="menu-button" src="../../assets/icons/menu-icon.svg"
+             alt="icone de menu sendo três linhas horizontais com um espaçamento entre elas">
+    </div>
+    <nav class="menu-options">
+        <a href="../../../index.html">Home</a>
+        <a href="../rack1Page/rack1Page.html">Rack 1 - Armazenamento, Apache e FTP</a>
+        <a href="../rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a>
+        <a href="../rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a>
+        <a href="#">Rack 4 - AD de Leitura e DNS Secundário</a>
+        <a href="../rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a>
+        <a href="../rack6Page/rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a>
+    </nav>
+</header>
+
+<main>
+    <div class="hero">
+        <h1>Rack 4 - AD2</h1>
+        <img src="/src/assets/images/ad2-img-hero.webp" alt="">
+    </div>
+
+    <div class="main-content" id="about">
+        <h2>O que é....?</h2>
+        <div class="main-content-wrapper"><p class="body2">O Servidor Rack 4 funciona como o plano B da rede, pronto
+            para
+            entrar em ação se algo der errado. Ele não só serve para guardar
+            arquivos, mas também para manter tudo funcionando. O mesmo cuida de
+            serviços críticos, como o login e o acesso à rede. Na prática, se o
+            servidor principal (AD1) cair, o Rack 4 assume e garante que ninguém
+            fique sem acesso ou tenha o trabalho interrompido. Isso evita a
+            perda de dados importantes e impede que a rede pare, economizando
+            tempo e evitando prejuízo.</p>
+            <img src="/src/assets/images/ad2-img.png" alt="Logo do AD"/></div>
+
+        <h3 class="main-title" id="conections">Clique nos componentes para descobrir o que cada um faz!</h3>
+        <div class="rack-component">
+            <h6>Clique nas imagens e veja mais sobre</h6>
+            <div class="rack-container">
+                <span data-popup="distribution" class="rack-button distribution"></span>
+                <span data-popup="switch" class="rack-button switch"></span>
+                <span data-popup="monitor" class="rack-button monitor"></span>
+                <span data-popup="server" class="rack-button server"></span>
+                <span data-popup="patch" class="rack-button patch"></span>
+
+                <div class="popup" data-popup-id="distribution">
+                    <span class="close-popup">&times;</span>
+                    <h3>Distribuição</h3>
+                    <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou de outros
+                        andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos da rede
+                        (como
+                        switches, roteadores ou conversores de mídia).</p>
+                </div>
+
+                <div class="popup" data-popup-id="switch">
+                    <span class="close-popup">&times;</span>
+                    <h3>Switch</h3>
+                    <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores, impressoras,
+                        servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem entre si
+                        de forma eficiente.</p>
+                </div>
+
+                <div class="popup" data-popup-id="monitor">
+                    <span class="close-popup">&times;</span>
+                    <h3>Monitor</h3>
+                    <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única estrutura.</span> Ele
+                        permite <span>controlar</span> vários servidores <span>a partir de um único console</span>, economizando espaço e
+                        facilitando a gestão.</p>
+                </div>
+
+                <div class="popup" data-popup-id="server">
+                    <span class="close-popup">&times;</span>
+                    <h3>Servidor</h3>
+                    <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você joga, digita
+                        textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
+                        frente dele. O trabalho dele é atender (servir) outros computadores.</p>
+                </div>
+
+                <div class="popup" data-popup-id="patch">
+                    <span class="close-popup">&times;</span>
+                    <h3>Patch Panel</h3>
+                    <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede (RJ45), que serve como um
+                        <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="other-services" class="dropdown">
+        <div class="dropdown-header">
+            <h2>Outros Serviços</h2>
+            <img class="dropdown-arrow" src="../../assets/icons/arrow-down.svg" alt="seta apontando para baixo">
+        </div>
+
+        <div class="dropdown-content">
+            <ul>
+                <li>
+                    <span style="font-weight: 800">Servidor de Arquivos (File Server):</span>
+                    Centraliza o armazenamento, o acesso e o backup de dados e
+                    arquivos importantes da rede em um local seguro.
+                </li>
+                <li>
+                    <span style="font-weight: 800">Servidor DHCP:</span> Distribui
+                    endereços IP automaticamente para os dispositivos (PCs, celulares)
+                    assim que eles se conectam na rede, evitando configuração manual.
+                </li>
+                <li>
+                    <span style="font-weight: 800">Firewall e Proxy:</span> Atuam como
+                    a segurança principal da rede. O Firewall bloqueia ataques
+                    externos, enquanto o Proxy gerencia e filtra o acesso dos usuários
+                    à internet.
+                </li>
+                <li>
+                    <span style="font-weight: 800">Monitoramento de Software (Ex: Zabbix):</span>
+                    Acompanha a "saúde" digital do servidor (CPU, memória, disco) e
+                    alerta a equipe de TI sobre problemas antes que eles causem uma
+                    falha.
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <nav class="footer-nav">
+        <h2><a href="">Voltar na Página</a></h2>
+        <a href="#about">Sobre</a>
+        <a href="#conections">O que cada um faz</a>
+        <a href="#other-services">Outros serviços</a>
+    </nav>
+    <div class="footer-wrapper">
+        <div class="footer-content contact-wrapper">
+            <h3>Contatos</h3>
+            <div class="icons-wrapper">
+                <a href="https://github.com/professor-correa/campus-datacenter-explorer" target="_blank">
+                    <img src="../../assets/icons/github-icon.svg" alt="logo do github">
+                </a>
+                <a href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu" target="_blank">
+                    <img src="../../assets/icons/instagram-icon.svg" alt="logo do instagram">
+                </a>
+                <a href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1253139837118322148" target="_blank">
+                    <img src="../../assets/icons/figma-icon.svg" alt="logo do figma">
+                </a>
+                <a href="https://www.linkedin.com/school/senaisp-suico/" target="_blank">
+                    <img src="../../assets/icons/linkedin-icon.svg" alt="logo do linkedin">
+                </a>
+            </div>
+        </div>
+        <div class="footer-content access-too-wrapper">
+            <h3>Acesse Também</h3>
+            <a href="https://sp.senai.br/unidade/suicobrasileira/" target="_blank">Senai Suiço Brasileira</a>
+        </div>
+    </div>
+</footer>
+<script src="../../helpers/dropdown-helper.js"></script>
+<script src="../../helpers/menu-options.js"></script>
+<script src="../../components/popup-rack/popupScript.js"></script>
+</body>
+
+</html>
