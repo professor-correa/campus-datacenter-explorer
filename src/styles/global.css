@@ -87,24 +87,31 @@ html {
 
 .accessibility {
     z-index: 2147483646;
+
     position: fixed;
     left: 0;
     top: 55%;
+
     margin: 10px;
 }
 
 #overlay {
     z-index: -1;
+
     display: none;
     position: fixed;
+
     width: 100vw;
     height: 100vh;
+
     opacity: 0;
 }
 
 .accessibility-icon {
     cursor: pointer;
+
     padding: 5px;
+
     border-radius: 8px;
     background-color: var(--red-v600) !important;
 }
@@ -124,8 +131,9 @@ html {
     min-height: 40px;
     min-width: 40px;
 
+    filter: drop-shadow(1px 1px 2px #000);
     border-radius: 10px;
-    background-color: var(--grey-c200);
+    background-color: var(--grey-c100);
 }
 
 .accessibility-open img {
@@ -135,8 +143,10 @@ html {
 .tittle-wrapper {
     display: flex;
     justify-content: space-between;
+
     width: 100%;
     padding: 1rem;
+
     border-radius: 10px 10px 0 0;
     color: var(--grey-c100);
     background-color: var(--red-v700);
@@ -160,10 +170,12 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     padding: 10px;
+
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
-    font-size: 16px;
+    font-size: var(--text-sm);
     color: var(--grey-c100);
     background-color: var(--red-v700);
 }
@@ -190,19 +202,23 @@ html {
 
 .bar {
     position: relative;
+
     width: 80%;
-    height: 30px;
+    height: 25px;
+
     border-radius: 10px;
-    background-color: var(--grey-c200);
+    background-color: var(--grey-c100);
 }
 
 .bar::before {
     content: "";
     position: absolute;
+
     width: var(--length, 0%);
     height: 100%;
+
     border-radius: inherit;
-    background-color: var(--grey-c1000);
+    background-color: var(--grey-c400);
     transition: all 0.5s ease;
 }
 

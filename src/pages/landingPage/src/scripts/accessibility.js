@@ -69,15 +69,24 @@ minus.addEventListener("click", () => {
     }
 });
 
-monochromatic = document.getElementById("monochromatic")
-high_saturation = document.getElementById("high-saturation");
-low_saturation = document.getElementById("low-saturation");
-high_contrast = document.getElementById("high-contrast");
-lower_contrast = document.getElementById("lower-contrast");
+let monochromatic = document.getElementById("monochromatic");
+let high_saturation = document.getElementById("high-saturation");
+let low_saturation = document.getElementById("low-saturation");
+let high_contrast = document.getElementById("high-contrast");
+let lower_contrast = document.getElementById("lower-contrast");
 
-function isActive(theme) {
-    theme.classList.toggle("active");
-}
+let btn_access = document.querySelectorAll('.btn-accessibility');
+btn_access.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isActive = btn.classList.contains('btn-active');
+
+    btn_access.forEach(b => b.classList.remove('btn-active'));
+
+    if (!isActive) {
+      btn.classList.add('btn-active');
+    }
+  });
+});
 
 function removeClasses() {
     html.classList.remove("high-saturation", "low-saturation", "monochromatic");
@@ -110,7 +119,6 @@ low_saturation.addEventListener("click", () => {
     removeContrast();
     html.classList.remove("high-saturation", "monochromatic");
     html.classList.toggle('low-saturation');
-    low_saturation.classList.toggle("btn-active")
 });
 
 high_contrast.addEventListener("click", function () {
