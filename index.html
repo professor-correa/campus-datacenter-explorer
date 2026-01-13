@@ -13,8 +13,10 @@
     </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="src/pages/LandingPage/src/styles/global-index.css">
-    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/variables.css">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/index.css">
     <meta name="description" content="Esta página é a principal página do projeto 'Data-Center SENAI', seja bem-vindo!">
     <link rel="shortcut icon" href="src/assets/icons/favicon.png" type="image/x-icon">
     <script src="/src/helpers/hamburgerMenu.js" defer></script>
@@ -24,26 +26,26 @@
 <body>
     <div id="overlay"></div>
 
-    <header class="noGap">
-        <div class="imagesWrap">
-            <a href=""><img src="/src/assets/icons/senai-logo.svg" alt="logotipo do senai" /></a>
-            <button id="hamburgerMenu">
-                <img id="arrowUp" src="/src/assets/icons/header-arrow-icon.svg" alt="ícone seta para cima" />
-                <img id="hamburgerIcon" src="/src/assets/icons/menu-icon.svg" alt="ícone menu hamburguer" />
-            </button>
-        </div>
-        <nav id="links">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="./src/pages/Rack1Page/rack1Page.html">Rack 1 - ARM, Apache & FTP</a></li>
-                <li><a href="./src/pages/Rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a></li>
-                <li><a href="./src/pages/Rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a></li>
-                <li><a href="./src/pages/Rack4Page/Rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
-                <li><a href="./src/pages/Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
-                <li><a href="./src/pages/Rack6Page/rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="noGap">
+    <div class="imagesWrap">
+        <a href=""><img src="/src/assets/icons/senai-logo.svg" alt="logotipo do senai"/></a>
+        <button id="hamburgerMenu">
+            <img id="arrowUp" src="/src/assets/icons/header-arrow-icon.svg" alt="ícone seta para cima"/>
+            <img id="hamburgerIcon" src="/src/assets/icons/menu-icon.svg" alt="ícone menu hamburguer"/>
+        </button>
+    </div>
+    <nav id="links">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="src/pages/rack1Page/rack1Page.html">Rack 1 - ARM, Apache & FTP</a></li>
+            <li><a href="src/pages/rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a></li>
+            <li><a href="src/pages/rack3Page/rack3Page.html">Rack 3 - Active Directory (AD) e DNS</a></li>
+            <li><a href="src/pages/rack4Page/rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
+            <li><a href="src/pages/rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
+            <li><a href="src/pages/rack6Page/rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <section class="hero" id="inicio">
@@ -61,138 +63,137 @@
         <section class="carrossel-servidores">
             <div class="hack-container">
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="hack">
-                                <img src="src/pages/LandingPage/src/assets/images/racks/rack_vermelho.svg"
-                                    alt="Rack 1" />
-                                <p>Rack 1 - Armazenamento</p>
-                            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="hack">
+                            <img src="src/pages/landingPage/src/assets/images/racks/rack_vermelho.svg" alt="Rack 1"/>
+                            <p>Rack 1 - Armazenamento</p>
                         </div>
-                        <div class="flip-card-back">
-                            <div class="card-back">
-                                <h3>Armazenamento, Apache e FTP</h3>
-                                <p>Servidor dedicado à hospedagem de dados e transferência segura de arquivos.</p>
-                                <a href="./src/pages/Rack1Page/rack1Page.html" class="botao-acesso"> Acessar
-                                    <img src="src/pages/LandingPage/src/assets/images/components/seta-acessar.svg"
-                                        alt="Acessar Servidor 1" class="seta-acesso">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="card-back">
+                            <h3>Armazenamento, Apache e FTP</h3>
+                            <p>Servidor dedicado à hospedagem de dados e transferência segura de arquivos.</p>
+                            <a href="src/pages/rack1Page/rack1Page.html" class="botao-acesso"> Acessar
+                                <img src="src/pages/landingPage/src/assets/images/components/seta-acessar.svg"
+                                     alt="Acessar Servidor 1"
+                                     class="seta-acesso">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="hack">
+                            <img src="src/pages/landingPage/src/assets/images/racks/rack_vermelho.svg" alt="Rack 1"/>
+                            <p>Rack 2 - VMware ESXi</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="card-back">
+                            <h3>VMware ESXi e pfSense</h3>
+                            <p>Responsável pela virtualização de sistemas e proteção do tráfego de rede.</p>
+                            <div class="btn-projeto">
+                                <a href="src/pages/rack2Page/rack2Page.html" class="botao-acesso"> Acessar
+                                    <img src="src/pages/landingPage/src/assets/images/components/seta-acessar.svg"
+                                         alt="Acessar Servidor 2"
+                                         class="seta-acesso">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="hack">
-                                <img src="src/pages/LandingPage/src/assets/images/racks/rack_vermelho.svg"
-                                    alt="Rack 1" />
-                                <p>Rack 2 - VMware ESXi</p>
-                            </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="hack">
+                            <img src="src/pages/landingPage/src/assets/images/racks/rack_vermelho.svg" alt="Rack 1"/>
+                            <p>Rack 3 - Active Directory 1</p>
                         </div>
-                        <div class="flip-card-back">
-                            <div class="card-back">
-                                <h3>VMware ESXi e pfSense</h3>
-                                <p>Responsável pela virtualização de sistemas e proteção do tráfego de rede.</p>
-                                <div class="btn-projeto">
-                                    <a href="./src/pages/Rack2Page/rack2Page.html" class="botao-acesso"> Acessar
-                                        <img src="src/pages/LandingPage/src/assets/images/components/seta-acessar.svg"
-                                            alt="Acessar Servidor 2" class="seta-acesso">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="card-back">
+                            <h3>Active Directory (AD) e DNS</h3>
+                            <p>Gerencia usuários e dispositivos e garante a comunicação entre servidores.</p>
+                            <div class="btn-projeto">
+                                <a href="src/pages/rack3Page/rack3Page.html" class="botao-acesso"> Acessar
+                                    <img src="src/pages/landingPage/src/assets/images/components/seta-acessar.svg"
+                                         alt="Acessar Servidor 3"
+                                         class="seta-acesso">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="hack">
-                                <img src="src/pages/LandingPage/src/assets/images/racks/rack_vermelho.svg"
-                                    alt="Rack 1" />
-                                <p>Rack 3 - Active Directory 1</p>
-                            </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="hack">
+                            <img src="src/pages/landingPage/src/assets/images/racks/rack_vermelho.svg" alt="Rack 1"/>
+                            <p>Rack 4 - Active Directory 2</p>
                         </div>
-                        <div class="flip-card-back">
-                            <div class="card-back">
-                                <h3>Active Directory (AD) e DNS</h3>
-                                <p>Gerencia usuários e dispositivos e garante a comunicação entre servidores.</p>
-                                <div class="btn-projeto">
-                                    <a href="./src/pages/Rack3Page/rack3Page.html" class="botao-acesso"> Acessar
-                                        <img src="src/pages/LandingPage/src/assets/images/components/seta-acessar.svg"
-                                            alt="Acessar Servidor 3" class="seta-acesso">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="card-back">
+                            <h3>AD de Leitura e DNS Secundário</h3>
+                            <p>Fornece redundância e estabilidade ao sistema principal de autenticação e nomes.</p>
+                            <div class="btn-projeto">
+                                <a href="src/pages/rack4Page/rack4Page.html" class="botao-acesso"> Acessar
+                                    <img src="src/pages/landingPage/src/assets/images/components/seta-acessar.svg"
+                                         alt="Acessar Servidor 4"
+                                         class="seta-acesso">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="hack">
-                                <img src="src/pages/LandingPage/src/assets/images/racks/rack_vermelho.svg"
-                                    alt="Rack 1" />
-                                <p>Rack 4 - Active Directory 2</p>
-                            </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="hack">
+                            <img src="src/pages/landingPage/src/assets/images/racks/rack_vermelho.svg" alt="Rack 1"/>
+                            <p>Rack 5 - Zabbix</p>
                         </div>
-                        <div class="flip-card-back">
-                            <div class="card-back">
-                                <h3>AD de Leitura e DNS Secundário</h3>
-                                <p>Fornece redundância e estabilidade ao sistema principal de autenticação e nomes.</p>
-                                <div class="btn-projeto">
-                                    <a href="./src/pages/Rack4Page/Rack4Page.html" class="botao-acesso"> Acessar
-                                        <img src="src/pages/LandingPage/src/assets/images/components/seta-acessar.svg"
-                                            alt="Acessar Servidor 4" class="seta-acesso">
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="card-back">
+                            <h3>Zabbix, Splunk/Wazuh e VMware ESXi</h3>
+                            <p>Realiza o monitoramento da rede e a análise de desempenho e segurança.</p>
+                            <div class="btn-projeto">
+                                <a href="src/pages/rack5Page/rack5Page.html" class="botao-acesso"> Acessar
+                                    <img src="src/pages/landingPage/src/assets/images/components/seta-acessar.svg"
+                                         alt="Acessar Servidor 5"
+                                         class="seta-acesso">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="hack">
-                                <img src="src/pages/LandingPage/src/assets/images/racks/rack_vermelho.svg"
-                                    alt="Rack 1" />
-                                <p>Rack 5 - Zabbix</p>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="card-back">
-                                <h3>Zabbix, Splunk/Wazuh e VMware ESXi</h3>
-                                <p>Realiza o monitoramento da rede e a análise de desempenho e segurança.</p>
-                                <div class="btn-projeto">
-                                    <a href="./src/pages/Rack5Page/rack5Page.html" class="botao-acesso"> Acessar
-                                        <img src="src/pages/LandingPage/src/assets/images/components/seta-acessar.svg"
-                                            alt="Acessar Servidor 5" class="seta-acesso">
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="hack">
+                            <img src="src/pages/landingPage/src/assets/images/racks/rack_vermelho.svg" alt="Rack 1"/>
+                            <p>Rack 6 - Central de Câmeras</p>
                         </div>
                     </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="hack">
-                                <img src="src/pages/LandingPage/src/assets/images/racks/rack_vermelho.svg"
-                                    alt="Rack 1" />
-                                <p>Rack 6 - Central de Câmeras</p>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <div class="card-back">
-                                <h3>Central de Câmeras e GitLab</h3>
-                                <p>Integra o monitoramento físico e o gerenciamento de código e sistemas.</p>
-                                <div class="btn-projeto">
-                                    <a href="./src/pages/Rack6Page/rack6Page.html" class="botao-acesso"> Acessar
-                                        <img src="src/pages/LandingPage/src/assets/images/components/seta-acessar.svg"
-                                            alt="Acessar Servidor 6" class="seta-acesso">
-                                    </a>
-                                </div>
+                    <div class="flip-card-back">
+                        <div class="card-back">
+                            <h3>Central de Câmeras e GitLab</h3>
+                            <p>Integra o monitoramento físico e o gerenciamento de código e sistemas.</p>
+                            <div class="btn-projeto">
+                                <a href="src/pages/rack6Page/rack6Page.html" class="botao-acesso"> Acessar
+                                    <img src="src/pages/landingPage/src/assets/images/components/seta-acessar.svg"
+                                         alt="Acessar Servidor 6"
+                                         class="seta-acesso">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -231,10 +232,21 @@
         </section>
     </main>
 
-    <div class="btn-fotos">
-        <a href="src/pages/LandingPage/src/pages/partners/partners.html" class="botao-acesso">
-            Confira todos os participantes
-            <img src="src/pages/LandingPage/src/assets/images/components/seta-acessar.svg" alt="" class="seta-acesso">
+    <section class="descricao-detalhada">
+        <p>Nosso DataCenter é equipado com hardware de ponta e sistemas de monitoramento contínuo. Cada servidor é
+            configurado para desempenho otimizado, segurança de dados e suporte a múltiplas aplicações
+            simultaneamente.</p>
+
+        <p>Além disso, promovemos a integração entre alunos, professores e projetos tecnológicos, tornando o DataCenter
+            um
+            ambiente de aprendizado e inovação prática.</p>
+    </section>
+
+    <div class="btn-projeto">
+        <a href="src/pages/landingPage/src/assets/docs/Sobre o Projeto Redes Senai.pdf"
+           download="Sobre o Projeto Redes Senai.pdf" class="botao-acesso">
+            Veja a documentação do projeto
+            <img src="src/pages/landingPage/src/assets/images/components/seta-acessar.svg" alt="" class="seta-acesso">
         </a>
     </div>
     <footer id="footer" class="scrollLink">
@@ -248,24 +260,39 @@
                 </ul>
             </nav>
         </div>
-        <div class="contact">
-            <nav class="contatos">
-                <h3>Contatos</h3>
-                <div class="socialMedias">
-                    <a target="_blank" href="https://github.com/professor-correa/campus-datacenter-explorer"><img
-                            src="/src/assets/icons/github-icon.svg" alt="logo do github" /></a>
-                    <a target="_blank" href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
-                            src="/src/assets/icons/instagram-icon.svg" alt="logo do instagram" /></a>
-                    <a target="_blank"
-                        href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1253139837118322148"><img
-                            src="/src/assets/icons/figma-icon.svg" alt="logo do figma" /></a>
-                    <a target="_blank" href="https://www.linkedin.com/school/senaisp-suico/"><img
-                            src="/src/assets/icons/linkedin-icon.svg" alt="logo do linkedin" /></a>
-                </div>
-            </nav>
-            <div class="acesseTambem">
-                <h4>Acesse Também</h4>
-                <a target="_blank" href="https://sp.senai.br/unidade/suicobrasileira/">Senai suiço-brasileira</a>
+    </section>
+</main>
+
+<div class="btn-fotos">
+    <a href="src/pages/landingPage/src/pages/partners/partners.html" class="botao-acesso">
+        Confira todos os participantes
+        <img src="src/pages/landingPage/src/assets/images/components/seta-acessar.svg" alt="" class="seta-acesso">
+    </a>
+</div>
+<footer id="footer" class="scrollLink">
+    <div class="backInPage">
+        <h2>Voltar na Página</h2>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Topo</a></li>
+                <li><a href="#racks">Serviços</a></li>
+                <li><a href="#carometro">Responsáveis</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact">
+        <nav class="contatos">
+            <h3>Contatos</h3>
+            <div class="socialMedias">
+                <a target="_blank" href="https://github.com/professor-correa/campus-datacenter-explorer"><img
+                        src="/src/assets/icons/github-icon.svg" alt="logo do github"/></a>
+                <a target="_blank" href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
+                        src="/src/assets/icons/instagram-icon.svg" alt="logo do instagram"/></a>
+                <a target="_blank"
+                   href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1253139837118322148"><img
+                        src="/src/assets/icons/figma-icon.svg" alt="logo do figma"/></a>
+                <a target="_blank" href="https://www.linkedin.com/school/senaisp-suico/"><img
+                        src="/src/assets/icons/linkedin-icon.svg" alt="logo do linkedin"/></a>
             </div>
         </div>
     </footer>
@@ -387,6 +414,8 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+<script src="src/pages/landingPage/src/scripts/menu.js"></script>
+<script src="src/pages/landingPage/src/scripts/carometro.js"></script>
 </body>
 
 </html>

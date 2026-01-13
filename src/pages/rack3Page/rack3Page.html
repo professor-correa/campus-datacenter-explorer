@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rack 3 - Active Directory (AD) e DNS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="/src/pages/rack3Page/rack3.css" />
+  <link rel="stylesheet" href="../../components/popup-rack/ppRack.css">
+  <link rel="shortcut icon" href="../../assets/icons/favicon.png" type="image/x-icon">
+  <script src="/src/helpers/hamburgerMenu.js" defer></script>
+  <script src="/src/helpers/dropdown.js" defer></script>
+  <script src="/src/helpers/scroll.js" defer></script>
+  <script src="/src/helpers/popup.js" defer></script>
+</head>
+
+<body>
+  <!-- Ryan -->
+  <div id="topo" class="scrollLink"></div>
+  <header class="noGap">
+    <div class="imagesWrap">
+      <a href="../../../index.html"><img src="/src/assets/icons/senai-logo.svg" alt="logotipo do senai" /></a>
+      <button id="hamburgerMenu">
+        <img id="arrowUp" src="/src/assets/icons/header-arrow-icon.svg" alt="ícone seta para cima" />
+        <img id="hamburgerIcon" src="/src/assets/icons/menu-icon.svg" alt="ícone menu hamburguer" />
+      </button>
+    </div>
+    <nav id="links">
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../rack1Page/rack1Page.html">Rack 1 - Armazenamento, Apache e FTP</a></li>
+        <li><a href="../rack2Page/rack2Page.html">Rack 2 - VMware ESXi e pfSense</a></li>
+        <li><a href="#">Rack 3 - Active Directory (AD) e DNS</a></li>
+        <li><a href="../rack4Page/rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
+        <li><a href="../rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
+        <li><a href="../rack6Page/rack6Page.html">Rack 6 - Central de Câmeras e GitLab</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- <li><a href="#adService">Rack 1 - Armazenamento, Apache e FTP</a></li>
+  <li><a href="#adDocumentation">Rack 2 - VMware ESXi e pfSense</a></li>
+  <li><a href="#footer">Rack 3 - Active Directory (AD) e DNS</a></li> -->
+  <!-- Nikollas -->
+  <main>
+    <h1 class="titulo">Rack AD1</h1>
+
+    <!--o componente do rack aqui vai ficar muito grande por conta do tamanho da tela (o componente preenche 100% da tela)-->
+    <div class="rack-component">
+      <h6>Clique nas imagens e veja mais sobre</h6>
+      <div class="rack-container">
+        <span data-popup="distribution" class="rack-button distribution"></span>
+        <span data-popup="switch" class="rack-button switch"></span>
+        <span data-popup="monitor" class="rack-button monitor"></span>
+        <span data-popup="server" class="rack-button server"></span>
+        <span data-popup="patch" class="rack-button patch"></span>
+
+        <div class="popup" data-popup-id="distribution">
+          <span class="close-popup">&times;</span>
+          <h3>Distribuição</h3>
+          <p>Ele é basicamente uma "caixa" ou painel onde os <span>cabos de fibra</span> que vêm da rua ou de outros
+            andares (chamados de backbone) chegam e <span>são conectados aos equipamentos</span> ativos da rede
+            (como
+            switches, roteadores ou conversores de mídia).</p>
+        </div>
+
+        <div class="popup" data-popup-id="switch">
+          <span class="close-popup">&times;</span>
+          <h3>Switch</h3>
+          <p>Ele é um equipamento de hardware que <span>conecta vários dispositivos</span> (computadores, impressoras,
+            servidores, câmeras IP) <span>numa mesma rede</span> (LAN), permitindo que eles conversem entre si
+            de forma eficiente.</p>
+        </div>
+
+        <div class="popup" data-popup-id="monitor">
+          <span class="close-popup">&times;</span>
+          <h3>Monitor</h3>
+          <p>O Monitor KVM é um dispositivo que integra teclado, vídeo e mouse em uma <span>única estrutura.</span> Ele
+            permite <span>controlar</span> vários servidores <span>a partir de um único console</span>, economizando
+            espaço e
+            facilitando a gestão.</p>
+        </div>
+
+        <div class="popup" data-popup-id="server">
+          <span class="close-popup">&times;</span>
+          <h3>Servidor</h3>
+          <p>Um servidor é um <span>computador</span>, mas diferente do seu computador pessoal (onde você joga, digita
+            textos ou navega na internet), o trabalho do servidor não é atender a uma pessoa sentada na
+            frente dele. O trabalho dele é atender (servir) outros computadores.</p>
+        </div>
+
+        <div class="popup" data-popup-id="patch">
+          <span class="close-popup">&times;</span>
+          <h3>Patch Panel</h3>
+          <p>O Patch Panel é um <span>painel passivo</span> (não usa energia) cheio de portas de rede (RJ45), que serve
+            como um
+            <span>ponto intermediário entre os cabos</span> que vêm das paredes e o Switch.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--depois, colocar um media query em todas as paginas e deixar para essas sections serem no macimo 1300px, pra n ficar muito grande no desktop (pagina rack2, por exemplo)-->
+
+    <div id="ad" class="scrollLink"></div>
+    <section class="card">
+      <h2 class="titulo-card">O que é o AD?</h2>
+      <p>Imagina uma empresa grande:</p>
+      <ul>
+        <li>tem vários funcionários (usuários).</li>
+        <li>
+          cada um precisa acessar computadores, impressoras, pastas e
+          sistemas.
+        </li>
+        <li>
+          se cada máquina tivesse senha própria e cada serviço fosse separado,
+          ia virar uma bagunça.
+        </li>
+      </ul>
+
+      <p>
+        O que o AD faz?<br />
+        O Active Directory é tipo o "porteiro digital" da empresa:
+      </p>
+      <ul>
+        <li>
+          ele guarda todas as informações sobre quem são os usuários e quais
+          permissões cada um tem.
+        </li>
+        <li>
+          ele controla o acesso: só quem tem login e senha válidos entra.
+        </li>
+        <li>
+          ele organiza os recursos (computadores, impressoras, pastas
+          compartilhadas) em um lugar central.
+        </li>
+      </ul>
+
+      <p>Exemplo prático:</p>
+      <ul>
+        <li>
+          você chega na empresa, liga o PC e coloca seu usuário e senha.
+        </li>
+        <li>
+          o AD verifica: “Esse cara trabalha aqui? Ele pode acessar quais
+          pastas? Pode usar a impressora do 3° andar?”
+        </li>
+        <li>se sim, ele libera. Se não, bloqueia.</li>
+      </ul>
+
+      <p>
+        Em resumo:<br />
+        O AD é um serviço da Microsoft que funciona como:
+      </p>
+      <ul>
+        <li>um cadastro central de pessoas e equipamentos.</li>
+        <li>
+          um sistema de segurança que garante que só quem deve ter acesso,
+          tenha.
+        </li>
+        <li>
+          um organizador que deixa tudo mais fácil de administrar em redes
+          grandes.
+        </li>
+      </ul>
+
+
+      <img src="/src/assets/images/hero-img.svg" alt="ilustração dos serviço do active directory" class="diagram" />
+      <a href="#adDocumentation" class="doc-link">veja a documentação técnica</a>
+    </section>
+  </main>
+  <!-- Ryan was here bro -->
+  <!-- Links para os serviços -->
+  <div id="adService" class="scrollLink"></div>
+  <div id="vmwareService" class="scrollLink"></div>
+  <div id="dnsService" class="scrollLink"></div>
+  <div id="arduinoService" class="scrollLink"></div>
+  <section class="services-documentation">
+    <h2>Serviços</h2>
+    <!-- Serviço AD -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>Ad</h3>
+        <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          O Active Directory (AD) é um serviço da Microsoft que organiza e
+          gerencia recursos de rede em um domínio. Ele centraliza a
+          autenticação de usuários, computadores e serviços, permitindo
+          aplicar políticas de segurança e facilitar a administração de
+          grandes ambientes corporativos.
+        </p>
+        <img src="/src/assets/images/hero-img.svg" alt="hero image do serviço active diretory" />
+        <a href="#adDocumentation">Veja a documentação técnica</a>
+      </div>
+    </div>
+    <!-- Serviço VMWare -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>VMWare</h3>
+        <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          O VMWare é uma plataforma de virtualização que possibilita a criação
+          e gestão de máquinas virtuais. Ele permite otimizar o uso dos
+          recursos de hardware, isolar ambientes de teste e produção e
+          aumentar a flexibilidade da infraestrutura de TI.
+        </p>
+        <img src="/src/assets/images/vmware-hero-img.svg" alt="hero image do serviço vmware" />
+        <a href="#vmwareDocumentation">Veja a documentação técnica</a>
+      </div>
+    </div>
+    <!-- Serviço DNS -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>DNS</h3>
+        <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          O Domain Name System (DNS) converte nomes de domínio (como
+          www.exemplo.com) em endereços IP, permitindo que os usuários acessem
+          serviços de rede de forma mais simples e intuitiva. Ele é essencial
+          para navegação na web, autenticação de serviços e comunicação entre
+          dispositivos.
+        </p>
+        <img src="/src/assets/images/dns-img.svg" alt="hero image do serviço dns" />
+        <a href="#dnsDocumentation">Veja a documentação técnica</a>
+      </div>
+    </div>
+    <!-- Serviço Arduino -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>Arduino</h3>
+        <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          O Arduino será usado para monitoramento de umidade e temperatura é
+          um sistema embarcado desenvolvido para coletar e exibir dados
+          ambientais em tempo real. Utilizando sensores como o DHT11 ou DHT22,
+          o dispositivo mede a temperatura e a umidade do ambiente,
+          processando as informações por meio da placa Arduino. Esses dados
+          podem ser exibidos em um display, enviados para um servidor ou
+          integrados a sistemas de automação e IoT. O projeto oferece uma
+          solução acessível e eficiente para controle climático em
+          laboratórios, data centers ou ambientes industriais.
+        </p>
+        <img src="/src/assets/images/arduino-img.svg" alt="hero image do serviço arduíno" />
+        <a href="#arduinoDocumentation">Veja a documentação técnica</a>
+      </div>
+    </div>
+  </section>
+  <!-- links que são redirecionados pra documentação técnica -->
+  <div id="adDocumentation" class="scrollLink"></div>
+  <div id="vmwareDocumentation" class="scrollLink"></div>
+  <div id="dnsDocumentation" class="scrollLink"></div>
+  <div id="arduinoDocumentation" class="scrollLink"></div>
+
+  <section class="services-documentation">
+    <h2>Documentação Técnica</h2>
+    <!-- Documentação AD -->
+    <div class="service-documentation">
+      <div class="dropdown">
+        <h3>Ad</h3>
+        <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          O Active Directory (AD) é um serviço da Microsoft que organiza e
+          gerencia recursos de rede em um domínio. Ele centraliza a
+          autenticação de usuários, computadores e serviços, permitindo
+          aplicar políticas de segurança e facilitar a administração de
+          grandes ambientes corporativos.
+        </p>
+        <a href="#adService">Veja o serviço</a>
+      </div>
+      <!-- Documentação VMWare -->
+      <div class="dropdown">
+        <h3>VMWARE</h3>
+        <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          Definição: Hypervisor bare-metal (tipo 1) da VMware que permite
+          rodar múltiplas máquinas virtuais em um único servidor físico.
+          Arquitetura: VMkernel: Núcleo que gerencia CPU, memória, rede e
+          armazenamento. Drivers nativos: Comunicação direta com hardware.
+          VMs: Cada máquina virtual com seu próprio sistema operacional
+          convidado. Funcionalidades: Gerenciamento centralizado via vCenter.
+          Recursos avançados: vMotion (migração de VMs sem downtime), HA (alta
+          disponibilidade), DRS (balanceamento de carga). Suporte a storage
+          via iSCSI, NFS e Fibre Channel. APIs para integração com soluções de
+          nuvem e automação. Casos de uso: Consolidação de servidores,
+          ambientes de teste, nuvem privada, alta disponibilidade em data
+          centers.
+        </p>
+        <a href="#vmwareService">Veja o serviço</a>
+      </div>
+      <!-- Documentação DNS -->
+      <div class="dropdown">
+        <h3>DNS</h3>
+        <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          Definição: Sistema hierárquico e distribuído que traduz nomes de
+          domínio em endereços IP. Arquitetura: Resolvers: Clientes que fazem
+          requisições de tradução. Servidores DNS: Autoritativos (responsáveis
+          por zonas) e recursivos (fazem consultas em cadeia). Zonas e
+          Registros: A, AAAA, MX, CNAME, PTR, entre outros. Funcionalidades:
+          Resolução de nomes (nome → IP e IP → nome). Balanceamento de carga
+          via múltiplos registros. Suporte a protocolos TCP/UDP na porta 53.
+          Segurança com DNSSEC (assinaturas digitais). Casos de uso: Navegação
+          na web, autenticação de serviços, comunicação entre dispositivos.
+        </p>
+        <a href="#dnsService">Veja o serviço</a>
+      </div>
+      <!-- Documentação Arduino -->
+      <div class="dropdown">
+        <h3>Arduíno</h3>
+        <img class="block" src="/src/assets/icons/arrow-down.svg" alt="arrow down icon" />
+        <img class="none" src="/src/assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+      <div class="serviceContent">
+        <p>
+          Definição: Plataforma de prototipagem eletrônica baseada em hardware
+          e software livres. Arquitetura: Placas: Arduino Uno, Mega, Nano,
+          entre outras. Microcontrolador: Geralmente da família AVR
+          (ATmega328, ATmega2560). IDE: Ambiente de desenvolvimento com
+          linguagem baseada em C/C++. Funcionalidades: Leitura de sensores
+          (analógicos e digitais). Controle de atuadores (motores, LEDs,
+          relés). Comunicação serial, I2C, SPI. Integração com IoT via Wi-Fi,
+          Bluetooth ou LoRa. Casos de uso: Automação residencial,
+          monitoramento ambiental, protótipos de robótica, sistemas de IoT.
+        </p>
+        <a href="#arduinoService">Veja o serviço</a>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="scrollLink">
+    <div class="backInPage">
+      <h2>Voltar na Página</h2>
+      <nav>
+        <ul>
+          <li><a href="#topo">Topo</a></li>
+          <li><a href="#adService">Serviços</a></li>
+          <li><a href="#adDocumentation">Documentação Técnica</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="contact">
+      <nav class="contatos">
+        <h3>Contatos</h3>
+        <div class="socialMedias">
+          <a href="https://github.com/professor-correa/campus-datacenter-explorer"><img
+              src="/src/assets/icons/github-icon.svg" alt="logo do github" /></a>
+          <a href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
+              src="/src/assets/icons/instagram-icon.svg" alt="logo do instagram" /></a>
+          <a href="https://www.figma.com/files/team/1549864848072511843/project/453453990/DataCenter-Sui%C3%A7o-Brasileiro?fuid=1253139837118322148"><img src="/src/assets/icons/figma-icon.svg" alt="logo do figma" /></a>
+          <a href="https://www.linkedin.com/school/senaisp-suico/"><img src="/src/assets/icons/linkedin-icon.svg"
+              alt="logo do linkedin" /></a>
+        </div>
+      </nav>
+      <div class="acesseTambem">
+        <h4>Acesse Também</h4>
+        <a href="https://sp.senai.br/unidade/suicobrasileira/">Senai suiço-brasileira</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../../components/popup-rack/popupScript.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>
