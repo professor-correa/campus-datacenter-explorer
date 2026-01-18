@@ -198,9 +198,9 @@ html {
 
 .font-adjust-wrapper {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
     width: 100%;
-    padding: 1rem;
+    padding: 16px;
     border-radius: 0 0 10px 10px;
     background-color: var(--red-v700);
 }
@@ -208,7 +208,7 @@ html {
 .bar {
     position: relative;
 
-    width: 188px;
+    width: 80%;
     height: 25px;
 
     border-radius: 10px;

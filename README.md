@@ -54,6 +54,14 @@ O **Campus Datacenter Explorer** tem como meta:
 
 ---
 
+## Acessibilidade
+O projeto inclui opções de acessibilidade como:
+- **Vlibras** → API implementada via script que permite que pessoas surdas acessem conteúdo multimídia em sua língua natural de comunicação
+- **Menu de acessibilidade** → Menu auxiliar com opções de: 
+   - ajuste de cores (monocromático, alto contraste) 
+   - ajuste de fonte (aumenta/diminuir texto)
+
+---
 ## 🚀 Como rodar
 1. Clone o repositório:
    ```bash
