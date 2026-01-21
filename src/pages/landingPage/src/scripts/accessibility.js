@@ -156,7 +156,6 @@ lower_contrast.addEventListener("click", function () {
         color: #5C4033 !important;
         background-color: #F5DEB3 !important;
         fill: var(--grey-c1000);
-
         }
         `;
         document.head.appendChild(lowerContrast);
