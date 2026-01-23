@@ -63,7 +63,7 @@ minus.addEventListener("click", () => {
         bar.style.setProperty('--length', '35%');
     } else if (html.style.fontSize == "18px") {
         html.style.fontSize = "16px";
-        bar.style.setProperty('--length', '0%');
+        bar.style.setProperty('--length', '10%');
         minus.style.cursor = "default"
         plus.style.cursor = "pointer"
     }
@@ -155,7 +155,6 @@ lower_contrast.addEventListener("click", function () {
         * {
         color: #5C4033 !important;
         background-color: #F5DEB3 !important;
-        fill: var(--grey-c1000);
         }
         `;
         document.head.appendChild(lowerContrast);

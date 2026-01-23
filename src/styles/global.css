@@ -119,7 +119,7 @@ html {
 .accessibility-open {
     position: fixed;
     top: 30%;
-    
+
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -196,6 +196,12 @@ html {
     fill: var(--grey-c100);
 }
 
+.btn-grid #high-contrast svg,
+.btn-grid #lower-contrast svg {
+    padding: 2px;
+    border-radius: 5px;    
+}
+
 .font-adjust-wrapper {
     display: flex;
     gap: 16px;
@@ -219,7 +225,7 @@ html {
     content: "";
     position: absolute;
 
-    width: var(--length, 0%);
+    width: var(--length, 10%);
     height: 100%;
 
     border-radius: inherit;
