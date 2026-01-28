@@ -10,7 +10,7 @@ let bar = document.getElementsByClassName("bar")[0];
 
 access_icon.addEventListener("click", () => {
 
-    if (access_open.style.display == "") {
+    if (access_open.style.display === "") {
         access_icon.style.display = "none";
         access_open.style.display = "flex";
 
@@ -36,16 +36,16 @@ overlay.addEventListener("click", () => {
 
 plus.addEventListener("click", () => {
 
-    if (html.style.fontSize == "16px") {
+    if (html.style.fontSize === "16px") {
         html.style.fontSize = "18px";
         bar.style.setProperty('--length', '35%');
         plus.style.cursor = "pointer"
         minus.style.cursor = "pointer"
-    } else if (html.style.fontSize == "18px") {
+    } else if (html.style.fontSize === "18px") {
         html.style.fontSize = "20px";
         bar.style.setProperty('--length', '70%');
         plus.style.cursor = "pointer"
-    } else if (html.style.fontSize == "20px") {
+    } else if (html.style.fontSize === "20px") {
         html.style.fontSize = "22px";
         bar.style.setProperty('--length', '100%');
         plus.style.cursor = "default"
@@ -54,14 +54,14 @@ plus.addEventListener("click", () => {
 
 minus.addEventListener("click", () => {
 
-    if (html.style.fontSize == "22px") {
+    if (html.style.fontSize === "22px") {
         html.style.fontSize = "20px";
         bar.style.setProperty('--length', '70%');
         plus.style.cursor = "pointer"
-    } else if (html.style.fontSize == "20px") {
+    } else if (html.style.fontSize === "20px") {
         html.style.fontSize = "18px";
         bar.style.setProperty('--length', '35%');
-    } else if (html.style.fontSize == "18px") {
+    } else if (html.style.fontSize === "18px") {
         html.style.fontSize = "16px";
         bar.style.setProperty('--length', '10%');
         minus.style.cursor = "default"
