@@ -81,10 +81,10 @@ header {
     color: var(--grey-c100, #FFF);
     margin-bottom: 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 140%;  
     /* 22.4px */
     padding: 10px 25px;
     border-radius: 4px;
@@ -106,7 +106,7 @@ header {
 }
 
 .whas_is h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
     line-height: 140%;
     margin-top: 40px;
@@ -132,7 +132,7 @@ header {
 }
 
 .conteine-rack5 h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     line-height: 150%;
 }
@@ -145,7 +145,7 @@ header {
 }
 
 .conteine-rack5 li {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 140%;
     color: #3b3b3b;
@@ -164,7 +164,7 @@ header {
 
 .conteine-rack5 .conteiner-link a {
     color: #1e1e1e;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 140%;
 }
@@ -189,7 +189,7 @@ header {
     width: 100%;
     border-top: 2px solid var(--grey-c500);
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     color: var(--grey-c1000);
     margin-bottom: 20px;
@@ -214,7 +214,7 @@ header {
 }
 
 .service-dropdown > h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--grey-c1000);
 }
@@ -241,7 +241,7 @@ img.icon-closed {
 }
 
 .service-content > p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--grey-c900);
     text-align: justify;
@@ -256,7 +256,7 @@ img.icon-closed {
 
 .service-content > a {
     align-self: flex-end;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--grey-c700);
     text-decoration: underline;
@@ -365,32 +365,32 @@ img.icon-closed {
     }
 
     .services-document > h2 {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     .service-dropdown > h3 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .service-content > p {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .what-is-rack h1 {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     .content-container h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .content-container h3 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .content-container p,
     .content-container ul li {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 

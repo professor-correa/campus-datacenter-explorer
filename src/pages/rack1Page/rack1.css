@@ -94,7 +94,7 @@ main img {
 
 .titulo {
     margin-top: 80px;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 
@@ -189,14 +189,14 @@ main img {
 }
 
 .popUp > p:nth-child(1) {
-    font-size: 24px;
+    font-size: 1.5rem;
     /* já atualizado */
     color: var(--grey-c100);
     font-weight: 400;
 }
 
 .popUp > p:nth-child(2) {
-    font-size: 18px;
+    font-size: 1.125rem;
     /* já atualizado */
     color: var(--grey-c200);
     font-weight: 400;
@@ -211,7 +211,7 @@ main img {
 
 .titulo-card {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 40px;
     font-weight: 600;
     color: var(--grey-c1000);
@@ -231,13 +231,13 @@ main img {
 
 .card > p,
 ul > li {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--grey-c700);
 }
 
 .card p > ul > li {
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -252,7 +252,7 @@ ul > li {
     align-items: end;
     width: 100%;
     color: var(--grey-c900);
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 20px;
     text-decoration: underline;
 }
@@ -291,7 +291,7 @@ ul > li {
     padding-top: 20px;
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     color: var(--grey-c1000);
 }
@@ -318,7 +318,7 @@ ul > li {
 }
 
 .dropdown > h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--grey-c1000);
 }
@@ -348,7 +348,7 @@ img.none {
 }
 
 .serviceContent > p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--grey-c900);
 }
@@ -361,7 +361,7 @@ img.none {
 
 .serviceContent > a {
     align-self: flex-end;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--grey-c700);
 }
@@ -383,7 +383,7 @@ footer {
 
 footer > .backInPage > h2 {
     margin-bottom: 12px;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     color: var(--grey-c100);
 }
@@ -397,7 +397,7 @@ footer > nav > ul {
 }
 
 footer > nav > ul > li > a {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--grey-c100);
 }
@@ -412,7 +412,7 @@ footer > nav > ul > li > a {
 }
 
 .contatos > h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--grey-c100);
 }
@@ -426,13 +426,13 @@ footer > nav > ul > li > a {
 
 footer > .contact > .acesseTambem > h4 {
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--grey-c100);
 }
 
 footer > .contact > .acesseTambem > a {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--grey-c100);
     text-decoration: underline;
@@ -473,12 +473,12 @@ footer > .contact > .acesseTambem > a {
     }
 
     .popUp > p:nth-child(1) {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: var(--grey-c100);
     }
 
     .popUp > p:nth-child(2) {
-        font-size: 18px;
+        font-size: 1.125rem;
         color: var(--grey-c200);
     }
 
@@ -495,20 +495,20 @@ footer > .contact > .acesseTambem > a {
 
     .titulo {
         text-align: center;
-        font-size: 72px;
+        font-size: 4.5rem;
         margin-bottom: 20px;
         font-weight: 700;
         color: var(--grey-c1000);
     }
 
     .titulo-card {
-        font-size: 48px;
+        font-size: 3rem;
         color: var(--grey-c1000);
     }
 
     .card > p,
     ul > li {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 400;
         color: var(--grey-c700);
     }
@@ -519,7 +519,7 @@ footer > .contact > .acesseTambem > a {
     }
 
     .doc-link {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 300;
         color: var(--grey-c900);
     }
@@ -533,40 +533,40 @@ footer > .contact > .acesseTambem > a {
 
     .services-documentation > h2 {
         width: 550px;
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 600;
     }
 
     .dropdown > h3 {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: 500;
         color: var(--grey-c1000);
     }
 
     .serviceContent > p {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
         color: var(--grey-c900);
     }
 
     .serviceContent > a {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     footer > .backInPage > h2 {
         margin-bottom: 12px;
-        font-size: 48px;
+        font-size: 3rem;
         color: var(--grey-c100);
     }
 
     footer > .backInPage > nav > ul > li > a {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: var(--grey-c100);
         font-weight: 300;
     }
 
     .contatos > h3 {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .acesseTambem {
@@ -577,12 +577,12 @@ footer > .contact > .acesseTambem > a {
     }
 
     footer > .contact > .acesseTambem > h4 {
-        font-size: 30px;
+        font-size: 1.875rem;
         color: var(--grey-c100);
     }
 
     footer > .contact > .acesseTambem > a {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: var(--grey-c100);
         font-weight: 300;
     }
@@ -612,7 +612,7 @@ footer > .contact > .acesseTambem > a {
     }
 
     .titulo {
-        font-size: 72px;
+        font-size: 4.5rem;
         font-weight: 800;
     }
 
@@ -636,14 +636,14 @@ footer > .contact > .acesseTambem > a {
     }
 
     .card > h2 {
-        font-size: 60px;
+        font-size: 4.5rem;
         font-weight: 500;
         color: var(--grey-c1000);
     }
 
     .card > p,
     .card > ul > li {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 500;
         color: var(--grey-c700);
     }
@@ -659,14 +659,14 @@ footer > .contact > .acesseTambem > a {
     }
 
     .card > a {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 300;
         color: var(--grey-c900);
     }
 
     .services-documentation > h2 {
         width: 100%;
-        font-size: 60px;
+        font-size: 1.125rem;
         color: var(--grey-c1000);
     }
 
@@ -675,20 +675,20 @@ footer > .contact > .acesseTambem > a {
     }
 
     .dropdown > h3 {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
         color: var(--grey-c1000);
     }
 
     .serviceContent > p {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
         color: var(--grey-c700);
     }
 
     /* ---------- Thiago ---------- */
     .serviceContent > p {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 300;
         color: var(--grey-c700);
     }
@@ -711,13 +711,13 @@ footer > .contact > .acesseTambem > a {
 
     footer > .backInPage > h2,
     .contact > .contatos > h3 {
-        font-size: 20px;
+        font-size: 1.125rem;
         font-weight: 600;
         color: var(--grey-c100);
     }
 
     footer > .backInPage > nav > ul > li > a {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
         color: var(--grey-c100);
     }
@@ -731,7 +731,7 @@ footer > .contact > .acesseTambem > a {
 
     .backInPage > h2 {
         color: var(--grey-c100);
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
 
@@ -745,19 +745,19 @@ footer > .contact > .acesseTambem > a {
     }
 
     footer > .contact > .acesseTambem > h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: var(--grey-c100);
     }
 
     footer > .contact > .acesseTambem > a {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         color: var(--grey-c100);
     }
 
 
     .contact > .acesseTambem > a {
-        font-size: 16px;
+        font-size: 1rem;
         color: var(--grey-c100);
     }
 }
